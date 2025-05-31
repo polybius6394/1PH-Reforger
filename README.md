@@ -5,6 +5,6 @@ If you'd like to contribute, report an issue, or get any information related to 
 
 No license is attached to this repository directly, but each subfolder has its own license which must be followed. Generally, we use the APL-SA license, but some mods may be set under different licenses by the author. You can read up on BI's licenses at https://www.bohemia.net/community/licenses
 
-Current list of contributors:
+Contributors:
 - poly
 - Citadel
