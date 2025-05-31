@@ -1,0 +1,41 @@
+GameEntity : "{9C030889E9A05770}Prefabs/Characters/Eyewear/npp_strelok/Eyewear_npp_strelok.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D601873E6784}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB13C575E2AFE37}" {
+     Name "M-1944 SWDG"
+     Description "The M-1944 Goggles (Model 1944) are an american protective goggles."
+    }
+   }
+  }
+  MeshObject "{5112706CD4157AE0}" {
+   Object "{6957A8C0CB8F4F60}Assets/Characters/HeadGear/Helmet_PASGT/Helmet_PASGT_01_cover_with_goggles_item.xob"
+   Materials {
+    MaterialAssignClass "{657EF641180D4067}" {
+     SourceMaterial "Helmet_PASGT_01_Cover"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+  SCR_ItemOutfitFactionComponent "{64D17D88D18EF4F7}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{64D17D88D157C3EC}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{64D17D88D0CECA3A}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornModel "{80051C2DA887BC0F}Assets/Characters/HeadGear/Helmet_PASGT/Helmet_PASGT_01_cover_with_goggles.xob"
+   WornMaterialsOverride {
+    "" "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+   }
+   ItemModel "{6957A8C0CB8F4F60}Assets/Characters/HeadGear/Helmet_PASGT/Helmet_PASGT_01_cover_with_goggles_item.xob"
+   ItemMaterialsOverride {
+    "" "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+   }
+  }
+ }
+}

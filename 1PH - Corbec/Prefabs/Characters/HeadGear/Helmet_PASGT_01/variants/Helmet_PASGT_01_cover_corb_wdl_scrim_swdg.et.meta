@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{41F5685D1317A1BC}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_corb_wdl_scrim_swdg.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

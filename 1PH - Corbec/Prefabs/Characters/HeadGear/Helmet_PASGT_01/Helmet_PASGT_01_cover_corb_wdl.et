@@ -1,0 +1,39 @@
+GameEntity : "{FE5C49069C2499D9}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover.et" {
+ ID "50D49DC5BC0CD17E"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Enabled 0
+  }
+  RHS_HelmetNodeStorageComponent "{5DB13C5777E6E695}" {
+   Enabled 1
+   Attributes SCR_ItemAttributeCollection "{5DB13C5760610D64}" {
+    ItemDisplayName UIInfo "{5DB13C575E2AFE37}" {
+     Name "M87 Combat Helmet (Woodland)"
+    }
+   }
+  }
+  SCR_ItemOutfitFactionComponent "{618AD7BB075F1045}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D96650B5696D}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D96650441EDE}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo MeshCover {
+     AreaType RHS_LoadoutTORCoverSlotArea "{657EF64F5EEDFAAA}" {
+     }
+    }
+    RHS_LoadoutSlotInfo NVG {
+    }
+    RHS_LoadoutSlotInfo Shroud {
+     Enabled 0
+     Prefab "{B0FA4DFBAA2A0B62}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/shroud.et"
+    }
+   }
+  }
+ }
+}

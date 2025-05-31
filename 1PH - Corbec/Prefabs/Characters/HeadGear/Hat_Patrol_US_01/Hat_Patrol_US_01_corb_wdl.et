@@ -1,0 +1,56 @@
+GameEntity : "{F545C1BE7C99954A}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat_Patrol_US_01.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Enabled 0
+  }
+  RHS_HelmetNodeStorageComponent "{657EF6481E2F86BD}" {
+   Attributes SCR_ItemAttributeCollection "{657EF648652CF4FA}" {
+    ItemDisplayName UIInfo "{52C8D6016792E1B8}" {
+     Name "Corbequais Patrol Cap (Woodland)"
+     Description "#AR-Headgear_PatrolCap_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{52C8D6015BC84E68}" {
+     Weight 0.175
+     SizeSetupStrategy Manual
+     ItemDimensions 10 10 10
+     ItemVolume 250
+     DimensionScaler 1
+     RestingAdditiveRotationLS 0 0 0
+     RestingAdditiveOffsetLS 0 0 0
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5CACE8EEE338C7A0}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 1.5
+      FOV 10
+      AspectRatio 1
+     }
+    }
+   }
+   Priority 150
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 100
+   MaxItemSize 1 1 1
+  }
+  SCR_ItemOutfitFactionComponent "{618AD7BA82D0FF27}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D966ECBA4E19}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D966EC303FF3}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo Masks {
+     InspectionWidgetOffset 0 1.6 0
+     AreaType LoadoutHeadCoverArea "{5DB0913540BC60B8}" {
+     }
+     m_sInspectIconTexture "{9D824B02D8CE6328}UI/Textures/InventoryIcons/Inspection-gizmo-mask-slot-UI.edds"
+    }
+   }
+  }
+ }
+}

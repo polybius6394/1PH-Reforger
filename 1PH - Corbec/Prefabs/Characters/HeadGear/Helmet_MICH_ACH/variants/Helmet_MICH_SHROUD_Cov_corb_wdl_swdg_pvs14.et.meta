@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{41565D5488E67811}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/Helmet_MICH_SHROUD_Cov_corb_wdl_swdg_pvs14.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
