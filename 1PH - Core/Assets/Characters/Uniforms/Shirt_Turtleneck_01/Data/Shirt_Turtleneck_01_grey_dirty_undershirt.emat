@@ -1,0 +1,15 @@
+MatPBRBasic {
+ Color 1 1 0.967 1
+ SurfaceProperties "{13581C35484F3000}Common/Materials/Game/fabric.gamemat"
+ AlphaMul 5
+ BlendMode AlphaBlend
+ AOScale 0.92
+ CavityFromAO 1
+ BCRMap "{6BEBA700F7B96FF1}Assets/Characters/Uniforms/Shirt_Turtleneck_01/Data/Shirt_Turtleneck_01_Grey_Dirty_BCR.edds"
+ OpacityMap "{DB4B4C78FFC123BB}Assets/Characters/Uniforms/Shirt_Turtleneck_01/Data/Shirt_Turtleneck_01_A.edds"
+ NMOMap "{E18A32A20EFF22A2}Assets/Characters/Uniforms/Shirt_Turtleneck_01/Data/Shirt_Turtleneck_01_NMO.edds"
+ Refs {
+  "OpacityMap"
+  "RHS_MaterialController.m_iOpacityMapID"
+ }
+}

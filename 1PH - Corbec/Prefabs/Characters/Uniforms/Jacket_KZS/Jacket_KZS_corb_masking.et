@@ -16,6 +16,11 @@ GameEntity : "{F1E29085C62F0D55}Prefabs/Characters/Uniforms/Jacket_KZS/Jacket_KZ
      Name "M96 Masking Oversuit Jacket"
      Description "A unique jacket issued to Para-Hussars, meant to be worn over a uniform. Supposed to be an improvement over the similar American Desert Night parkas."
     }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 1
+     }
+    }
    }
   }
  }

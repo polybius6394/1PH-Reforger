@@ -1,0 +1,15 @@
+GenericEntity : "{3E30C542E1314D03}Prefabs/Weapons/Rifles/M16/Rifle_FC16A2_carbine_weaver_painted.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{56DE9C900611C1AF}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Offset 0 0 -0.0205
+      Prefab "{D711F819F3271AC6}Prefabs/Weapons/Attachments/Underbarrel/UGL_M203_short_OliveGreen_Sand_Stripes.et"
+     }
+    }
+   }
+  }
+ }
+}

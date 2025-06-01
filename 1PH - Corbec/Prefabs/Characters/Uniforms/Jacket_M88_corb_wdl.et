@@ -16,6 +16,11 @@ GameEntity : "{9F546CCA2582D16F}Prefabs/Characters/Uniforms/Jacket_M88.et" {
      Name "Para-Hussar Combat Blouse (Woodland)"
      Description "Corbequais BDUs, modified for Para-Hussar use."
     }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 1
+     }
+    }
    }
   }
   BaseLoadoutClothComponent "{5104869D194C627A}" {
@@ -23,6 +28,12 @@ GameEntity : "{9F546CCA2582D16F}Prefabs/Characters/Uniforms/Jacket_M88.et" {
     LoadoutSlotInfo DummyBelt {
      Prefab "{ACB6C2B49C1230F9}Prefabs/Characters/Vests/Vest_ALICE/Vest_ALICE_belt_dummy.et"
     }
+   }
+   WornMaterialsOverride {
+    "{DEE51BF1B4E742DB}Assets/Characters/Uniforms/Jacket_M88/Data/Jacket_M88_01_corb_wdl.emat"
+   }
+   ItemMaterialsOverride {
+    "{27E6D318672E0279}Assets/Characters/Uniforms/Jacket_M88/Data/Jacket_M88_01_item_corb_wdl.emat"
    }
   }
  }

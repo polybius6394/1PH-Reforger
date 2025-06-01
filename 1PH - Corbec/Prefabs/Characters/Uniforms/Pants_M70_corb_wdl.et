@@ -16,6 +16,11 @@ GameEntity : "{06BC3F18B47799AE}Prefabs/Characters/Uniforms/Pants_M70.et" {
      Name "Para-Hussar Combat Trousers (Woodland)"
      Description "Corbequais BDU trousers, modified for Para-Hussar use."
     }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 1
+     }
+    }
    }
   }
  }
