@@ -12,5 +12,13 @@ GameEntity : "{4ABE3ECCA8D951A6}Prefabs/Characters/Uniforms/Pants_M70_corb_wdl.e
     }
    }
   }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{556CBEF093C14482}Assets/Characters/Uniforms/Pants_M70/Data/Pants_M70_01_corb_des.emat"
+   }
+   ItemMaterialsOverride {
+    "{54259A189526D98B}Assets/Characters/Uniforms/Pants_M70/Data/Pants_M70_01_Item_corb_des.emat"
+   }
+  }
  }
 }
