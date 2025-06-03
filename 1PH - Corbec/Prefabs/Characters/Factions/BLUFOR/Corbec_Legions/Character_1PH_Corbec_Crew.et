@@ -14,6 +14,7 @@ SCR_ChimeraCharacter : "{31F90ED032B45F88}Prefabs/Characters/Factions/BLUFOR/Cor
   }
   SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
    m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-Role_Crew"
     m_sFaction "1PH_Corbec"
    }
   }
