@@ -1,0 +1,8 @@
+MatPBRBasic {
+ AlphaMul 5
+ BlendMode AlphaBlend
+ CavityFromAO 1
+ BCRMap "{4782B7549CD2C136}Assets/Weapons/Rifles/m4a1/Data/02_KACRAS_GROUP_BCR.edds"
+ OpacityMap "{1FD65A4281047989}Assets/Weapons/Rifles/m4a1/Data/LP_KAC_A.edds"
+ NMOMap "{7F5A0CC645A593A8}Assets/Weapons/Rifles/m4a1/Data/02_KACRAS_GROUP_NMO.edds"
+}

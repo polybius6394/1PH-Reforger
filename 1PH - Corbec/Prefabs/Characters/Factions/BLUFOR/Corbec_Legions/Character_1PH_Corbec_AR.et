@@ -14,7 +14,7 @@ SCR_ChimeraCharacter : "{7840B49BBF82AA4D}Prefabs/Characters/Factions/BLUFOR/Cor
    }
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et"
+   WeaponTemplate "{F45E82154205C14C}Prefabs/Weapons/MachineGuns/M249/MG_FNMinimi_corbec_peq2.et"
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {

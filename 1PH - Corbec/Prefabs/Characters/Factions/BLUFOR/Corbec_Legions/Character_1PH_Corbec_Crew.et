@@ -18,5 +18,8 @@ SCR_ChimeraCharacter : "{31F90ED032B45F88}Prefabs/Characters/Factions/BLUFOR/Cor
     m_sFaction "1PH_Corbec"
    }
   }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{8FB5F1B6DAF56191}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3_carbine.et"
+  }
  }
 }

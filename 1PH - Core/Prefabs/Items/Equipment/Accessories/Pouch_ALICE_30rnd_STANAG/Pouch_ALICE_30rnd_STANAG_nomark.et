@@ -3,10 +3,10 @@ GenericEntity : "{E3154E0EAC48D67B}Prefabs/Items/Equipment/Accessories/Pouch_ALI
  components {
   BaseLoadoutClothComponent "{521AC04910AB9954}" {
    WornMaterialsOverride {
-    "{59D43090E6A555CD}Assets/Characters/Vests/Vest_ALICE/Data/vest_ALICE_eyes.emat"
+    "{B60FA225CCBDF945}Assets/Characters/Vests/Vest_ALICE/Data/vest_ALICE_nomark.emat"
    }
    ItemMaterialsOverride {
-    "{59D43090E6A555CD}Assets/Characters/Vests/Vest_ALICE/Data/vest_ALICE_eyes.emat"
+    "{B60FA225CCBDF945}Assets/Characters/Vests/Vest_ALICE/Data/vest_ALICE_nomark.emat"
    }
   }
  }

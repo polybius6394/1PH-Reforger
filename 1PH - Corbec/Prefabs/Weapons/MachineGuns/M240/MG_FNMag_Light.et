@@ -1,0 +1,24 @@
+GenericEntity : "{24A824857ADC84CF}Prefabs/Weapons/MachineGuns/M240/MG_M240_Light.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07E1D123E9}" {
+     Name "FN MAG"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{60FF597F5EC7B87C}" {
+     AttachmentSlot InventoryStorageSlot leftrail {
+      Offset -0.0385 0.0449 0.4197
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "FN MAG"
+   }
+  }
+ }
+}
