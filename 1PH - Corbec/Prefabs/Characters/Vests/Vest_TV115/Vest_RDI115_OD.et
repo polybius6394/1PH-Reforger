@@ -1,0 +1,51 @@
+GenericEntity : "{68920F86816B7DC6}Prefabs/Characters/Vests/Vest_TV115/Vest_TV115_base.et" {
+ ID "50D8C49B3558F152"
+ components {
+  RHS_ClothNodeStorageComponent "{5E8ECC6318C07954}" {
+   Attributes SCR_ItemAttributeCollection "{5E8ECC63152ECC55}" {
+    ItemDisplayName UIInfo "{5E8ECC6310D5F5D3}" {
+     Name "Raven Defense Industries Model 1991 - Olive"
+     Description "First deployed in 1993, this home-built ballistic vest is a Corbequais original.  Designed to replace the PASGT with a lightweight plate carrier, it is used by Special Forces and Gendarmarie tactical teams across the country."
+    }
+   }
+  }
+  SCR_ItemOutfitFactionComponent "{64D170D31B27039B}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{64D170D31ACC5389}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{64D170D315AEE057}" {
+      m_AffiliatedFactionKey "US"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5312D798A71DFBB1}" {
+   Slots {
+    LoadoutSlotInfo ArmorPlate_Front {
+     Prefab "{88E31AB238FFCB0A}Prefabs/Characters/Vests/Vest_PCGen_III/Plates/DestructibleArmorPlate_PCGenIII_ESAPIrevJ_Front.et"
+     AreaType RHS_LoadoutSAPIFrontPlateSlotArea "{6212A0DC48E2FDC6}" {
+     }
+    }
+    LoadoutSlotInfo ArmorPlate_Back {
+     Prefab "{1B4129A0C0C752A3}Prefabs/Characters/Vests/Vest_PCGen_III/Plates/DestructibleArmorPlate_PCGenIII_ESAPIrevJ_Back.et"
+     AreaType RHS_LoadoutSAPIBackPlateSlotArea "{6212A0DC48E2FDCA}" {
+     }
+    }
+    LoadoutSlotInfo ArmorPlate_Left {
+     AreaType RHS_LoadoutSAPILeftPlateSlotArea "{6212A0DC48E2FDD7}" {
+     }
+    }
+    LoadoutSlotInfo ArmorPlate_Right {
+     AreaType RHS_LoadoutSAPIRightPlateSlotArea "{6212A0DC48E2FDD4}" {
+     }
+    }
+   }
+   WornMaterialsOverride {
+    "{01A8119C11C8A990}Assets/Characters/Vests/Vest_TV115/data/tv115_OD.emat"
+   }
+   ItemMaterialsOverride {
+    "{01A8119C11C8A990}Assets/Characters/Vests/Vest_TV115/data/tv115_OD.emat"
+   }
+  }
+ }
+ coords 144.04 1.098 147.61
+}

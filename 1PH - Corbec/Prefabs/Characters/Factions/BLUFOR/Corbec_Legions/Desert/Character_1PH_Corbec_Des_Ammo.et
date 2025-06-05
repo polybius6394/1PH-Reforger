@@ -1,0 +1,25 @@
+SCR_ChimeraCharacter : "{AD8C514334BE1AA4}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Woodland/Character_1PH_Corbec_Ammo.et" {
+ ID "520EC961A090BBD5"
+ components {
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{34D2F3C764EC2DF6}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_corb_des.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{E3345C3DD715F825}Prefabs/Characters/Uniforms/Jacket_M88_corb_des.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{A7182E75BFAF72BF}Prefabs/Characters/Uniforms/Pants_M70_corb_des.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6582E6A0EBD3DCF2}" {
+     TargetStorage "Pants/Pants_M70_corb_des.et"
+    }
+   }
+  }
+ }
+}

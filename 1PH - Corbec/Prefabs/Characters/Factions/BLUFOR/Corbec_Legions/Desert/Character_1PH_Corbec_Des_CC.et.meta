@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{AE7293E85240972E}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Woodland/Character_1PH_Corbec_Des_CC.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

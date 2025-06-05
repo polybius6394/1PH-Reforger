@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BA68F06B33BF343F}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Character_1PH_Corbec_Rifleman_Variant_01.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

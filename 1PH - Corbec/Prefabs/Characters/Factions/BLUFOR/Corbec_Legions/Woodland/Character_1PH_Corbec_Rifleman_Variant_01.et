@@ -1,0 +1,12 @@
+SCR_ChimeraCharacter : "{7840B49BBF82AA4D}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Character_1PH_Corbec_Rifleman.et" {
+ ID "520EC961A090BBD5"
+ components {
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{B741073108D69F33}Prefabs/Characters/HeadGear/Helmet_PASGT_01/variants/Helmet_PASGT_01_cover_corb_wdl_scrim.et"
+    }
+   }
+  }
+ }
+}

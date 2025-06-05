@@ -1,0 +1,42 @@
+SCR_ChimeraCharacter : "{55F3F94514B4C886}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Character_1PH_Corbec_Base_Loadout.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-Role_Officer"
+    m_aAuthoredLabels + {
+     42
+    }
+    m_aAutoLabels {
+     122
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{0676440AE748256E}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat_Patrol_US_01_corb_wdl.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{2293762B67F14704}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_officer_nomark_eyes.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6582E6A0EFECF68F}" {
+     TargetStorage "Vest/Vest_ALICE_officer_nomark_eyes.et/Suspenders/Vest_ALICE_suspenders_2_nomark.et"
+    }
+    ItemsInitConfigurationItem "{658743FE38AC1768}" {
+     TargetStorage "Vest/Vest_ALICE_officer_nomark_eyes.et/MagPouch/Holster_M12_magpouch.et"
+     PrefabsToSpawn {
+      "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et" "{9C05543A503DB80E}Prefabs/Weapons/Magazines/Magazine_9x19_M9_15rnd_Ball.et"
+     }
+    }
+   }
+  }
+ }
+}
