@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{D19BC6A14E267E92}Prefabs/Weapons/Attachments/Stocks/Stock_VZ58/Stock_m16a2_carbine.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

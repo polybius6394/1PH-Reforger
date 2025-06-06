@@ -12,5 +12,8 @@ SCR_ChimeraCharacter : "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_
     }
    }
   }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{62F3780352C32303}Prefabs/Weapons/Handguns/M9/Handgun_M9_corbec.et"
+  }
  }
 }

@@ -1,6 +1,34 @@
 GenericEntity : "{F97A4AC994231900}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_carbine.et" {
  ID "CFBAA4B725411E45"
  components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{5E4C832970357276}" {
+     SourceMaterial "M16A2_FrontSight_01"
+     AssignedMaterial "{98D559D65B9736F3}Assets/Weapons/Rifles/M16A2/Data/M16A2_FrontSight_01.emat"
+    }
+    MaterialAssignClass "{5E4C83297035724B}" {
+     SourceMaterial "M16A2_Grip_01"
+     AssignedMaterial "{10AAD9135092BA02}Assets/Weapons/Rifles/M16A2/Data/M16A2_Grip_01_OliveGreen_Solid_corbec.emat"
+    }
+    MaterialAssignClass "{5E4C832970357253}" {
+     SourceMaterial "M16A2_Receiver1_01"
+     AssignedMaterial "{C4776498ED1BAA69}Assets/Weapons/Rifles/M16A2/Data/M16A2_Receiver1_01.emat"
+    }
+    MaterialAssignClass "{5E4C83297035725A}" {
+     SourceMaterial "M16A2_Receiver2_01"
+     AssignedMaterial "{CA6920D0D0ECA5B3}Assets/Weapons/Rifles/M16A2/Data/M16A2_Receiver2_01.emat"
+    }
+    MaterialAssignClass "{5E4C83297035725F}" {
+     SourceMaterial "M16A2_carbine_Barrel_01"
+     AssignedMaterial "{E5F534D8E719A0A5}Assets/Weapons/Rifles/M16A2/Data/M16A2_carbine_Barrel_01.emat"
+    }
+    MaterialAssignClass "{5E4C832970357224}" {
+     SourceMaterial "M16A2_carbine_Stock_01"
+     AssignedMaterial "{DEF042B5FB631797}Assets/Weapons/Rifles/M16A2/Data/M16A2_carbine_Stock_01_OliveGreen_Solid_corbec.emat"
+    }
+   }
+  }
   SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
    Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
     ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
@@ -11,6 +39,11 @@ GenericEntity : "{F97A4AC994231900}Prefabs/Weapons/Rifles/M16/Rifle_M16A2_carbin
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
+    AttachmentSlotComponent "{56DE9C900611C1AF}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Prefab "{BD666C5BB2C4A8AB}Prefabs/Weapons/Attachments/Handguards/Handguard_M16_carbine/Handguard_M16_carbine_OliveGreen_Solid_corbec.et"
+     }
+    }
     AttachmentSlotComponent "{6560FCEC4C4290C3}" {
      Enabled 0
     }

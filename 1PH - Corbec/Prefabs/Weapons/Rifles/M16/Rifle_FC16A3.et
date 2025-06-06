@@ -1,6 +1,18 @@
 GenericEntity : "{9C38B35C2CC96D4B}Prefabs/Weapons/Rifles/M16/Rifle_M16A3.et" {
  ID "CFBAA4B725411E45"
  components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{658C21C3E85A8A8E}" {
+     SourceMaterial "M16A2_Grip_01"
+     AssignedMaterial "{10AAD9135092BA02}Assets/Weapons/Rifles/M16A2/Data/M16A2_Grip_01_OliveGreen_Solid_corbec.emat"
+    }
+    MaterialAssignClass "{658C21C3E85A8AA5}" {
+     SourceMaterial "M16A2_Stock_01"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
   SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
    Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
     ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
@@ -10,6 +22,22 @@ GenericEntity : "{9C38B35C2CC96D4B}Prefabs/Weapons/Rifles/M16/Rifle_M16A3.et" {
    }
   }
   WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{56DE9C900611C1AF}" {
+     AttachmentSlot InventoryStorageSlot Handguard {
+      Prefab "{04A1DE8949C1B2E4}Prefabs/Weapons/Attachments/Handguards/Handguard_M16A2/Handguard_M16_OliveGreen_Solid_corbec.et"
+     }
+    }
+    AttachmentSlotComponent "{658C21C8DD3F6AF2}" {
+     AttachmentSlot InventoryStorageSlot "{658C21C922F45E1F}" {
+      Prefab "{BE1610B8ADE75571}Prefabs/Weapons/Attachments/Stocks/Stock_VZ58/Stock_m16a2_carbine_corbec.et"
+      DeactivatePhysicsOnAtaching 1
+      InspectionWidgetOffset 0 0.0789 0.2607
+     }
+     AttachmentType AttachmentStock "{658C21C9276DFC2C}" {
+     }
+    }
+   }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
     Name "FC-16A3"
     Description "Corbec's standard issue service rifle."

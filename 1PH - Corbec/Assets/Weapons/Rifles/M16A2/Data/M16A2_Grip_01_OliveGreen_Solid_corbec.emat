@@ -1,0 +1,4 @@
+MatPBRCamo : "{FD4C692542DAFA91}Assets/Weapons/Rifles/M16A2/Data/M16A2_Grip_01_OliveGreen_Solid.emat" {
+ CamoCRMMap "{861652E63EBDFD35}Assets/Weapons/Rifles/M16A2/Data/M16A2_Grip_01_CRM.edds"
+ CamoRoughnessOpacity 0
+}

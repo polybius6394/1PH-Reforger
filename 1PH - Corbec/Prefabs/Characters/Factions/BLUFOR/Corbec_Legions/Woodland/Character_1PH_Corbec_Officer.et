@@ -1,4 +1,4 @@
-SCR_ChimeraCharacter : "{55F3F94514B4C886}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Character_1PH_Corbec_Base_Loadout.et" {
+SCR_ChimeraCharacter : "{55F3F94514B4C886}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Woodland/Character_1PH_Corbec_Base_Loadout.et" {
  ID "520EC961A090BBD5"
  components {
   SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
@@ -13,7 +13,7 @@ SCR_ChimeraCharacter : "{55F3F94514B4C886}Prefabs/Characters/Factions/BLUFOR/Cor
    }
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
-   WeaponTemplate "{1353C6EAD1DCFE43}Prefabs/Weapons/Handguns/M9/Handgun_M9.et"
+   WeaponTemplate "{62F3780352C32303}Prefabs/Weapons/Handguns/M9/Handgun_M9_corbec.et"
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {

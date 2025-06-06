@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{161D7510902AFFD5}Assets/Weapons/Rifles/m4a1/Data/LP_KAC_corbec.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}
