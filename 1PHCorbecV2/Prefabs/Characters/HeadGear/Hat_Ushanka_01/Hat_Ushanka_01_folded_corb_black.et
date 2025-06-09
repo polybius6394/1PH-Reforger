@@ -1,0 +1,22 @@
+GameEntity : "{A22C976003AA5BA3}Prefabs/Characters/HeadGear/Hat_Ushanka_01/Hat_Ushanka_01_folded.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{566E9A1680EE825D}" {
+    ItemDisplayName UIInfo "{566E9A1680EE824A}" {
+     Name "Corbequais Ushanka (Folded)"
+     Description "A warm and comfortable winter hat, issued to Corbec's military."
+    }
+   }
+  }
+  SCR_ItemOutfitFactionComponent "{618AD7BA473FF1E3}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D966B638063D}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D966B59F5B0E}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+ }
+}

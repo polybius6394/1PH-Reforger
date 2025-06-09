@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6FAAE96EF99B9302}Prefabs/Weapons/Rifles/M16/Para-Hussar/Rifle_FC16A3_carbine_parahussar_m203_4x.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

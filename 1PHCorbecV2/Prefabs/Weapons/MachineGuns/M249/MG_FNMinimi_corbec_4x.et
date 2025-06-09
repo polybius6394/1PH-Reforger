@@ -1,0 +1,12 @@
+GenericEntity : "{5B03102CA3B0FA8F}Prefabs/Weapons/MachineGuns/M249/MG_FNMinimi_corbec.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{658A31CCDA52D968}" {
+     Enabled 1
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+GameEntity : "{D974E37E739A0EEF}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_corb_wdl.et" {
+ ID "50D49DC5BC0CD17E"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo MeshCover {
+     Prefab "{5F69A72997F0AFCB}Prefabs/Characters/HeadGear/Helmet_TOR/Headgear_pasgt_scrim_corb_wdl.et"
+    }
+   }
+  }
+ }
+}

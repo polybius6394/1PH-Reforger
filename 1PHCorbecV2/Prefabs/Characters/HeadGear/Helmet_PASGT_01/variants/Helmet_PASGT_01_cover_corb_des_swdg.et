@@ -1,0 +1,12 @@
+GameEntity : "{34D2F3C764EC2DF6}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_corb_des.et" {
+ ID "50D49DC5BC0CD17E"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo Goggles {
+     Prefab "{AB9428B34703BC52}Prefabs/Characters/Eyewear/npp_strelok/swdg_pasgt.et"
+    }
+   }
+  }
+ }
+}

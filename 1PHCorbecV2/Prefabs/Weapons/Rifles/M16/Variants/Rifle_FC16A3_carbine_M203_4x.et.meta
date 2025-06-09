@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6F0B950BA82A8FEE}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3_carbine_M203_4x.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

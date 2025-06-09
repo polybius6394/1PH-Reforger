@@ -1,0 +1,21 @@
+GenericEntity : "{8FB5F1B6DAF56191}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3_carbine.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{658A0E97431881CA}" {
+     AttachmentSlot InventoryStorageSlot "{658A0E974A3F2D2B}" {
+      Offset 0 0.0957 0.2073
+      Prefab "{5D00C138E2510EDC}Prefabs/Weapons/Attachments/Mounts/Mount_WeaverCarryhandle.et"
+      DeactivatePhysicsOnAtaching 1
+     }
+    }
+    AttachmentSlotComponent "{658A0E97456B25A0}" {
+     AttachmentSlot RHS_SlidingInventoryStorageSlot "{658A0E9753F96E30}" {
+      Offset 0 0.1127 0.2661
+     }
+    }
+   }
+  }
+ }
+}

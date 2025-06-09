@@ -1,0 +1,40 @@
+GameEntity : "{BBA08EC4EC40FA94}Prefabs/Characters/Uniforms/Jacket_M70.et" {
+ ID "5104869D194C6243"
+ components {
+  SCR_ItemOutfitFactionComponent "{6196E251BE6CA6CC}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8A841F631D8A0}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8A841F652F0B2}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "M70 Winter Parka"
+     Description "A thick parka with about a million pockets, for use in winter."
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 1
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   Slots {
+    LoadoutSlotInfo Undershirt {
+     Prefab "{D37984CC4506105D}Prefabs/Characters/Uniforms/Shirt_Turtleneck_01/Shirt_Turtleneck_01_grey_Dirty_undershirt_small.et"
+    }
+   }
+   WornMaterialsOverride {
+    "{A09408BF47B59484}Assets/Characters/Uniforms/Jacket_M70/Data/Jacket_M70_01_corb_winter.emat"
+   }
+   ItemMaterialsOverride {
+    "{91E9D50D2CCF3EA3}Assets/Characters/Uniforms/Jacket_M70/Data/Jacket_M70_01_item_corb_winter.emat"
+   }
+  }
+ }
+}

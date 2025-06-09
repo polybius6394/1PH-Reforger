@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4147300C8BAAFB59}Prefabs/Characters/HeadGear/Balaclavas/Balaclava_v1/Balaclava_v1_corb_olive.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
