@@ -8,5 +8,3 @@ No license is attached to this repository directly, but each subfolder has its o
 Contributors:
 - poly
 - Citadel
-
-grunger
