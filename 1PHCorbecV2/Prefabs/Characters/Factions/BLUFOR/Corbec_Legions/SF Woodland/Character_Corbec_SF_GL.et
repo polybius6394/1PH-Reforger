@@ -1,0 +1,41 @@
+SCR_ChimeraCharacter : "{DBCB8C263D8F1081}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/SF Woodland/Character_Corbec_SF_Rifleman.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "Special Forces Grenadier"
+    Icon "{DDAEEF112BEBCF94}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Grenadier.edds"
+    IconSetName "EditableEntity_Character_Grenadier"
+    m_aAutoLabels {
+     122 41
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{EE14976C822000BF}Prefabs/Weapons/Rifles/M16/Para-Hussar Variants/Rifle_FC16A3_carbine_parahussar_m203_peq2_m300c.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{81D08049C85A0C59}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/variants/Helmet_MICH_SHROUD_Cov_corb_wdl_swdg_balaclava.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{60E69A2DF2E7E070}" {
+    }
+    ItemsInitConfigurationItem "{60E69A2DF203B8DC}" {
+     PrefabsToSpawn + {
+      "{1663496AE5B9F10B}Prefabs/Weapons/Ammo/Ammo_Grenade_HEDP_M433.et"
+     }
+    }
+    ItemsInitConfigurationItem "{60E69A2DF2423D05}" {
+     PrefabsToSpawn {
+      "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et" "{5375FA7CB1F68573}Prefabs/Weapons/Ammo/Ammo_Grenade_HE_M406.et"
+     }
+    }
+   }
+  }
+ }
+}

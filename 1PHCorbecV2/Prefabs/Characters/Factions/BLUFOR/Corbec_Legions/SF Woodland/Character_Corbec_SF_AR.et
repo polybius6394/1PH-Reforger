@@ -18,6 +18,9 @@ SCR_ChimeraCharacter : "{DBCB8C263D8F1081}Prefabs/Characters/Factions/BLUFOR/Cor
     LoadoutSlotInfo Hat {
      Prefab "{271971651DAA78D1}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/variants/Helmet_MICH_SHROUD_Cov_corb_wdl_swdg.et"
     }
+    LoadoutSlotInfo Jacket {
+     Prefab "{0AC951AFF4C9546E}Prefabs/Characters/Uniforms/Jacket_M88_rolledup_corb_wdl.et"
+    }
     LoadoutSlotInfo Vest {
      Prefab "{38D6A467BA2F8177}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_AR_nomark_eyes.et"
     }
