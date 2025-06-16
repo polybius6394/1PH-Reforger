@@ -1,4 +1,4 @@
-GenericEntity : "{1CF769513890710D}Prefabs/Weapons/Rifles/M16/Para-Hussar/Rifle_FC16A3_carbine_parahussar.et" {
+GenericEntity : "{1CF769513890710D}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3_carbine_parahussar.et" {
  ID "CFBAA4B725411E45"
  components {
   WeaponComponent "{CFBAA4B706BA66E8}" {
@@ -15,6 +15,8 @@ GenericEntity : "{1CF769513890710D}Prefabs/Weapons/Rifles/M16/Para-Hussar/Rifle_
     AttachmentSlotComponent "{65891ACD1C5187A8}" {
      AttachmentSlot RHS_SlidingInventoryStorageSlot "{65891ACD1EE20E19}" {
       Offset 0.0217 0.0819 0.2225
+     }
+     AttachmentType AttachmentLaserFlashlight "{65891ACD674535BA}" {
      }
     }
    }

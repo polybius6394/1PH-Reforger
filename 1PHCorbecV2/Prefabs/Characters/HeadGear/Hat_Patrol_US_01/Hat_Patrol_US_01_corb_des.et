@@ -8,5 +8,13 @@ GameEntity : "{0676440AE748256E}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat
     }
    }
   }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornMaterialsOverride {
+    "{8B02AFDA102D527A}Assets/Characters/HeadGear/Hat_Patrol_US_01/Data/Hat_Patrol_US_01_corb_des.emat"
+   }
+   ItemMaterialsOverride {
+    "{8B02AFDA102D527A}Assets/Characters/HeadGear/Hat_Patrol_US_01/Data/Hat_Patrol_US_01_corb_des.emat"
+   }
+  }
  }
 }

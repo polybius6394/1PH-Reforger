@@ -35,8 +35,8 @@ GenericEntity : "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et" 
     AttachmentSlotComponent "{658A31CCDA52D968}" {
      Enabled 0
      AttachmentSlot InventoryStorageSlot "{658A31CD26C673E3}" {
-      PivotID "slot_optic"
-      Offset 0 0.1344 0.006
+      PivotID "w_topcover"
+      Offset 0 0.0088 -0.0719
       ChildPivotID "snap_weapon"
       Prefab "{BD496EE1B40DC510}Prefabs/Weapons/Attachments/Optics/Optic_4x20/Optic_4x20.et"
       InspectionWidgetOffset 0 0.1222 0.0283
@@ -73,6 +73,17 @@ GenericEntity : "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et" 
      AttachmentType AttachmentRIS1913Short "{658A31CF8F6EDBEA}" {
      }
      ShowInInspection 1
+    }
+    AttachmentSlotComponent "{65A0295DB9B1C109}" {
+     Enabled 0
+     AttachmentSlot InventoryStorageSlot "{65A0295DBEE46F2C}" {
+      PivotID "w_topcover"
+      Offset 0.0001 0.018 -0.1271
+      Angles 3 0 180
+      ChildPivotID "snap_weapon"
+      Prefab "{5D00C138E2510EDC}Prefabs/Weapons/Attachments/Mounts/Mount_WeaverCarryhandle.et"
+      InspectionWidgetOffset 0 0.1222 0.0283
+     }
     }
    }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {

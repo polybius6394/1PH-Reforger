@@ -67,7 +67,7 @@ GenericEntity : "{8FB5F1B6DAF56191}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3_carbi
       m_fMaximumPositiveSlideOffset 0.02
       m_fMaximumNegativeSlideOffset -0.01
      }
-     AttachmentType AttachmentRIS1913Short "{65891AC534F631B2}" {
+     AttachmentType AttachmentLaserFlashlight "{65891AC534F631B2}" {
      }
      ShowInInspection 1
     }

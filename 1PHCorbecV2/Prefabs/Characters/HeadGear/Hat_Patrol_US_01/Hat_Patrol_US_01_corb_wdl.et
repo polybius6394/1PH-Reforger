@@ -51,6 +51,12 @@ GameEntity : "{F545C1BE7C99954A}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat
      m_sInspectIconTexture "{9D824B02D8CE6328}UI/Textures/InventoryIcons/Inspection-gizmo-mask-slot-UI.edds"
     }
    }
+   WornMaterialsOverride {
+    "{ED60A1786C2F22A3}Assets/Characters/HeadGear/Hat_Patrol_US_01/Data/Hat_Patrol_US_01_corb_wdl.emat"
+   }
+   ItemMaterialsOverride {
+    "{ED60A1786C2F22A3}Assets/Characters/HeadGear/Hat_Patrol_US_01/Data/Hat_Patrol_US_01_corb_wdl.emat"
+   }
   }
  }
 }

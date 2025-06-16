@@ -3,6 +3,12 @@ GenericEntity : "{D963B1F5CB3F8E63}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3.et" {
  components {
   WeaponComponent "{CFBAA4B706BA66E8}" {
    components {
+    AttachmentSlotComponent "{6560FCEC4C4290C3}" {
+     Enabled 0
+    }
+    AttachmentSlotComponent "{656956A5A3FD8459}" {
+     Enabled 0
+    }
     AttachmentSlotComponent "{658A0E90E7C4AE5C}" {
      AttachmentSlot InventoryStorageSlot weaver {
       Offset 0 0.0942 0.3496
@@ -13,6 +19,8 @@ GenericEntity : "{D963B1F5CB3F8E63}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3.et" {
     AttachmentSlotComponent "{658A0E973248B1D0}" {
      AttachmentSlot RHS_SlidingInventoryStorageSlot peq {
       Offset 0 0.1111 0.4084
+     }
+     AttachmentType AttachmentLaserFlashlight "{65A0295F78291B93}" {
      }
      ShowInInspection 1
     }

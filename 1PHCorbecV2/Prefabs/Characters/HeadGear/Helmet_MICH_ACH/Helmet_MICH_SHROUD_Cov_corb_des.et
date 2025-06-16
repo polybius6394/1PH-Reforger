@@ -8,5 +8,13 @@ GameEntity : "{148F7DFD2C6B433D}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/Helm
     }
    }
   }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornMaterialsOverride {
+    "" "{374F0F7477CC8273}Assets/Characters/HeadGear/Helmet_ACH_MICH/data/rhs_mich_cov_corb_des.emat"
+   }
+   ItemMaterialsOverride {
+    "" "{374F0F7477CC8273}Assets/Characters/HeadGear/Helmet_ACH_MICH/data/rhs_mich_cov_corb_des.emat"
+   }
+  }
  }
 }

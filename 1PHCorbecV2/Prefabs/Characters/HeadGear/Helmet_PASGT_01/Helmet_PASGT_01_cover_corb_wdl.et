@@ -34,6 +34,12 @@ GameEntity : "{FE5C49069C2499D9}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helm
      Prefab "{B0FA4DFBAA2A0B62}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/shroud.et"
     }
    }
+   WornMaterialsOverride {
+    "{9D40D7C97A130D14}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_cover_corb_wdl.emat"
+   }
+   ItemMaterialsOverride {
+    "{9D40D7C97A130D14}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_cover_corb_wdl.emat"
+   }
   }
  }
 }

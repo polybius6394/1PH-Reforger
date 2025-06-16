@@ -45,6 +45,12 @@ GameEntity : "{E12126CDE731EED5}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat
      m_sInspectIconTexture "{9D824B02D8CE6328}UI/Textures/InventoryIcons/Inspection-gizmo-mask-slot-UI.edds"
     }
    }
+   WornMaterialsOverride {
+    "{58B59DEEA2569758}Assets/Characters/HeadGear/Hat_Boonie_US_01/Data/Hat_Boonie_US_01_corb_wdl.emat"
+   }
+   ItemMaterialsOverride {
+    "{58B59DEEA2569758}Assets/Characters/HeadGear/Hat_Boonie_US_01/Data/Hat_Boonie_US_01_corb_wdl.emat"
+   }
   }
  }
 }

@@ -18,6 +18,12 @@ GameEntity : "{D974E37E739A0EEF}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helm
      Enabled 0
     }
    }
+   WornMaterialsOverride {
+    "{FB22D96B06117DCD}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_cover_corb_des.emat"
+   }
+   ItemMaterialsOverride {
+    "{FB22D96B06117DCD}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_cover_corb_des.emat"
+   }
   }
  }
 }
