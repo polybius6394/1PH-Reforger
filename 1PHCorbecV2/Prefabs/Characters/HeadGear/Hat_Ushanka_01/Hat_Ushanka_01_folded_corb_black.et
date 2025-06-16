@@ -43,6 +43,10 @@ GameEntity : "{A22C976003AA5BA3}Prefabs/Characters/HeadGear/Hat_Ushanka_01/Hat_U
      }
      m_sInspectIconTexture "{9D824B02D8CE6328}UI/Textures/InventoryIcons/Inspection-gizmo-mask-slot-UI.edds"
     }
+    RHS_LoadoutSlotInfo Glasses {
+     InspectionWidgetOffset 0 1.6901 0.0813
+     m_sInspectIconTexture "{8C5C7CED1FFCE9F6}UI/Textures/InventoryIcons/Inspection-gizmo-goggles-slot-UI.edds"
+    }
    }
   }
  }

@@ -22,7 +22,6 @@ GameEntity : "{9EFEE32C346C9F26}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/Helm
     RHS_LoadoutSlotInfo BackVelcro {
     }
     RHS_LoadoutSlotInfo Headset {
-     Enabled 0
     }
    }
    WornMaterialsOverride {

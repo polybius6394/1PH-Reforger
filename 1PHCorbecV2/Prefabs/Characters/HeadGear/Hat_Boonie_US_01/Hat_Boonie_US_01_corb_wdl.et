@@ -45,6 +45,14 @@ GameEntity : "{E12126CDE731EED5}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat
      }
      m_sInspectIconTexture "{9D824B02D8CE6328}UI/Textures/InventoryIcons/Inspection-gizmo-mask-slot-UI.edds"
     }
+    RHS_LoadoutSlotInfo Glasses {
+     InspectionWidgetOffset 0 1.6901 0.0813
+     m_sInspectIconTexture "{8C5C7CED1FFCE9F6}UI/Textures/InventoryIcons/Inspection-gizmo-goggles-slot-UI.edds"
+    }
+    RHS_LoadoutSlotInfo Headset {
+     InspectionWidgetOffset 0.1 1.67 0
+     m_sInspectIconTexture "{EA640FDAF6A450BD}UI/Textures/InventoryIcons/Inspection-gizmo-headset-slot-UI.edds"
+    }
    }
    WornMaterialsOverride {
     "{58B59DEEA2569758}Assets/Characters/HeadGear/Hat_Boonie_US_01/Data/Hat_Boonie_US_01_corb_wdl.emat"

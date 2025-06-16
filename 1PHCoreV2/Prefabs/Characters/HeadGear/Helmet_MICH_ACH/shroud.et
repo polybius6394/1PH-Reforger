@@ -19,10 +19,10 @@ GameEntity : "{E319701076AF6C79}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/Helm
     }
    }
    WornMaterialsOverride {
-    "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
    }
    ItemMaterialsOverride {
-    "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
    }
   }
  }
