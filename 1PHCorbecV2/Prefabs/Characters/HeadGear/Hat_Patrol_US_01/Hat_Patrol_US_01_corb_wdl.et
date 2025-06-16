@@ -29,6 +29,7 @@ GameEntity : "{F545C1BE7C99954A}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat
     }
    }
    Priority 150
+   StoragePurpose 64
    UseCapacityCoefficient 0
    MaxCumulativeVolume 100
    MaxItemSize 1 1 1

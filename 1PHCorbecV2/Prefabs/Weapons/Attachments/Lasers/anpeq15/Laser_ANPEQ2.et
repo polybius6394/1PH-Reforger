@@ -4,22 +4,28 @@ GameEntity : "{5AE8F3A22BDB534F}Prefabs/Weapons/Attachments/Lasers/anpeq15/Laser
   InventoryItemComponent "{557E85EEE1B60313}" {
    Attributes SCR_ItemAttributeCollection "{557E85EEE1B60310}" {
     ItemDisplayName UIInfo "{5EA2EE3095C6E254}" {
-     Name "AN/PEQ-2"
-     Description "The AN/PEQ-2 succeeded the AN/PAQ-4C, which was designed in the early 1990s after the Gulf War. It was widely used by US forces during the War in Afghanistan and the Iraq War."
+     Name "FSM-4"
+     Description "A domestically produced visible and IR laser for Corbequais forces."
     }
     CustomAttributes {
      WeaponAttachmentAttributes "{557E85EEE1B60316}" {
-      AttachmentType AttachmentLaserFlashlight "{5EA2EE3095C6E25C}" {
+      AttachmentType AttachmentRIS1913Short "{5EA2EE3095C6E25C}" {
       }
      }
     }
    }
   }
   MeshObject "{557E85EE39CED921}" {
-   Object "{EBAC4248083E7D87}Assets/Weapons/Attachments/PEQ2/Laser_Sight.xob"
+   Object "{B69DBB2AD1EF65AE}Assets/Weapons/Attachments/Lasers/Laser_Perst_classic_v4/perst_classic_v4.xob"
+   Materials {
+    MaterialAssignClass "{65A147AB88D0B4E2}" {
+     SourceMaterial "PERST_Classic"
+     AssignedMaterial "{477BDFB97469D934}Assets/Weapons/Attachments/Lasers/Laser_Perst_classic_v4/data/PERST_Classic_nomark.emat"
+    }
+   }
   }
   RHS_SGC_RadialMenuComponent "{5EC286A42E515166}" {
-   m_sDisplayName "AN/PEQ-2"
+   m_sDisplayName "FSM-4"
   }
  }
  coords 0.003 0 0

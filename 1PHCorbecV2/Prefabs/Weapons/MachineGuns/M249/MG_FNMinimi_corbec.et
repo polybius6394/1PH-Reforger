@@ -64,7 +64,7 @@ GenericEntity : "{D2B48DEBEF38D7D7}Prefabs/Weapons/MachineGuns/M249/MG_M249.et" 
     }
     AttachmentSlotComponent "{658A31CFBB5A51DB}" {
      AttachmentSlot RHS_SlidingInventoryStorageSlot "{658A31CF8DDDE93A}" {
-      Offset -0.0299 0.0941 0.2918
+      Offset -0.0344 0.0941 0.2343
       Angles 0 0 -90
       MergePhysics 1
       InspectionWidgetOffset 0.0278 0.0819 0.2225

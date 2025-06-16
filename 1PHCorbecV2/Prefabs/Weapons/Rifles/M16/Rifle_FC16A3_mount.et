@@ -18,9 +18,9 @@ GenericEntity : "{D963B1F5CB3F8E63}Prefabs/Weapons/Rifles/M16/Rifle_FC16A3.et" {
     }
     AttachmentSlotComponent "{658A0E973248B1D0}" {
      AttachmentSlot RHS_SlidingInventoryStorageSlot peq {
-      Offset 0 0.1111 0.4084
+      Offset 0 0.118 0.3206
      }
-     AttachmentType AttachmentLaserFlashlight "{65A0295F78291B93}" {
+     AttachmentType AttachmentRIS1913Short "{65A0295F78291B93}" {
      }
      ShowInInspection 1
     }

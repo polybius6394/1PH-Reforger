@@ -12,7 +12,6 @@ GenericEntity : "{24A824857ADC84CF}Prefabs/Weapons/MachineGuns/M240/MG_M240_Ligh
    components {
     AttachmentSlotComponent "{60FF597F5EC7B87C}" {
      AttachmentSlot InventoryStorageSlot leftrail {
-      Offset -0.0385 0.0449 0.4197
      }
     }
    }
