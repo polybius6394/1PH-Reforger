@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C62DB97A45AD77F5}Assets/Characters/Vests/Vest_ALICE/Data/vest_ALICE_nomark_eyes.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

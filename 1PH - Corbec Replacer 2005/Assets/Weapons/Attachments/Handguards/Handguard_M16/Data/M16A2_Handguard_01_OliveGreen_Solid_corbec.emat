@@ -1,0 +1,4 @@
+MatPBRCamo : "{F334AB44659298C9}Assets/Weapons/Attachments/Handguards/Handguard_M16/Data/M16A2_Handguard_01_OliveGreen_Solid.emat" {
+ CamoCRMMap "{460052C19FA059FC}Assets/Weapons/Attachments/Handguards/Handguard_M16/Data/M16A2_Handguard_01_CRM.edds"
+ CamoRoughnessOpacity 0
+}

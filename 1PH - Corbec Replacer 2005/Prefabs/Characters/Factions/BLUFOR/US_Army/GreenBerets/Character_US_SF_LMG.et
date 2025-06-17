@@ -1,0 +1,34 @@
+SCR_ChimeraCharacter : "{894628A45793E7A0}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/Character_US_SF_BaseLoadout.et" {
+ ID "520EC961A090B1EE"
+ components {
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{B8D01E23340AFEFE}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_01_corb_wdl.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{0AC951AFF4C9546E}Prefabs/Characters/Uniforms/Jacket_M88_rolledup_corb_wdl.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{38D6A467BA2F8177}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_AR_nomark_eyes.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D7CAAFB9235E903}" {
+     TargetStorage "Vest/Vest_ALICE_AR_nomark_eyes.et/Suspenders/Vest_ALICE_suspenders_2_nomark.et"
+    }
+    ItemsInitConfigurationItem "{60E69A2DF2E7E070}" {
+     TargetStorage "Vest/Vest_ALICE_AR_nomark_eyes.et/MagPouch/Pouch_ALICE_200rnd_M249_nomark.et"
+    }
+    ItemsInitConfigurationItem "{60E69A2DF203B8DC}" {
+     TargetStorage "Vest/Vest_ALICE_AR_nomark_eyes.et/MagPouch2/Pouch_ALICE_200rnd_M249_nomark.et"
+    }
+    ItemsInitConfigurationItem "{60E69A2DF2423D05}" {
+     TargetStorage "Vest/Vest_ALICE_AR_nomark_eyes.et/Buttpack/Vest_ALICE_buttpack_nomark_eyes.et"
+    }
+   }
+  }
+ }
+}

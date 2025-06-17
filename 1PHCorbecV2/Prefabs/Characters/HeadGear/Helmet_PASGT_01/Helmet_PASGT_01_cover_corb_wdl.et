@@ -28,9 +28,12 @@ GameEntity : "{FE5C49069C2499D9}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helm
      }
     }
     RHS_LoadoutSlotInfo NVG {
+     Offset 0 0.1421 -0.1298
+     Angles 0 180 0
      Enabled 1
     }
     RHS_LoadoutSlotInfo Shroud {
+     Enabled 0
      Prefab "{B0FA4DFBAA2A0B62}Prefabs/Characters/HeadGear/Helmet_MICH_ACH/shroud.et"
     }
    }

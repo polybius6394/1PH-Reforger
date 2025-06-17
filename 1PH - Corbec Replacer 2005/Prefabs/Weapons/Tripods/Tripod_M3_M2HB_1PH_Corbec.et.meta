@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2BAC89F0DE20E1B8}Prefabs/Weapons/Tripods/Tripod_M3_M2HB_1PH_Corbec.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

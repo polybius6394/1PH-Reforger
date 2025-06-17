@@ -1,0 +1,13 @@
+MatPBRCamo : "{60A791056A9C61D4}Assets/Weapons/Handguns/M9/Data/M9_Body.emat" {
+ CamoAlbedoMap "{CEE23838FD6B350F}Assets/Weapons/Rifles/M16A2/Data/T_OliveGreen_Solid_BC.edds"
+ UVSrcCamoAlbedoMap "UV set 2"
+ CamoAlbedoMapUVTransform MatUVTransform "{658C69F30B313D26}" {
+  TilingU 1.25
+  TilingV 1.25
+  OffsetU 0.498
+  Rotation 29.091
+ }
+ CamoCRMMap "{AED6F6E91BC05615}Assets/Weapons/Handguns/M9/Data/M9_Body_CRM.edds"
+ CamoOpacity 1
+ CamoMetalnessOpacity 1
+}

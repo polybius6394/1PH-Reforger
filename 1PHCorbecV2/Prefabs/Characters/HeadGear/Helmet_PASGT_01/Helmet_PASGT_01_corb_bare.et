@@ -26,6 +26,11 @@ GameEntity : "{B74A4FF0DD8BB116}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helm
     RHS_LoadoutSlotInfo MeshCover {
      Enabled 0
     }
+    RHS_LoadoutSlotInfo NVG {
+     Offset 0 0.1421 -0.1298
+     Angles 0 180 0
+     Enabled 1
+    }
     RHS_LoadoutSlotInfo Headset {
      Enabled 0
     }

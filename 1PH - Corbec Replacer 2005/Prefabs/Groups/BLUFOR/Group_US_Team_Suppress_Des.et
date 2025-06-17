@@ -1,0 +1,6 @@
+SCR_AIGroup : "{81B6DBF2B88545F5}Prefabs/Groups/BLUFOR/Group_US_Team_Suppress.et" {
+ ID "0000000000000001"
+ m_aUnitPrefabSlots {
+  "{1907C96E8DE74C1C}Prefabs/Characters/Factions/BLUFOR/US_Army/Desert/Character_US_TL_Des.et" "{EE5ECD0132C6E03D}Prefabs/Characters/Factions/BLUFOR/US_Army/Desert/Character_US_AR_Des.et" "{EE5ECD0132C6E03D}Prefabs/Characters/Factions/BLUFOR/US_Army/Desert/Character_US_AR_Des.et" "{4845B158053FE8A6}Prefabs/Characters/Factions/BLUFOR/US_Army/Desert/Character_US_GL_Des.et"
+ }
+}

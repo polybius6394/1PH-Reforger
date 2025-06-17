@@ -1,0 +1,22 @@
+GenericEntity : "{F59BF59EB9F716AF}Prefabs/Weapons/Handguns/Glock/Handgun_Glock17_corbec.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{50F64C45E7271D47}" {
+     FireModes {
+      BaseFireMode "{658C5D2B7134D1E1}" {
+       MaxBurst -1
+       RoundsPerMinute 1250
+       UIName "Auto"
+      }
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "Glock 18"
+    Description "A glock 17, but with a fully automatic fire mode, and a fire rate of ~1300rpm."
+   }
+  }
+ }
+}

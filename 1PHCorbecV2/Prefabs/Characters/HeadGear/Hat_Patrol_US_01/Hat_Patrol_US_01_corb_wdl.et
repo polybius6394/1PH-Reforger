@@ -56,8 +56,20 @@ GameEntity : "{F545C1BE7C99954A}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat
      m_sInspectIconTexture "{8C5C7CED1FFCE9F6}UI/Textures/InventoryIcons/Inspection-gizmo-goggles-slot-UI.edds"
     }
     RHS_LoadoutSlotInfo Headset {
+     Offset 0 -0.0046 0
      InspectionWidgetOffset 0.1 1.67 0
+     AreaType LoadoutHeadCoverArea "{65A2F5A8E3427598}" {
+     }
      m_sInspectIconTexture "{EA640FDAF6A450BD}UI/Textures/InventoryIcons/Inspection-gizmo-headset-slot-UI.edds"
+    }
+    RHS_LoadoutSlotInfo NVG {
+     PivotID "Head"
+     Offset 0 0.1421 -0.0855
+     Angles 0 180 0
+     InspectionWidgetOffset 0 1.7698 0.129
+     AreaType RHS_LoadoutNVGSlotArea "{65A3083B68ABD897}" {
+     }
+     m_sInspectIconTexture "{2099559B5965F0C7}UI/Textures/InventoryIcons/Inspection-gizmo-nvg-slot-UI.edds"
     }
    }
    WornMaterialsOverride {
