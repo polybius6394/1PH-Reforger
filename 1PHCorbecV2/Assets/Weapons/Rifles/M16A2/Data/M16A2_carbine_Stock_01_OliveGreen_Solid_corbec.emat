@@ -1,0 +1,4 @@
+MatPBRCamo : "{C82F8BC0EF860186}Assets/Weapons/Rifles/M16A2/Data/M16A2_carbine_Stock_01_OliveGreen_Solid.emat" {
+ CamoCRMMap "{4CA5D30E82AC6C9C}Assets/Weapons/Rifles/M16A2/Data/M16A2_carbine_Stock_01_CRM.edds"
+ CamoRoughnessOpacity 0
+}

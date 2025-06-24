@@ -1,0 +1,14 @@
+GameEntity : "{F1E29085C62F0D55}Prefabs/Characters/Uniforms/Jacket_KZS/Jacket_KZS.et" {
+ ID "5104869D194C6243"
+ components {
+  SCR_ItemOutfitFactionComponent "{618AD7B999DA470F}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D96676BEC81B}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D966763A6F5F}" {
+      m_AffiliatedFactionKey "US"
+     }
+    }
+   }
+  }
+ }
+}

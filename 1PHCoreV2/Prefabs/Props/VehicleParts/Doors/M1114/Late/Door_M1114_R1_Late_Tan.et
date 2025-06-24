@@ -1,0 +1,14 @@
+GenericEntity : "{C748411DD65D807C}Prefabs/Props/VehicleParts/Doors/M1114/Late/Door_M1114_R1_Late.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{6574BAC78FF1BB33}" {
+     SourceMaterial "hmmwv_gpk_tower"
+     AssignedMaterial "{7081740DE8F88C3A}Assets/Vehicles/Wheeled/M1114/Doors/Data/HV_Doors_Tan.emat"
+    }
+   }
+  }
+ }
+ coords 66.162 1 1188.286
+}

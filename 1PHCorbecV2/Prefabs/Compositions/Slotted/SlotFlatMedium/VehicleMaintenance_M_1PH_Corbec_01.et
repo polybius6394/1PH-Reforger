@@ -1,0 +1,26 @@
+GenericEntity : "{FB18EFE9C1A81E29}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_US_01.et" {
+ ID "5282DCB5DFC8538F"
+ components {
+  FactionAffiliationComponent "{5E38DC8C378BCC8A}" {
+   "faction affiliation" "1PH_Corbec"
+  }
+ }
+ {
+  GenericEntity {
+   ID "5D22B941BA4ECAA0"
+   components {
+    SCR_FactionAffiliationComponent "{5D22B92ED0ABBFD4}" {
+     "faction affiliation" "1PH_Corbec"
+    }
+   }
+  }
+  GenericEntity {
+   ID "5E690688EBC16840"
+   components {
+    SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
+     "faction affiliation" "1PH_Corbec"
+    }
+   }
+  }
+ }
+}

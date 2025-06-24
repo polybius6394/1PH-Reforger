@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{43E8A9C673770D19}Prefabs/Weapons/Rifles/M4A1/base_parts/RHS_M4A1_RasUpper_hidden_corbec.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

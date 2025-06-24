@@ -1,0 +1,53 @@
+SCR_ChimeraCharacter : "{55F3F94514B4C886}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Character_1PH_Corbec_Base_Loadout.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Icon "{AE53796BC5D21A08}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Rifleman.edds"
+    m_aAuthoredLabels +{
+    }
+    m_aAutoLabels {
+     122 46
+    }
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{BCC5FE1F8A5E5FBD}Prefabs/Weapons/Rifles/M16/Variants/Rifle_FC16A3_mount_peq2.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo ArmoredVest {
+     Prefab "{F0C5162706001DCD}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT_corb_olive.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{84B47F0DBBAE8EC2}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_rifleman_nomark_eyes.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6582E6A0EFECF68F}" {
+     TargetStorage "Vest/Vest_ALICE_rifleman_nomark_eyes.et/Suspenders/Vest_ALICE_suspenders_2_nomark.et"
+    }
+    ItemsInitConfigurationItem "{6582E6A524808D06}" {
+     TargetStorage "Vest/Vest_ALICE_rifleman_nomark_eyes.et/MagPouch/Pouch_ALICE_30rnd_STANAG_nomark.et"
+     PrefabsToSpawn {
+      "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6582E6A534DB29BB}" {
+     TargetStorage "Vest/Vest_ALICE_rifleman_nomark_eyes.et/MagPouch2/Pouch_ALICE_30rnd_STANAG_nomark.et"
+     PrefabsToSpawn {
+      "{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et" "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_M855_M856_Last_5Tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6582E6A5C58107A9}" {
+     TargetStorage "Vest/Vest_ALICE_rifleman_nomark_eyes.et/Buttpack/Vest_ALICE_buttpack_nomark_eyes.et"
+     PrefabsToSpawn {
+      "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et" "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et"
+     }
+    }
+   }
+  }
+ }
+}

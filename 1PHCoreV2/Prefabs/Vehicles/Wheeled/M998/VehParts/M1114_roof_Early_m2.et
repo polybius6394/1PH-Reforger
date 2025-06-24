@@ -1,0 +1,16 @@
+GenericEntity : "{637E3382ED17C760}Prefabs/Vehicles/M998/VehParts/M1114_roof_Early.et" {
+ ID "4B42E71698F5739C"
+ components {
+  SlotManagerComponent "{54F2B37F3202E099}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Enabled 1
+     Prefab "{199523BF565050A3}Prefabs/Vehicles/M998/VehParts/M1114_gun_mount_M2HB.et"
+    }
+    RegisteringComponentSlotInfo Hatch_Closed {
+     Enabled 0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,13 @@
+GenericEntity : "{3AE8501351314006}Prefabs/Vehicles/M998/VehParts/M1097_Roof.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A811F0EF6B40A1}" {
+     SourceMaterial "M1097"
+     AssignedMaterial "{299353B3A149C962}Assets/Vehicles/Wheeled/M1097/Roof/Data/M1097_Tan.emat"
+    }
+   }
+  }
+ }
+}

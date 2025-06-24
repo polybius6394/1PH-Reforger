@@ -1,0 +1,18 @@
+SCR_ChimeraCharacter : "{8E98CB76C2FC0D5F}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Character_1PH_Corbec_PL.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-Role_SquadLeader"
+    Icon "{A26C465A6AE2AA17}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Leader.edds"
+   }
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{B741073108D69F33}Prefabs/Characters/HeadGear/Helmet_PASGT_01/variants/Helmet_PASGT_01_cover_corb_wdl_scrim.et"
+    }
+   }
+  }
+ }
+}

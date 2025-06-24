@@ -1,0 +1,14 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{F009C8BBA54A33F9}Assets/Vehicles/Wheeled/M1114/Doors/kiok_humvee_platecover_door_l1.xob"
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Mass 10
+   ResponseIndex "TinyDestructible"
+   Static 1
+  }
+ }
+ coords 81.331 1 1193.281
+}

@@ -1,0 +1,13 @@
+GenericEntity : "{5C83803A2CC4DBBC}Prefabs/Vehicles/M998/VehParts/VehPart_M1114_Roof_Hatch_Closed.et" {
+ ID "51F6D6DE0C8B22AD"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{65A811FD14AEB854}" {
+     SourceMaterial "hmmwv_body_2"
+     AssignedMaterial "{8D435E4F8B63158D}Assets/Vehicles/Wheeled/Detailing/Closed_Roof_Hatch/Data/hmmwv_body_2_Tan.emat"
+    }
+   }
+  }
+ }
+}

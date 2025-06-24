@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0D6528A5ECF4E2B2}Assets/Vehicles/Wheeled/M1097/Cargo_Racks/Data/M1097_Benches_Tan.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

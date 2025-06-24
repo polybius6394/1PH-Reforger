@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F9D8273EFFD9F5FF}Prefabs/Compositions/Slotted/SlotFlatMedium/FieldHospital_M_1PH_Corbec_01.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

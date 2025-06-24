@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{36A400A975B4F43D}Prefabs/MP/Campaign/Assets/CampaignMobileAssemblyWest_1PN_Corbec.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

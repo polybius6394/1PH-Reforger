@@ -1,0 +1,8 @@
+GenericEntity : "{4D69F9D77C372BE5}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_US_01_M60.et" {
+ ID "52F07DE9010CEE6C"
+ components {
+  FactionAffiliationComponent "{5D06E95DA1ACEC64}" {
+   "faction affiliation" "1PH_Corbec"
+  }
+ }
+}

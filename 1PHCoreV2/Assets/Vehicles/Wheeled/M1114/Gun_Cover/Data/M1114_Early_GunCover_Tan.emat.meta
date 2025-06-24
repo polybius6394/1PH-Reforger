@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9B65A5F59FCFC34A}Assets/Vehicles/Wheeled/M1114/Gun_Cover/Data/M1114_Early_GunCover_Tan.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

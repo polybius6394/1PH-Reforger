@@ -1,0 +1,13 @@
+GenericEntity : "{8D957396466D23FE}Prefabs/Vehicles/M998/VehParts/M1114_tailgate.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A811FFDD4AA046}" {
+     SourceMaterial "Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body"
+     AssignedMaterial "{F1FA74DCA013923D}Assets/Vehicles/Wheeled/M998/HMMWV_Body_Tan.emat"
+    }
+   }
+  }
+ }
+}

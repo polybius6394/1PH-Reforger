@@ -1,0 +1,16 @@
+Turret : "{8094D99689ABE241}Prefabs/Weapons/Mortars/M252/Mortar_M252.et" {
+ ID "5CF87D15B3D0A976"
+ components {
+  SCR_EditableVehicleComponent "{617CC5661216D3D8}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_sFaction "1PH_Corbec"
+    m_aAuthoredLabels {
+     20145711 3 281 913
+    }
+   }
+  }
+  SCR_VehicleFactionAffiliationComponent "{5CF87D14630BD7E0}" {
+   "faction affiliation" "1PH_Corbec"
+  }
+ }
+}

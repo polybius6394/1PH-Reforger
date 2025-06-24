@@ -1,0 +1,21 @@
+GenericEntity : "{D74FE85E78BE09B8}Prefabs/Vehicles/M998/VehParts/VehPart_M1114_Roof_Armor.et" {
+ ID "51F6D6DE0C8B22AD"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{6574C2E46AF5D64E}" {
+     SourceMaterial "0"
+     AssignedMaterial "{F22E0D44B11E6DDE}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof001_Tan.emat"
+    }
+    MaterialAssignClass "{6574C2E46AF5D668}" {
+     SourceMaterial "1"
+     AssignedMaterial "{4CDE6C24F25083D5}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof003_Tan.emat"
+    }
+    MaterialAssignClass "{6574C2E46AF5D66E}" {
+     SourceMaterial "2"
+     AssignedMaterial "{B2DE2C610702EF99}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof002_Tan.emat"
+    }
+   }
+  }
+ }
+}

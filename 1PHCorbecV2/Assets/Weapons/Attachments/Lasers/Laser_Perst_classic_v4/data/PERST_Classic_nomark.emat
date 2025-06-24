@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{00D3201173C824A4}Assets/Weapons/Attachments/Lasers/Laser_Perst_classic_v4/data/rhs_perst_classic_v4_nomark_BCR.edds"
+ NMOMap "{49CC1F68D0448C15}Assets/Weapons/Attachments/Lasers/Laser_Perst_classic_v4/data/rhs_perst_classic_v4_NMO.edds"
+}

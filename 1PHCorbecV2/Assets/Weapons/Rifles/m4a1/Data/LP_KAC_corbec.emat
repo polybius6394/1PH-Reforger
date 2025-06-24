@@ -1,0 +1,15 @@
+MatPBRCamo {
+ BlendMode None
+ GlobalLayerContrast 0
+ GlobalLayerGlobalAO 0
+ GlobalLayerHeightPower 0
+ CavityFromAO 1
+ BCRMap "{4782B7549CD2C136}Assets/Weapons/Rifles/m4a1/Data/02_KACRAS_GROUP_BCR.edds"
+ OpacityMap "{1FD65A4281047989}Assets/Weapons/Rifles/m4a1/Data/LP_KAC_A.edds"
+ NMOMap "{7F5A0CC645A593A8}Assets/Weapons/Rifles/m4a1/Data/02_KACRAS_GROUP_NMO.edds"
+ CamoAlbedoMap "{CEE23838FD6B350F}Assets/Weapons/Rifles/M16A2/Data/T_OliveGreen_Solid_BC.edds"
+ UVSrcCamoAlbedoMap "UV set 2"
+ CamoCRMMap "{F6B836CD4D055621}Assets/Weapons/Rifles/m4a1/Data/LP_KAC_CRM.edds"
+ CamoNormalOpacity 0
+ CamoRoughnessOpacity 0
+}

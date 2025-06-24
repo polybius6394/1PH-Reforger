@@ -1,0 +1,14 @@
+GameEntity : "{F545C1BE7C99954A}Prefabs/Characters/HeadGear/Hat_Patrol_US_01/Hat_Patrol_US_01.et" {
+ ID "5112706CD4157AC7"
+ components {
+  SCR_ItemOutfitFactionComponent "{618AD7BA82D0FF27}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D966ECBA4E19}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D966EC303FF3}" {
+      m_AffiliatedFactionKey "US"
+     }
+    }
+   }
+  }
+ }
+}

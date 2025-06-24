@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.361 0.285 0.19 1
+ SpecularMul 1.12
+ RoughnessScale 0.953
+ DielectricReflectance 0.042
+ BCRMap "{AFAEF600998AB51F}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof_002_BCR.edds"
+ NMOMap "{97764D9240FDE781}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof_002_NMO.edds"
+}

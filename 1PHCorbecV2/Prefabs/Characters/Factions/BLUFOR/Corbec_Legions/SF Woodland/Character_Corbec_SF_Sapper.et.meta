@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2C92A30EA58983C6}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/SF Woodland/Character_Corbec_SF_Sapper.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

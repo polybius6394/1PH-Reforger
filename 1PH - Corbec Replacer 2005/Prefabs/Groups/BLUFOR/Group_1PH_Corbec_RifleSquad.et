@@ -1,0 +1,13 @@
+SCR_AIGroup : "{EACD97CF4A702FAE}Prefabs/Groups/BLUFOR/Group_US_Base.et" {
+ ID "0000000000000001"
+ components {
+  SCR_EditableGroupComponent "{50D291F6C83FA532}" {
+   m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
+    m_aAuthoredLabels {
+     4 11 25 34 38
+    }
+   }
+  }
+ }
+ m_faction "US"
+}

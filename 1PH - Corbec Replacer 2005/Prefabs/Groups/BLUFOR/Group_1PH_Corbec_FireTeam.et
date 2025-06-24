@@ -1,0 +1,12 @@
+SCR_AIGroup : "{3F1454FEC49A0DF5}Prefabs/Groups/BLUFOR/Group_1PH_Corbec_RifleSquad.et" {
+ ID "0000000000000001"
+ components {
+  SCR_EditableGroupComponent "{50D291F6C83FA532}" {
+   m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
+    m_aAuthoredLabels {
+     4 11 25 34 38
+    }
+   }
+  }
+ }
+}

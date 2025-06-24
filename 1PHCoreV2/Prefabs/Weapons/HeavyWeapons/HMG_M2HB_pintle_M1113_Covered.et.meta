@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C90BE19EF2F9E517}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_pintle_M1113_Covered.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

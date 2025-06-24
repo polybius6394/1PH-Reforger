@@ -1,0 +1,15 @@
+GenericEntity : "{1CC8DD9D7F92ED2A}Prefabs/Props/Core/VehiclePart_Base.et" {
+ ID "51F6D6DE0C8B22AD"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{34FFA99A543A9E0D}Assets/Vehicles/Wheeled/SOF_GMV/TamponCover/kiok_back_tamponcover.xob"
+   Materials {
+    MaterialAssignClass "{65A811FC5118D82A}" {
+     SourceMaterial "hmmwv_gpk_tower"
+     AssignedMaterial "{881C2FD76CC235CE}Assets/Vehicles/Wheeled/SOF_GMV/TamponCover/Data/HV_DirtCover.emat"
+    }
+   }
+  }
+ }
+ coords 85.795 1 1197.506
+}

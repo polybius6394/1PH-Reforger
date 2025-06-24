@@ -1,0 +1,13 @@
+GenericEntity : "{76F2D6C8CF18925B}Prefabs/Vehicles/Wheeled/M998/VehParts/VehPart_M1114_Radiator.et" {
+ ID "51F6D6DE0C8B22AD"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{65A858266F43FBB5}" {
+     SourceMaterial "front"
+     AssignedMaterial "{75FBCBB3EB07AB56}Assets/Vehicles/Wheeled/M1114/Radiator/Data/HV_Radiator_Tan.emat"
+    }
+   }
+  }
+ }
+}

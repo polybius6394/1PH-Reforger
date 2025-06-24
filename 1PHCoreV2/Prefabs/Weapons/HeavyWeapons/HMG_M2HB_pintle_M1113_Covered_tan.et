@@ -1,0 +1,12 @@
+GenericEntity : "{C90BE19EF2F9E517}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_pintle_M1113_Covered.et" {
+ ID "476AE74DE20E1061"
+ components {
+  SlotManagerComponent "{65A811FE5DBA93E9}" {
+   Slots {
+    EntitySlotInfo Gun_Cover {
+     Prefab "{9619380E69894CF4}Prefabs/Vehicles/M998/VehParts/M1114_VehPart_GunCover_tan.et"
+    }
+   }
+  }
+ }
+}

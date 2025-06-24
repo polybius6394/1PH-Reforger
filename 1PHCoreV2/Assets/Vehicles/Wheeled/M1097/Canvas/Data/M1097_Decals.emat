@@ -1,0 +1,13 @@
+MatPBRDecal {
+ BlendMode AlphaBlend
+ RoughnessScale 3
+ CavityFromAO 0
+ OpacityMap "{1319DF9837F550C1}Assets/_SharedData/VehicleParts/Bolts/bolt_decal_A.edds"
+ NMOMap "{047B7B07BE46CD9E}Assets/_SharedData/VehicleParts/Bolts/bolt_decal_NMO.edds"
+ GBufferAlbedo 1
+ GBufferMetalness 1
+ GBufferAO 1
+ HeightMap "{C971E0B9A0BFCC7F}Assets/_SharedData/VehicleParts/Bolts/bolt_decal_H.edds"
+ ParallaxScale 0.2
+ ParallaxMidlePlane 0.5
+}

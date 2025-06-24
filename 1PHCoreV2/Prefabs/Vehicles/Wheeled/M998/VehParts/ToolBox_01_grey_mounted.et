@@ -1,0 +1,29 @@
+GenericEntity : "{174E332EF84362B2}Prefabs/Props/Industrial/ToolBox_01/ToolBox_01_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   SimState Collision
+  }
+  SCR_DamageManagerComponent "{5624A88D86EFE8BA}" {
+   Enabled 1
+   "Additional hit zones" {
+    SCR_DestructibleHitzone HitZone {
+     HZDefault 1
+     "Collision multiplier" 0
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{62D89740353100C8}" {
+       m_fMultiplier 0.1
+       m_bPassToParent 1
+      }
+     }
+     m_pDestructionHandler SCR_DestructionBaseHandler "{62D897403EC640B7}" {
+      m_bAllowHideWreck 0
+     }
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+}

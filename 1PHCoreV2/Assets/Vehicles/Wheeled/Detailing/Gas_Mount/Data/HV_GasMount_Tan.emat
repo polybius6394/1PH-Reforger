@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.392 0.297 0.201 1
+ SpecularMul 1.12
+ RoughnessScale 0.953
+ DielectricReflectance 0.042
+ BCRMap "{00B21E28B1A9B388}Assets/Vehicles/Wheeled/Detailing/Gas_Mount/Data/HV_GasMount_BCR.edds"
+ NMOMap "{386AA5BA68DEE116}Assets/Vehicles/Wheeled/Detailing/Gas_Mount/Data/HV_GasMount_NMO.edds"
+}

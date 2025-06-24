@@ -1,0 +1,44 @@
+GameEntity : "{33EA038E98843FAE}Prefabs/Items/Equipment/Flashlights/Flashlight_Soviet_01/Flashlight_Soviet_01_base.et" {
+ ID "56A4B11C0BE428DA"
+ components {
+  InventoryItemComponent "{56A4B11C0BE428C5}" {
+   Enabled 0
+  }
+  ParametricMaterialInstanceComponent "{5D0CB95BC1CDFBAD}" {
+   Enabled 0
+  }
+  RigidBody "{5D0CB95BC1CDFBA8}" {
+   SimState Collision
+  }
+  SCR_DestructionDamageManagerComponent "{62DF096F0FC24C49}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone hitzone {
+     HZDefault 1
+     BaseDamageMultiplier 0
+     "Collision multiplier" 0
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{62DF096F3C98F193}" {
+       m_fMultiplier 0.1
+       m_bPassToParent 1
+      }
+     }
+     m_pDestructionHandler SCR_DestructionBaseHandler "{62DF096F38D818F0}" {
+      m_bAllowHideWreck 0
+     }
+    }
+   }
+  }
+  SCR_FlashlightComponent "{5D0CB95BC1CDFBA9}" {
+   Enabled 0
+  }
+  SCR_SoundDataComponent "{5D0CB95BC1CDFBBE}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{56A4B11C0BE428FF}" {
+   Enabled 0
+  }
+  RplComponent "{56A4B11C0BE428EA}" {
+   "Rpl State Override" None
+  }
+ }
+}

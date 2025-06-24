@@ -1,0 +1,37 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{0F55504A35401163}Assets/Props/Military/Radios/RadioStation_ANPRC77_01.xob"
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   SimState Collision
+   ResponseIndex "SmallDestructible"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionDamageManagerComponent "{5624A88D86EFE8BA}" {
+   Enabled 1
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Default {
+     BaseDamageMultiplier 0
+     "Collision multiplier" 0
+     "Explosive multiplier" 1
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{62D89746D840BF96}" {
+       m_fMultiplier 0.1
+       m_bPassToParent 1
+      }
+     }
+     m_pDestructionHandler SCR_DestructionBaseHandler "{62D89746D039E518}" {
+      m_bAllowHideWreck 0
+     }
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+ coords 0 0 0
+}

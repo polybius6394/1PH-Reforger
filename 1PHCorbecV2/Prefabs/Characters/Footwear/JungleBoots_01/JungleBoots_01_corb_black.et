@@ -1,0 +1,13 @@
+GenericEntity : "{203EEA924B049EF1}Prefabs/Characters/Footwear/JungleBoots_01/JungleBoots_01.et" {
+ ID "5104869D194C6243"
+ components {
+  InventoryItemComponent "{5244C46AD695742D}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D60139586A54}" {
+    ItemDisplayName UIInfo "{52C8D60138ED3590}" {
+     Name "Corbequais Jungle Boots"
+     Description "A pair of black jungle boots, standard issue for Corbec's military."
+    }
+   }
+  }
+ }
+}

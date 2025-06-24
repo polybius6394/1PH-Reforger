@@ -1,0 +1,34 @@
+SCR_ChimeraCharacter : "{284E735C6C70DAD2}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_BaseLoadout.et" {
+ ID "520EC961A090BBD5"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate "{E998FA484B0C4BFF}Prefabs/Weapons/Handguns/Glock/Handgun_Glock17.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{B8D01E23340AFEFE}Prefabs/Characters/HeadGear/Hat_Boonie_US_01/Hat_Boonie_US_01_corb_wdl.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{46A72EE408E1C3DC}Prefabs/Characters/Vests/Vest_ALICE/Variants/Vest_ALICE_sniper_nomark_eyes.et"
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D7CAAFB9235E903}" {
+     TargetStorage "Vest/Vest_ALICE_sniper_nomark_eyes.et/Suspenders/Vest_ALICE_suspenders_2_nomark.et"
+    }
+    ItemsInitConfigurationItem "{54A49B42D138207E}" {
+     TargetStorage "Vest/Vest_ALICE_sniper_nomark_eyes.et/MagPouch/Pouch_ALICE_20rnd_M14_nomark.et"
+    }
+    ItemsInitConfigurationItem "{5538C29D4709645E}" {
+     TargetStorage "Vest/Vest_ALICE_sniper_nomark_eyes.et/MagPouch2/Holster_M12.et"
+     PrefabsToSpawn {
+      "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et" "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et" "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et" "{E8F00BF730225B00}Prefabs/Weapons/Grenades/Grenade_M67.et" "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et" "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
+     }
+    }
+   }
+  }
+ }
+}

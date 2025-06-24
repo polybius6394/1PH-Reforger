@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{67528F3C541E9911}Prefabs/Props/VehicleParts/Doors/M1114/Late/Door_M1114_L2_Late.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

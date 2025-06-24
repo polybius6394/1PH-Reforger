@@ -1,0 +1,20 @@
+SCR_AIGroup : "{F8A1F49FAC7C4C20}Prefabs/Groups/BLUFOR/Group_1PH_Corbec_FireTeam.et" {
+ ID "0000000000000001"
+ components {
+  SCR_EditableGroupComponent "{50D291F6C83FA532}" {
+   m_UIInfo SCR_EditableGroupUIInfo "{5298E609432D192D}" {
+    Name "Sentry"
+    m_Image "{090653AF2A3B3E89}UI/Textures/EditorPreviews/Groups/BLUFOR/Group_US_SentryTeam.edds"
+    m_aAuthoredLabels {
+     4 20145711
+    }
+    m_aAutoLabels {
+     70
+    }
+   }
+  }
+ }
+ m_aUnitPrefabSlots {
+  "{7840B49BBF82AA4D}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Woodland/Character_1PH_Corbec_Rifleman.et" "{BA68F06B33BF343F}Prefabs/Characters/Factions/BLUFOR/Corbec_Legions/Woodland/Character_1PH_Corbec_Rifleman_Variant_01.et"
+ }
+}

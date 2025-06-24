@@ -1,0 +1,22 @@
+GameEntity : "{7621C7D9145AF8D5}Prefabs/Characters/HeadGear/Balaclavas/Balaclava_v1/Balaclava_v1_OD.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D601873E6784}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB13C575E2AFE37}" {
+     Name "One-hole Balaclava"
+     Description "Issued to you for cold weather, but often used in cold cases."
+    }
+   }
+  }
+  SCR_ItemOutfitFactionComponent "{64D17D88D18EF4F7}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{64D17D88D157C3EC}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{64D17D88D0CECA3A}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+ }
+}
