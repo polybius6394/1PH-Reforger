@@ -1,8 +1,0 @@
-SCR_ChimeraCharacter : "{E1CB513B8B9B08F4}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_Crew.et" {
- ID "520EC961A090B1EE"
- components {
-  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{790C82641CD053D0}Prefabs/Weapons/Rifles/M16/Variants/Rifle_FC16A3_carbine_mount_peq2.et"
-  }
- }
-}
