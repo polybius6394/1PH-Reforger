@@ -1,0 +1,20 @@
+GameEntity : "{C0BC2CEB02832679}Prefabs/Characters/Uniforms/Pants_US_BDU_corb_wdl.et" {
+ ID "521AC0438899D203"
+ components {
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Corbequais Battle Dress Uniform Trousers (Desert)"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{4CA89201F3A76F24}Assets/Characters/Uniforms/Pants_BDU_M81/Data/Pants_BDU_corb_des_tucked.emat"
+   }
+   ItemMaterialsOverride {
+    "{A47C3DF196764103}Assets/Characters/Uniforms/Pants_BDU_M81/Data/Pants_BDU_corb_des_item.emat"
+   }
+  }
+ }
+}

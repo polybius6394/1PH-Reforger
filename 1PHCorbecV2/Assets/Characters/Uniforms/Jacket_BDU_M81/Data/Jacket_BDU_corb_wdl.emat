@@ -1,0 +1,3 @@
+MatPBRMulti : "{9F490D9BC0544DAC}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_M81.emat" {
+ BCR_1 "{BB503342F830BEB0}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_corb_wdl_BCR.edds" "{33E930585C58F2A4}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_M81_BCR.edds" anim( 0 )
+}

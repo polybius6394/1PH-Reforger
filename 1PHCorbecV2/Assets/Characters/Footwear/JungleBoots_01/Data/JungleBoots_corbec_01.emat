@@ -1,0 +1,7 @@
+MatPBRBasic : "{0C3E8ADDBE734E96}Assets/Characters/Footwear/CombatBoots_US_01/Data/CombatBoots_US_01.emat" {
+ Color 0.558 0.558 0.558 1
+ GlobalLayerGlobalAO 0
+ GlobalLayerHeightPower 0
+ BCRMap "{6569E0DC2194D0DE}Assets/Characters/Footwear/JungleBoots_01/Data/JungleBoots_01_black_BCR.edds"
+ NMOMap "{9A68C553211D6B43}Assets/Characters/Footwear/JungleBoots_01/Data/JungleBoots_01_2x_NMO.edds"
+}

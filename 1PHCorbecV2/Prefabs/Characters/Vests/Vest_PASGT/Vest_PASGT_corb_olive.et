@@ -18,5 +18,13 @@ GenericEntity : "{4B57C11AA5161760}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASG
     }
    }
   }
+  BaseLoadoutClothComponent "{5312D798A71DFBB1}" {
+   WornMaterialsOverride {
+    "{028034CD6B1F932F}Assets/Characters/Vests/Vest_PASGT/Data/Vest_PASGT_corb_olive.emat"
+   }
+   ItemMaterialsOverride {
+    "{B06B6CCC7A51D493}Assets/Characters/Vests/Vest_PASGT/Data/Vest_PASGT_corb_olive_item.emat"
+   }
+  }
  }
 }

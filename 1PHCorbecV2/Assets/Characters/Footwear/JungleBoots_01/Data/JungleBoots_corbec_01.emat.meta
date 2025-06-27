@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2B0614DB5E0BA5C3}Assets/Characters/Footwear/CombatBoots_US_01/Data/JungleBoots_corbec_01.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

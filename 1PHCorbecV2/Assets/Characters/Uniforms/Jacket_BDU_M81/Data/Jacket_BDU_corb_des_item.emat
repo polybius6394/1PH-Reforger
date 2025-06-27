@@ -1,0 +1,3 @@
+MatPBRBasic : "{D1514A223DF71B1E}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_corb_wdl_item.emat" {
+ BCRMap "{6CEC4890CBC9BFA4}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_corb_des_item_BCR.edds" "{33E930585C58F2A4}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_M81_BCR.edds" anim( 0 )
+}

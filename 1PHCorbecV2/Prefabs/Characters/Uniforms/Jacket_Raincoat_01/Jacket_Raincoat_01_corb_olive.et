@@ -17,5 +17,13 @@ GameEntity : "{7F1451790F3D75BD}Prefabs/Characters/Uniforms/Jacket_Raincoat_01/J
     }
    }
   }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{84A1D5D91EE71925}Assets/Characters/Uniforms/Jacket_Raincoat_01/Data/Jacket_Raincoat_01_corb_olive.emat"
+   }
+   ItemMaterialsOverride {
+    "{683D40DE8B619559}Assets/Characters/Uniforms/Jacket_Raincoat_01/Data/Jacket_Raincoat_01_Item_corb_olive.emat"
+   }
+  }
  }
 }
