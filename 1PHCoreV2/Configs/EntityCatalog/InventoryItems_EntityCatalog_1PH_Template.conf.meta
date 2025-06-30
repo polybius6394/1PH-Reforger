@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{78A443CBC9E86732}Configs/EntityCatalog/InventoryItems_EntityCatalog_1PH_Template.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}
