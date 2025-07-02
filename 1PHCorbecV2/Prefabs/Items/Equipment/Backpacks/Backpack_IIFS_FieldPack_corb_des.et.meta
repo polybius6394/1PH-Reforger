@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{95EA10CEF2996629}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack_corb_des.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

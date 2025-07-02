@@ -1,0 +1,20 @@
+GenericEntity : "{4CC2C69DE1AEF103}Prefabs/Props/Core/Destructible_Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{2CB3B07E8B171FF6}Assets/Vehicles/Wheeled/M1114/Doors/kiok_humvee_door_r2.xob"
+   Materials {
+    MaterialAssignClass "{6574BAC781359817}" {
+     SourceMaterial "hmmwv_gpk_tower"
+     AssignedMaterial "{2E7F29579EE8DCDB}Assets/Vehicles/Wheeled/M1114/Doors/Data/HV_Doors_Green.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Mass 10
+   ResponseIndex "TinyDestructible"
+   Static 1
+  }
+ }
+ coords 74.989 1 1189.437
+}

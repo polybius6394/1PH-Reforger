@@ -1,0 +1,17 @@
+GenericEntity : "{E517E6CCC1DF5737}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_pintle_M1025.et" {
+ ID "476AE74DE20E1061"
+ components {
+  SlotManagerComponent "{657576D3224D8AAE}" {
+   Slots {
+    EntitySlotInfo Gun_Cover {
+     PivotID "w_root"
+     Offset 0 -1.0503 -0.9333
+     Angles 0 180 0
+     Prefab "{E667D13F20C46422}Prefabs/Vehicles/M998/VehParts/M1114_VehPart_GunCover.et"
+     DisablePhysicsInteraction 1
+    }
+   }
+  }
+ }
+ coords 93.801 3.108 1222.665
+}

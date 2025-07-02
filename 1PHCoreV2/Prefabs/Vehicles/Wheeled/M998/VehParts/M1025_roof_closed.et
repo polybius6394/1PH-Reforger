@@ -1,0 +1,13 @@
+GenericEntity : "{343EC0126CCD0F58}Prefabs/Vehicles/Wheeled/M998/VehParts/M1025_roof.et" {
+ ID "4B42E71698F5739C"
+ components {
+  SlotManagerComponent "{54F2B37F3202E099}" {
+   Slots {
+    RegisteringComponentSlotInfo Turret {
+     Offset 0 1.1644 0
+     Prefab "{5C83803A2CC4DBBC}Prefabs/Vehicles/Wheeled/M998/VehParts/VehPart_M1114_Roof_Hatch_Closed.et"
+    }
+   }
+  }
+ }
+}

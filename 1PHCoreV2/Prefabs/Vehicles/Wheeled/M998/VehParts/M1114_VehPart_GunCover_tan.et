@@ -1,0 +1,13 @@
+GenericEntity : "{E667D13F20C46422}Prefabs/Vehicles/M998/VehParts/M1114_VehPart_GunCover.et" {
+ ID "623EA74782EC971A"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A811FCDF48A4D5}" {
+     SourceMaterial "hmmwv_body"
+     AssignedMaterial "{9B65A5F59FCFC34A}Assets/Vehicles/Wheeled/M1114/Gun_Cover/Data/M1114_Early_GunCover_Tan.emat"
+    }
+   }
+  }
+ }
+}

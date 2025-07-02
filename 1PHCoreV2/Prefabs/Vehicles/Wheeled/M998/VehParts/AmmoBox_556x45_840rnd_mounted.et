@@ -1,0 +1,85 @@
+GenericEntity : "{42894F191BC9EDE1}Prefabs/Props/Core/AmmoBox_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{002690FC9F6178C4}Assets/Props/Military/AmmoBox/AmmoBox_556x45_840rnd/AmmoBox_556x45_840rnd.xob"
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   SimState Collision
+   ResponseIndex "TinyDestructible"
+   Static 1
+  }
+  SCR_DamageManagerComponent "{58F89684469E44B1}" {
+   Enabled 1
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Default {
+     BaseDamageMultiplier 0
+     "Collision multiplier" 0
+     "Explosive multiplier" 1
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{65A913B3A8648575}" {
+       m_fMultiplier 0.1
+       m_bPassToParent 1
+      }
+     }
+     m_pDestructionHandler SCR_DestructionBaseHandler "{65A913B3A8648578}" {
+      m_bAllowHideWreck 0
+     }
+    }
+   }
+  }
+  SCR_SoundDataComponent "{5C53391603B5CF41}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5C5339160C8869E2}" {
+     m_sSoundProject "{1A1F49248284A1CF}Sounds/Props/Military/AmmoBoxes/AmmoBox_81mm_mortar_3rnd/Props_AmmoBox_81mm_mortar_3rnd.acp"
+    }
+    SCR_AudioSourceConfiguration "{5C533916090D28B6}" {
+     m_sSoundProject "{1A1F49248284A1CF}Sounds/Props/Military/AmmoBoxes/AmmoBox_81mm_mortar_3rnd/Props_AmmoBox_81mm_mortar_3rnd.acp"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5476A2F100DF4EFF}" {
+   Attributes SCR_ItemAttributeCollection "{5476CDB2EAD8225E}" {
+    ItemDisplayName UIInfo "{54F48AF1F3C103C1}" {
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{65A913B3A864856A}" {
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{65A913B3A8648497}" {
+      CameraPreset Back
+      CameraDistanceToItem 0.35
+     }
+    }
+    m_Size SLOT_1x1
+    m_SlotType SLOT_BACKPACK
+    m_bStackable 0
+   }
+   Priority 4
+   StoragePurpose 3
+   CapacityCoefficient 3.2
+   MaxCumulativeVolume 983
+   m_fMaxWeight 4.1
+   m_LinkedStorageLogic SCR_SetLinkedStorageToParent "{65A913B3A8648491}" {
+   }
+  }
+  ActionsManagerComponent "{5476B36C403D4CC0}" {
+   ActionContexts {
+    UserActionContext "{5476B36C47B0461A}" {
+     Position PointInfo "{5476B36C45ADDA89}" {
+      Offset 0 0.0921 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{5476DE57AA50402F}" {
+     VisibilityRange 1.5
+     Duration 1
+    }
+   }
+  }
+  RplComponent "{5476B36C54387F41}" {
+   "Parent Node From Parent Entity" 1
+  }
+ }
+ coords 3112.856 15.999 2743.287
+}

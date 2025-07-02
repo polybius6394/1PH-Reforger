@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{B52023F23B4D0242}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_1PH_Corbec_01.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

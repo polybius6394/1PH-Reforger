@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{06EB2CC4F0AD7064}Prefabs/Weapons/MachineGuns/M249/MG_FNMinimi_corbec_4x_peq2.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

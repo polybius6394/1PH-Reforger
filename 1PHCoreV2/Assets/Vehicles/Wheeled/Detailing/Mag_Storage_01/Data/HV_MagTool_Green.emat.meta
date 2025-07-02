@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9C49DEA49D59BFF3}Assets/Vehicles/Wheeled/Detailing/Mag_Storage_01/Data/HV_MagTool_Green.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

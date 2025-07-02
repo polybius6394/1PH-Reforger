@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9579068E7A0E4A2B}Prefabs/Vehicles/Wheeled/M998/VehParts/AmmoBox_762x51_200rnd_mounted.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

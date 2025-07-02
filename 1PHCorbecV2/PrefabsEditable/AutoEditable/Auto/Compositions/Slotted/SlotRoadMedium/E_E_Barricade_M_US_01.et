@@ -1,0 +1,14 @@
+GenericEntity : "{6FE74C9C75DA8A52}PrefabsEditable/Auto/Compositions/Slotted/SlotRoadMedium/E_Barricade_M_US_01.et" {
+ ID "5282DCB5DFC8538F"
+ components {
+  SCR_EditableEntityComponent "{5EA88D655B03F49D}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    m_sFaction "RHS_USAF"
+    m_aAutoLabels + {
+     FACTION_RHS_USAF
+    }
+   }
+  }
+ }
+ coords 0 0 0
+}

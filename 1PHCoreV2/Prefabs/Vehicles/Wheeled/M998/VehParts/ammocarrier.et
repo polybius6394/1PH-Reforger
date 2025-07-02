@@ -1,0 +1,40 @@
+GenericEntity {
+ ID "65A913B160456C8A"
+ components {
+  MeshObject "{65A913B160456C91}" {
+   Object "{4D57A8BF323C9CBA}Assets/Vehicles/Wheeled/Detailing/Mag_Storage_01/mag.xob"
+   Materials {
+    MaterialAssignClass "{65A913B172205C69}" {
+     SourceMaterial "DefaultGeneratedMaterial"
+     AssignedMaterial "{9C49DEA49D59BFF3}Assets/Vehicles/Wheeled/Detailing/Mag_Storage_01/Data/HV_MagTool_Green.emat"
+    }
+   }
+  }
+  RigidBody "{65A913B160456CE3}" {
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_DestructionDamageManagerComponent "{65A913B160456CE5}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone HitZone {
+     HZDefault 1
+     BaseDamageMultiplier 0
+     "Collision multiplier" 0
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{65A913B160456CEB}" {
+       m_fMultiplier 0.1
+       m_bPassToParent 1
+      }
+     }
+     m_pDestructionHandler SCR_DestructionBaseHandler "{65A913B160456CED}" {
+      m_bAllowHideWreck 0
+     }
+    }
+   }
+  }
+  RplComponent "{65A913B160456CF1}" {
+  }
+  Hierarchy "{65A913B160456CF2}" {
+  }
+ }
+}

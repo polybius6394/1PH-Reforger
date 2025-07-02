@@ -1,0 +1,16 @@
+Turret : "{199523BF565050A3}Prefabs/Vehicles/M998/VehParts/M1114_gun_mount_M2HB.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Materials {
+    MaterialAssignClass "{65A811FE1E99A13F}" {
+     SourceMaterial "Base"
+     AssignedMaterial "{C82D65310F15099D}Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body_Roof_tan.emat"
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   WeaponTemplate "{BF66644C0CBCE6F4}Prefabs/Weapons/HeavyWeapons/HMG_M2HB_pintle_M1114_Covered_tan.et"
+  }
+ }
+}

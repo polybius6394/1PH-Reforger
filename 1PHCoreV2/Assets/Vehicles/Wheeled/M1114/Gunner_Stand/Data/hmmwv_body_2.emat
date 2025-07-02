@@ -1,0 +1,5 @@
+MatPBRBasic {
+ Color 0.103 0.114 0.087 1
+ BCRMap "{6FA31429BA8DCBB9}Assets/Vehicles/Wheeled/M1114/Gunner_Stand/kiok_tower_step_BCR.edds"
+ NMOMap "{577BAFBB63FA9927}Assets/Vehicles/Wheeled/M1114/Gunner_Stand/kiok_tower_step_NMO.edds"
+}

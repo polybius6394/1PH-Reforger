@@ -1,0 +1,20 @@
+GenericEntity : "{DC6375041D2E3EA7}Prefabs/Vehicles/M998/VehParts/M1097_bench_cargo.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{65A811F260867AB5}" {
+     SourceMaterial "M1097_Benches"
+     AssignedMaterial "{0D6528A5ECF4E2B2}Assets/Vehicles/Wheeled/M1097/Cargo_Racks/Data/M1097_Benches_Tan.emat"
+    }
+   }
+  }
+  SlotManagerComponent "{6574D1E8D7370B1E}" {
+   Slots {
+    EntitySlotInfo Canvas {
+     Prefab "{9232F96D35A2E5AA}Prefabs/Vehicles/M998/VehParts/VehPart_M1097_Canvas_tan.et"
+    }
+   }
+  }
+ }
+}

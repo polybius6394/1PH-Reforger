@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.392 0.297 0.201 1
+ SpecularMul 1.12
+ RoughnessScale 0.953
+ DielectricReflectance 0.042
+ BCRMap "{5BD7B2F08D9F9DA3}Assets/Vehicles/Wheeled/Detailing/MineRoller/Data/spark_Empty_material.001_BCR.edds"
+ NMOMap "{630F096254E8CF3D}Assets/Vehicles/Wheeled/Detailing/MineRoller/Data/spark_Empty_material.001_NMO.edds"
+}

@@ -1,0 +1,28 @@
+GenericEntity : "{E99071B4A98FFD2A}Prefabs/Weapons/Rifles/M16/Para-Hussar/Rifle_FC16A3_cqbr_parahussar.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5534745C44D1EF58}" {
+     AttachmentSlot InventoryStorageSlot optics {
+      Prefab "{BD496EE1B40DC510}Prefabs/Weapons/Attachments/Optics/Optic_4x20/Optic_4x20.et"
+     }
+    }
+    AttachmentSlotComponent "{65891AC523719D54}" {
+     AttachmentSlot RHS_SlidingInventoryStorageSlot "{65891AC524BC516F}" {
+      Prefab "{D57F1491711D50E0}Prefabs/Weapons/Attachments/Lasers/anpeq15/Laser_ANPEQ2.et"
+     }
+    }
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      AttachmentSlotComponent "{5D527627CCB8F756}" {
+       AttachmentSlot InventoryStorageSlot Muzzle {
+        Prefab "{B9C41AAC90570E50}Prefabs/Weapons/Attachments/Muzzle/KAC_NT4_QDSS/KAC_NT4_QDSS.et"
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

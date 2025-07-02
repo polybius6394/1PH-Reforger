@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.392 0.297 0.201 1
+ SpecularMul 1.12
+ RoughnessScale 0.953
+ DielectricReflectance 0.042
+ BCRMap "{3E3C8E9706FA1D18}Assets/Vehicles/Wheeled/Detailing/Mag_Storage_01/Data/HV_MagTool_BCR.edds"
+ NMOMap "{06E43505DF8D4F86}Assets/Vehicles/Wheeled/Detailing/Mag_Storage_01/Data/HV_MagTool_NMO.edds"
+}

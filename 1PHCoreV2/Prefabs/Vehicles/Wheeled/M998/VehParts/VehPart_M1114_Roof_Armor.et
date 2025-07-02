@@ -1,0 +1,30 @@
+GenericEntity : "{1CC8DD9D7F92ED2A}Prefabs/Props/Core/VehiclePart_Base.et" {
+ ID "51F6D6DE0C8B22AD"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{5F681F0E824BE552}Assets/Vehicles/Wheeled/M1114/Roof/kiok_humvee_roof.xob"
+   Materials {
+    MaterialAssignClass "{6574C2E46AF5D64E}" {
+     SourceMaterial "0"
+     AssignedMaterial "{7B1C591B0146E771}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof001_Green.emat"
+    }
+    MaterialAssignClass "{6574C2E46AF5D668}" {
+     SourceMaterial "1"
+     AssignedMaterial "{7267809C16BF30DD}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof003_Green.emat"
+    }
+    MaterialAssignClass "{6574C2E46AF5D66E}" {
+     SourceMaterial "2"
+     AssignedMaterial "{E681EB090E4AAD6E}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof002_Green.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Enabled 1
+   AngularSleepingThreashold 1
+   SimState Collision
+   ModelGeometry 1
+   Static 0
+  }
+ }
+ coords 80.811 1 1245.193
+}

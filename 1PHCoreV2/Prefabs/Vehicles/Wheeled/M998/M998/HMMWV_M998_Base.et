@@ -1,0 +1,14 @@
+Vehicle : "{355D6ABE3FD71F27}Prefabs/Vehicles/Wheeled/M998/HMMWV_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Rollbar {
+    }
+    RegisteringComponentSlotInfo Roof {
+     Prefab "{204DB2FAE70312A8}Prefabs/Vehicles/Wheeled/M998/VehParts/M998_canvas_long.et"
+    }
+   }
+  }
+ }
+}

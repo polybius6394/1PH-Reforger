@@ -1,0 +1,11 @@
+MatPBRBasic {
+ Color 0.114 0.114 0.114 1
+ SpecularMul 1.12
+ RoughnessScale 0.953
+ DielectricReflectance 0.042
+ CavityFromAO 0
+ GlobalAOPower 1
+ BCRMap "{31AD882847227DC7}Assets/Vehicles/Wheeled/SOF_GMV/TamponCover/Data/HV_DirtCover_BCR.edds"
+ NormalPower 1.842
+ NMOMap "{097533BA9E552F59}Assets/Vehicles/Wheeled/SOF_GMV/TamponCover/Data/HV_DirtCover_NMO.edds"
+}

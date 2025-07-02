@@ -1,0 +1,36 @@
+GameEntity : "{3CCA7A9BB4FD3197}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolledup.et" {
+ ID "58E0DEA8C461C2FF"
+ components {
+  SCR_ItemOutfitFactionComponent "{618AD7BAB29F1EAE}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8A841C8FE46FC}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8A841CE9490F3}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Corbequais Battle Dress Uniform Blouse (Woodland, Rolled)"
+     Description "Standard-issue Corbequais BDUs."
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 1
+      PreviewModel "{99DD45795E81EFAB}Assets/Characters/Uniforms/Jacket_M88/Jacket_M88_01.xob"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{2EB997C276E5987B}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_corb_wdl_rolledup.emat"
+   }
+   ItemMaterialsOverride {
+    "{D1514A223DF71B1E}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_corb_wdl_item.emat"
+   }
+  }
+ }
+}

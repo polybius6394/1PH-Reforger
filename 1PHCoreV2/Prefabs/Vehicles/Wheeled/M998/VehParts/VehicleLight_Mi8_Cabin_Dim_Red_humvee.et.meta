@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{0512B76C243D0741}Prefabs/Vehicles/Helicopters/Mi8MT/Lights/VehicleLight_Mi8_Cabin_Dim_Red_humvee.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

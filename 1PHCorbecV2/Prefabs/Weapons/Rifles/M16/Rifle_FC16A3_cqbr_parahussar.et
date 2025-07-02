@@ -1,0 +1,49 @@
+GenericEntity : "{1CF769513890710D}Prefabs/Weapons/Rifles/M16/Para-Hussar/Rifle_FC16A3_carbine_parahussar.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB07CFF6712A}" {
+     Name "FC-16A3 CQBR"
+     Description "An FC-16A3 Carbine, with a 10.3\" barrel."
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5534745C44D1EF58}" {
+     AttachmentSlot InventoryStorageSlot optics {
+     }
+    }
+    AttachmentSlotComponent "{65891AC523719D54}" {
+     AttachmentSlot RHS_SlidingInventoryStorageSlot "{65891AC524BC516F}" {
+     }
+    }
+    AttachmentSlotComponent "{65891ACC5532E371}" {
+     AttachmentSlot InventoryStorageSlot "{65891ACC57F66ECE}" {
+      Prefab "{7B75124A0F96ACF3}Prefabs/Weapons/Rifles/M4A1/base_parts/RHS_M4_BARREL_10_3.et"
+     }
+    }
+    MuzzleComponent "{CA6BE4D6B867541F}" {
+     components {
+      AttachmentSlotComponent "{5D527627CCB8F756}" {
+       AttachmentSlot InventoryStorageSlot Muzzle {
+        Offset 0 0 -0.1053
+       }
+      }
+     }
+     MuzzleEndPositions {
+      PointInfo "{B80A64F4B6CFB9BF}" {
+       Offset 0 0 -0.1183
+      }
+     }
+    }
+   }
+   UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
+    Name "FC-16A3 CQBR"
+    Description "An FC-16A3 Carbine, with a 10.3\" barrel."
+   }
+  }
+ }
+ coords -0.014 0 0
+}

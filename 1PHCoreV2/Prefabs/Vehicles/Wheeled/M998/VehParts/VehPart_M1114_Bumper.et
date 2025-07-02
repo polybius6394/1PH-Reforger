@@ -1,0 +1,39 @@
+GenericEntity : "{A507D9AE39652BD6}Prefabs/Vehicles/Core/Vehicle_Part_Base.et" {
+ ID "51F6D6DE0C8B22AD"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{793A4F4A18FBE19B}Assets/Vehicles/Wheeled/M1114/Bumper/kiok_humvee_bumper.xob"
+   Materials {
+    MaterialAssignClass "{65A811FC09169541}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{CFE4C9FD13179E9C}Assets/Vehicles/Wheeled/M1114/Bumper/Data/HV_Bumper.emat"
+    }
+   }
+  }
+  RigidBody "{4B42E71692C2FB79}" {
+   Enabled 1
+   Layers 0
+   Active Inactive
+   AngularSleepingThreashold 1
+   SimState Collision
+   Kinematic 1
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Bumper {
+     HZDefault 1
+     BaseDamageMultiplier 0
+     DamageReduction 0
+     DamageThreshold 0
+     "Collision multiplier" 0
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{60AAF83A13B1AFB5}" {
+      }
+     }
+     m_vParticleOffset 0 0 0
+    }
+   }
+  }
+ }
+ coords 89.349 1 1238.656
+}

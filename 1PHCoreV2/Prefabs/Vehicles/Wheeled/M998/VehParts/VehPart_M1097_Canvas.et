@@ -1,0 +1,15 @@
+GenericEntity : "{25895C54FE021EE6}Prefabs/Vehicles/Core/Vehicle_Canvas_Base.et" {
+ ID "51F6D6DE0C8B22AD"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{617B587AB066E5FA}Assets/Vehicles/Wheeled/M1097/Canvas/M1097_Canvas.xob"
+  }
+  SCR_DamageManagerComponent "{3EBB276D48AFFF41}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone Canvas {
+    }
+   }
+  }
+ }
+ coords 79.064 2.016 1239.877
+}

@@ -1,0 +1,13 @@
+GenericEntity : "{95D4766BBE46F23D}Prefabs/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack.et" {
+ ID "511E9C6ADE70F798"
+ components {
+  BaseLoadoutClothComponent "{511E9C6ADE70F7BB}" {
+   WornMaterialsOverride {
+    "" "{2E17B5197C87B728}Assets/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack/Data/backpackIIFSM1_nomark.emat"
+   }
+   ItemMaterialsOverride {
+    "" "{2E17B5197C87B728}Assets/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack/Data/backpackIIFSM1_nomark.emat"
+   }
+  }
+ }
+}

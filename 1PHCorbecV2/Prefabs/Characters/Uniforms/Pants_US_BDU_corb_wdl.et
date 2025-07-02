@@ -1,0 +1,37 @@
+GameEntity : "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et" {
+ ID "521AC0438899D203"
+ components {
+  SCR_ItemOutfitFactionComponent "{618AD7BAC1A66A83}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8A841936C7D82}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8A84192F44629}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Corbequais Battle Dress Uniform Trousers (Woodland)"
+     Description "Standard-issue Corbequais BDUs."
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      CameraOffset 0 0 0
+      PreviewWornModel 1
+      PreviewModel "{065DC5366BA23024}Assets/Characters/Uniforms/Pants_M70/Pants_M70_01.xob"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{5FB53EB78A316563}Assets/Characters/Uniforms/Pants_BDU_M81/Data/Pants_BDU_corb_wdl_tucked.emat"
+   }
+   ItemMaterialsOverride {
+    "{D109F154E8249FF3}Assets/Characters/Uniforms/Pants_BDU_M81/Data/Pants_BDU_corb_wdl_item.emat"
+   }
+  }
+ }
+}

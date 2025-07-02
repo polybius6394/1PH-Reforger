@@ -1,0 +1,30 @@
+GenericEntity : "{4B57C11AA5161760}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et" {
+ ID "525674F565A195C4"
+ components {
+  InventoryItemComponent "{5DF2CE902E1EB161}" {
+   Attributes SCR_ItemAttributeCollection "{5DF2CE902E1EB16A}" {
+    ItemDisplayName UIInfo "{5DF2CE902E1EB170}" {
+     Name "M84 Vest"
+     Description "Not-a-PASGT-vest, standard issue for Corbec's military."
+    }
+   }
+  }
+  SCR_ItemOutfitFactionComponent "{62A2A6189E89E00A}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{62A2A6189DAC0777}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{62A2A6189D3FB829}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5312D798A71DFBB1}" {
+   WornMaterialsOverride {
+    "{028034CD6B1F932F}Assets/Characters/Vests/Vest_PASGT/Data/Vest_PASGT_corb_olive.emat"
+   }
+   ItemMaterialsOverride {
+    "{B06B6CCC7A51D493}Assets/Characters/Vests/Vest_PASGT/Data/Vest_PASGT_corb_olive_item.emat"
+   }
+  }
+ }
+}

@@ -1,0 +1,9 @@
+GenericEntity : "{F8881C025E0D29E8}Prefabs/Props/VehicleParts/Doors/M1114/Early/Door_M1114_L1_Early.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{3F7913F675E932B9}Assets/Vehicles/Wheeled/M1114/Doors/kiok_humvee_platecover_door_r1.xob"
+  }
+ }
+ coords 76.647 1 1194.366
+}

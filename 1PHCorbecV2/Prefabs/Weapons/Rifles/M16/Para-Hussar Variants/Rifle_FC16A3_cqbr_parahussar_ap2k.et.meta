@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BC5BE4FE1E2C3679}Prefabs/Weapons/Rifles/M16/Para-Hussar/Rifle_FC16A3_cqbr_parahussar_ap2k.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

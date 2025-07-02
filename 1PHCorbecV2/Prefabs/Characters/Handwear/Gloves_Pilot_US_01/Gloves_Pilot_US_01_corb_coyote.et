@@ -1,0 +1,20 @@
+GameEntity : "{15EE91A80708A1D3}Prefabs/Characters/Handwear/Gloves_Pilot_US_01/Gloves_Pilot_US_01_corb_olive.et" {
+ ID "5DF2774398EBD275"
+ components {
+  InventoryItemComponent "{5E38A40D482770CE}" {
+   Attributes SCR_ItemAttributeCollection "{5E38A40D4BC49A36}" {
+    ItemDisplayName UIInfo "{5E38A40D4C298215}" {
+     Name "Para-Cavalry Gloves (Coyote)"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DF2774268A6E4AA}" {
+   WornMaterialsOverride {
+    "{AA863DCFA7C3B7FC}Assets/Characters/Handwear/Gloves_Pilot_US_01/Data/Gloves_Pilot_US_01_coyote_calf.emat"
+   }
+   ItemMaterialsOverride {
+    "{AA863DCFA7C3B7FC}Assets/Characters/Handwear/Gloves_Pilot_US_01/Data/Gloves_Pilot_US_01_coyote_calf.emat"
+   }
+  }
+ }
+}

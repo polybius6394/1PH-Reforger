@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{2E8801C26E1ACDCB}Assets/Vehicles/Wheeled/M1097/Canvas/Data/M1097_Decals.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

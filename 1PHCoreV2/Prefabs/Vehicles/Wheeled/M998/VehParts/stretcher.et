@@ -1,0 +1,40 @@
+GenericEntity {
+ ID "65A913B2249BF43F"
+ components {
+  MeshObject "{65A913B2249BF43B}" {
+   Object "{2F355FABC0958013}Assets/Vehicles/Wheeled/Detailing/Stretcher_Pack/kiok_humvee_roof_detail.xob"
+   Materials {
+    MaterialAssignClass "{65A913B2249BF422}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{80667A5DC1E732E8}Assets/Vehicles/Wheeled/M998/VehParts/green_metal.emat"
+    }
+   }
+  }
+  RigidBody "{65A913B2249BF429}" {
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_DestructionDamageManagerComponent "{65A913B2249BF457}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone HitZone {
+     HZDefault 1
+     BaseDamageMultiplier 0
+     "Collision multiplier" 0
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{65A913B2249BF451}" {
+       m_fMultiplier 0.1
+       m_bPassToParent 1
+      }
+     }
+     m_pDestructionHandler SCR_DestructionBaseHandler "{65A913B2249BF45F}" {
+      m_bAllowHideWreck 0
+     }
+    }
+   }
+  }
+  RplComponent "{65A913B2249BF45A}" {
+  }
+  Hierarchy "{65A913B2249B89ED}" {
+  }
+ }
+}

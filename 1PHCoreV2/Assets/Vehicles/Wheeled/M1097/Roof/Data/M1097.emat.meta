@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C6A0922E3517FC43}Assets/Vehicles/Wheeled/M1097/Roof/Data/M1097.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

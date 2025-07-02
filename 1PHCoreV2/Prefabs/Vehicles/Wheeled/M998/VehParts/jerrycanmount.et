@@ -1,0 +1,40 @@
+GenericEntity {
+ ID "65A913B2D533F754"
+ components {
+  MeshObject "{65A913B2D533F758}" {
+   Object "{E2A94940CFA71518}Assets/Vehicles/Wheeled/Detailing/Gas_Mount/kiok_humvee_gas_mount.xob"
+   Materials {
+    MaterialAssignClass "{65A913B2D533F7A3}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{12B724F3F709D91F}Assets/Vehicles/Wheeled/M998/VehParts/vs17panel.emat"
+    }
+   }
+  }
+  RigidBody "{65A913B2D533F7AA}" {
+   SimState Collision
+   ModelGeometry 1
+  }
+  SCR_DestructionDamageManagerComponent "{65A913B2D533F7B0}" {
+   "Additional hit zones" {
+    SCR_DestructibleHitzone HitZone {
+     HZDefault 1
+     BaseDamageMultiplier 0
+     "Collision multiplier" 0
+     m_aDamagePassRules {
+      SCR_DamagePassRule "{65A913B2D533F7B6}" {
+       m_fMultiplier 0.1
+       m_bPassToParent 1
+      }
+     }
+     m_pDestructionHandler SCR_DestructionBaseHandler "{65A913B2D533F7B9}" {
+      m_bAllowHideWreck 0
+     }
+    }
+   }
+  }
+  RplComponent "{65A913B2D533F7BD}" {
+  }
+  Hierarchy "{65A913B2D533F7BE}" {
+  }
+ }
+}

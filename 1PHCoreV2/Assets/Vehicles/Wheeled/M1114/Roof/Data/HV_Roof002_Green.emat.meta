@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E681EB090E4AAD70}Assets/Vehicles/Wheeled/M1114/Roof/Data/HV_Roof002_Green.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

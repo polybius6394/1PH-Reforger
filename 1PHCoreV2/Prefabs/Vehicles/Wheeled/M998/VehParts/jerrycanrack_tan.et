@@ -1,0 +1,13 @@
+GenericEntity : "{B1ADC49BE13E4B10}Prefabs/Vehicles/Wheeled/M998/VehParts/jerrycanrack.et" {
+ ID "65A913B12AF4D024"
+ components {
+  MeshObject "{65A913B12AF4D028}" {
+   Materials {
+    MaterialAssignClass "{65A913B103CCA79B}" {
+     SourceMaterial "Material"
+     AssignedMaterial "{418E51449C39C712}Assets/Vehicles/Wheeled/Detailing/Gas_Stand/Data/HV_GasStant_Tan.emat"
+    }
+   }
+  }
+ }
+}

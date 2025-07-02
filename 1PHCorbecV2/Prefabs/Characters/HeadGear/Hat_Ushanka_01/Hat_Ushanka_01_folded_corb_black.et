@@ -1,0 +1,60 @@
+GameEntity : "{A22C976003AA5BA3}Prefabs/Characters/HeadGear/Hat_Ushanka_01/Hat_Ushanka_01_folded.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{566E9A1680EE825D}" {
+    ItemDisplayName UIInfo "{566E9A1680EE824A}" {
+     Name "Corbequais Ushanka (Folded)"
+     Description "A warm and comfortable winter hat, issued to Corbec's military."
+    }
+   }
+  }
+  RHS_HelmetNodeStorageComponent "{65A147A95C56536F}" {
+   Attributes SCR_ItemAttributeCollection "{65A147A9AAFF33B8}" {
+    ItemDisplayName UIInfo "{566E9A1680EE824A}" {
+     Name "Corbequais Ushanka (Folded)"
+     Description "A warm and comfortable winter hat, issued to Corbec's military."
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5CEEDA82021A13C3}" {
+     }
+    }
+   }
+   StoragePurpose 64
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 100
+   MaxItemSize 1 1 1
+  }
+  SCR_ItemOutfitFactionComponent "{618AD7BA473FF1E3}" {
+   m_OutfitDataHolder SCR_OutfitFactionDataHolder "{61A8D966B638063D}" {
+    m_aOutfitFactionData {
+     SCR_OutfitFactionData "{61A8D966B59F5B0E}" {
+      m_AffiliatedFactionKey "1PH_Corbec"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo Masks {
+     InspectionWidgetOffset 0 1.6 0
+     AreaType LoadoutHeadCoverArea "{5DB0913540BC60B8}" {
+     }
+     m_sInspectIconTexture "{9D824B02D8CE6328}UI/Textures/InventoryIcons/Inspection-gizmo-mask-slot-UI.edds"
+    }
+    RHS_LoadoutSlotInfo Glasses {
+     InspectionWidgetOffset 0 1.6901 0.0813
+     m_sInspectIconTexture "{8C5C7CED1FFCE9F6}UI/Textures/InventoryIcons/Inspection-gizmo-goggles-slot-UI.edds"
+    }
+    RHS_LoadoutSlotInfo Headset {
+     Offset 0 -0.0046 0
+     InspectionWidgetOffset 0.1 1.67 0
+     AreaType LoadoutHeadCoverArea "{65A2F5A8E3427598}" {
+     }
+     m_sInspectIconTexture "{EA640FDAF6A450BD}UI/Textures/InventoryIcons/Inspection-gizmo-headset-slot-UI.edds"
+    }
+   }
+  }
+ }
+}

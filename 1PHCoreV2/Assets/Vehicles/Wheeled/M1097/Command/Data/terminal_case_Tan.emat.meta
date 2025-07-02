@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{C54D82B5AD344E29}Assets/Vehicles/Wheeled/M1097/Command/Data/terminal_case_Tan.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

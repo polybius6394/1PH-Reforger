@@ -1,0 +1,13 @@
+GenericEntity : "{4805E67E2AE30F8D}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_M5.et" {
+ ID "511E9C6ADE70F798"
+ components {
+  BaseLoadoutClothComponent "{511E9C6ADE70F7BB}" {
+   WornMaterialsOverride {
+    "{F7FCD9C30EFABCF8}Assets/Items/Equipment/Backpacks/Backpack_Medical_M5/Data/Backpack_Medical_M5_nomark.emat"
+   }
+   ItemMaterialsOverride {
+    "{F7FCD9C30EFABCF8}Assets/Items/Equipment/Backpacks/Backpack_Medical_M5/Data/Backpack_Medical_M5_nomark.emat"
+   }
+  }
+ }
+}

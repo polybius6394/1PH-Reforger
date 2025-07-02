@@ -1,0 +1,2930 @@
+AnimSrcGraphFile {
+ Sheets {
+  AnimSrcGraphSheet Main {
+   Nodes {
+    AnimSrcNodeSource CoDriverDeathAnim {
+     EditorPos 14.5 20.5
+     Source "Vehicle.Death"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource CoDriverIdleAnim {
+     EditorPos 6.1 39.6
+     Source "Vehicle.Idle"
+     Looptype Loop
+    }
+    AnimSrcNodeStateMachine CoDriverIdleStateMachine {
+     EditorPos 4.6 30.2
+     states {
+      AnimSrcNodeState Idle {
+       EditorPos 5.9 31.4
+       Child "Var Update 15592"
+       StartCondition "true"
+       TimeStorage Inherit
+       IsExit 0
+      }
+      AnimSrcNodeState Unconscious {
+       Tags {
+        "TagUnconscious"
+       }
+       EditorPos 11.1 31.4
+       Child "CoDriverUnconsciousStateMachine"
+       StartCondition "false"
+       TimeStorage Inherit
+       IsExit 0
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E639664880}" {
+       FromState "Idle"
+       ToState "Unconscious"
+       Duration "0.2"
+       StartTime ""
+       Condition "GetCommandI(CMD_Unconscious) == 1"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E639664886}" {
+       FromState "Unconscious"
+       ToState "Idle"
+       Duration ""
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeSource CoDriverUnconsciousIdle {
+     EditorPos 13.9 37.7
+     Source "Vehicle.UnconsciousIdle"
+     Looptype Loop
+    }
+    AnimSrcNodeSource CoDriverUnconsciousIn {
+     EditorPos 11.5 37.2
+     Source "Vehicle.UnconsciousIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource CoDriverUnconsciousOut {
+     EditorPos 16.3 37.2
+     Source "Vehicle.UnconsciousOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeStateMachine CoDriverUnconsciousStateMachine {
+     Tags {
+      "TagUnconscious"
+     }
+     EditorPos 11.1 34.3
+     states {
+      AnimSrcNodeState In {
+       EditorPos 11.5 35.5
+       Child "CoDriverUnconsciousIn"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Idle {
+       Tags {
+        "TagCanExitUnconscious"
+       }
+       EditorPos 13.9 35.5
+       Child "CoDriverUnconsciousIdle"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Out {
+       EditorPos 16.3 35.5
+       Child "CoDriverUnconsciousOut"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966488E}" {
+       FromState "In"
+       ToState "Idle"
+       Duration ""
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E639664890}" {
+       FromState "Idle"
+       ToState "Out"
+       Duration "0.2"
+       StartTime ""
+       Condition "GetCommandI(CMD_Unconscious) == -1"
+       BlendFn S
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeStateMachine CoDriverVehicle {
+     EditorPos -0.4 18.3
+     states {
+      AnimSrcNodeState Idle {
+       Tags {
+        "TagVehicleIdle"
+       }
+       EditorPos 4.9 19.5
+       Child "Blend T 22088"
+       StartCondition ""
+       TimeStorage Inherit
+       IsExit 0
+      }
+      AnimSrcNodeState Death {
+       Tags {
+        "TagDeath"
+       }
+       EditorPos 14.5 19.5
+       Child "CoDriverDeathAnim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState UnconsciousDeath {
+       Tags {
+        "TagDeath"
+       }
+       EditorPos 12 19.5
+       Child "CoDriverUnconDeath"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E639664897}" {
+       FromState "Idle"
+       ToState "UnconsciousDeath"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Death) && IsTag(\"TagUnconscious\")"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E639664896}" {
+       ToState "Death"
+       Duration "0.2"
+       StartTime ""
+       Condition "IsCommand(CMD_Death)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeSource DriverDeathAnim {
+     EditorPos -26.3 10
+     Source "Vehicle.Death"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeStateMachine DriverVehicle {
+     EditorPos -18.2 5.9
+     states {
+      AnimSrcNodeState Idle {
+       Tags {
+        "TagVehicleIdle"
+       }
+       EditorPos -21.3 7
+       Child "Blend T 20303"
+       StartCondition ""
+       TimeStorage Inherit
+       IsExit 0
+      }
+      AnimSrcNodeState Death {
+       Tags {
+        "TagDeath"
+       }
+       EditorPos -26.3 7.1
+       Child "DriverDeathAnim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState UnconsciousDeath {
+       Tags {
+        "TagDeath"
+       }
+       EditorPos -23.8 7.1
+       Child "DriverUnconDeathAnim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966489A}" {
+       FromState "Idle"
+       ToState "UnconsciousDeath"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Death) && IsTag(\"TagUnconscious\")"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966489F}" {
+       ToState "Death"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Death)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeSource PassengerDeathAnim {
+     EditorPos 32.2 17.7
+     Source "Vehicle.Death"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeStateMachine PassengerIdleStateMachine {
+     EditorPos 25.4 29.7
+     states {
+      AnimSrcNodeState Idle {
+       EditorPos 25.8 30.9
+       Child "Var Update 38150"
+       StartCondition "True"
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Unconscious {
+       Tags {
+        "TagUnconscious"
+       }
+       EditorPos 30.9 30.9
+       Child "PassengerUnconsciousSTM"
+       StartCondition ""
+       TimeStorage Inherit
+       IsExit 0
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E6396648E5}" {
+       FromState "Idle"
+       ToState "Unconscious"
+       Duration "0.2"
+       StartTime ""
+       Condition "GetCommandI(CMD_Unconscious) == 1"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E6396648E7}" {
+       FromState "Unconscious"
+       ToState "Idle"
+       Duration "0.1"
+       StartTime ""
+       Condition "RemainingTimeLess(0.11)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeStateMachine PassengerStateMachine {
+     EditorPos 24.8 13.7
+     states {
+      AnimSrcNodeState Idle {
+       Tags {
+        "TagVehicleIdle"
+       }
+       EditorPos 25.8 14.9
+       Child "Blend T 20186"
+       StartCondition ""
+       TimeStorage Inherit
+       IsExit 0
+      }
+      AnimSrcNodeState Death {
+       Tags {
+        "TagDeath"
+       }
+       EditorPos 32.2 15.8
+       Child "PassengerDeathAnim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState UnconsciousDeath {
+       Tags {
+        "TagDeath"
+       }
+       EditorPos 34.6 14.9
+       Child "PassengerUnconDeathAnim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E6396648E8}" {
+       FromState "Idle"
+       ToState "UnconsciousDeath"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Death) && IsTag(\"TagUnconscious\")"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E6396648EB}" {
+       ToState "Death"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Death)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeSource PassengerUnconsciousIdleAnim {
+     EditorPos 33.5 36.9
+     Source "Vehicle.UnconsciousIdle"
+     Looptype Loop
+    }
+    AnimSrcNodeSource PassengerUnconsciousInAnim {
+     EditorPos 31 36
+     Source "Vehicle.UnconsciousIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource PassengerUnconsciousOutAnim {
+     EditorPos 35.9 36
+     Source "Vehicle.UnconsciousOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeStateMachine PassengerUnconsciousSTM {
+     Tags {
+      "TagUnconscious"
+     }
+     EditorPos 30.9 33
+     states {
+      AnimSrcNodeState In {
+       EditorPos 31 34.3
+       Child "PassengerUnconsciousInAnim"
+       StartCondition "true"
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Loop {
+       Tags {
+        "TagCanExitUnconscious"
+       }
+       EditorPos 33.5 34.3
+       Child "PassengerUnconsciousIdleAnim"
+       StartCondition "false"
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Out {
+       EditorPos 35.9 34.3
+       Child "PassengerUnconsciousOutAnim"
+       StartCondition "false"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E6396648EF}" {
+       FromState "Loop"
+       ToState "Out"
+       Duration "0.1"
+       StartTime ""
+       Condition "GetCommandI(CMD_Unconscious) == -1"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E6396648F9}" {
+       FromState "In"
+       ToState "Loop"
+       Duration "0.1"
+       StartTime ""
+       Condition "RemainingTimeLess(0.1)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeBlend AccelerationB_1 {
+     EditorPos -1.9 -4.5
+     BlendWeight "1.0"
+     Child0 "SteeringMainIKT_1"
+     Child1 "AccelerationG"
+     IkTargets "Keep Singular From First"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeIK2 VehicleIK_1 {
+     EditorPos -1.9 -5.6
+     Child "AccelerationB_1"
+     Chains {
+      AnimSrcIkBinding "{6574F2E6396648FC}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkBinding "{6574F2E6396648FE}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E6396648C1}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodePose2 AccelerationDir_1 {
+     EditorPos 1 -2.9
+     Source "Vehicle.AccelerationSpine"
+     ValueX "VehicleAccelerationLR"
+     ValueY "VehicleAccelerationFB"
+     Table "Y(-1):   	X(-1) = 0, X(0) = 1, X(1) = 2"\
+     "Y(0): 	X(-1) = 3, X(0) = 4, X(1) = 5"\
+     "Y(1): 	X(-1) = 6, X(0) = 7, X(1) = 8"\
+     ""
+    }
+    AnimSrcNodeIK2Target SteeringMainIKT_1 {
+     EditorPos -1.8 -3
+     Child "VehicleSTM"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E6396648C7}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E6396648C8}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeBlend BrakeSpineCoDriverIntensityB {
+     Tags {
+      "TagDeceleration"
+     }
+     EditorPos 8.3 27.6
+     BlendWeight "normalize(SpineAccelerationFB, -0.1, -1.6)"
+     Child0 "NoBrakeSpineCoDriverAnim"
+     Child1 "BrakeSpineCoDriverAnim"
+     Optimization "Always eval both"
+     SelectMainPath 1
+    }
+    AnimSrcNodeIK2Target SteeringMainIKT_1_2_1_1 {
+     EditorPos 4.6 27.5
+     Child "CoDriverIdleStateMachine"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E6396648CF}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E6396648CE}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeSource NoBrakeSpineCoDriverAnim {
+     EditorPos 7.2 28.4
+     Source "Vehicle.Driver.SpineBrakeSoft"
+    }
+    AnimSrcNodeSource BrakeSpineCoDriverAnim {
+     EditorPos 9.5 28.3
+     Source "Vehicle.Driver.SpineBrakeHard"
+    }
+    AnimSrcNodeIK2 VehicleIK_1_2_1_1 {
+     EditorPos 4.7 25.4
+     Child "BrakeSpineCoDriverQ"
+     Chains {
+      AnimSrcIkBinding "{6574F2E6396648D7}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkBinding "{6574F2E6396648D6}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E6396648D8}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeQueue BrakeSpineCoDriverQ {
+     EditorPos 4.7 26.3
+     Child "SteeringMainIKT_1_2_1_1"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E639664923}" {
+       Child "BrakeSpineCoDriverTime"
+       StartExpr "inRange(VehicleAccelerationFB, -1, -0.3)"
+       BlendInTime 0.1
+       BlendOutTime 0.2
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeTimeScale BrakeSpineCoDriverTime {
+     EditorPos 8.1 26.6
+     Child "BrakeSpineCoDriverIntensityB"
+     TimeExpr "-(clamp(SpineAccelerationFB, -1, -0.4))"\
+     ""
+     TimeStorage "Real Time"
+    }
+    AnimSrcNodeBlend BrakeSpinePassengerIntensityB {
+     Tags {
+      "TagDeceleration"
+     }
+     EditorPos 29.3 23.9
+     BlendWeight "normalize(SpineAccelerationFB, -0.1, -1.4)"
+     Child0 "NoBrakeSpinePassengerAnim"
+     Child1 "BrakeSpinePassengerAnim"
+     Optimization "Always eval both"
+     SelectMainPath 1
+    }
+    AnimSrcNodeIK2Target SteeringMainIKT_1_2_2 {
+     EditorPos 25.6 23.8
+     Child "PassengerIdleStateMachine"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E639664928}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E63966492B}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeSource NoBrakeSpinePassengerAnim {
+     EditorPos 28.2 25.1
+     Source "Vehicle.SpineBrakeSoft"
+    }
+    AnimSrcNodeSource BrakeSpinePassengerAnim {
+     EditorPos 30.5 25
+     Source "Vehicle.SpineBrakeHard"
+    }
+    AnimSrcNodeIK2 VehicleIK_1_2_2 {
+     EditorPos 25.7 21.7
+     Child "BrakeSpinePassengerQ"
+     Chains {
+      AnimSrcIkBinding "{6574F2E63966492D}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkBinding "{6574F2E63966EFEC}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E63966EFEE}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeQueue BrakeSpinePassengerQ {
+     EditorPos 25.7 22.6
+     Child "SteeringMainIKT_1_2_2"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966EFF0}" {
+       Child "BrakeSpinePassengerTime"
+       StartExpr "inRange(VehicleAccelerationFB, -1, -0.3)"
+       BlendInTime 0.1
+       BlendOutTime 0.2
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeTimeScale BrakeSpinePassengerTime {
+     EditorPos 29.1 22.9
+     Child "BrakeSpinePassengerIntensityB"
+     TimeExpr "-(clamp(SpineAccelerationFB, -0.9, -0.3))"\
+     ""
+     TimeStorage "Real Time"
+    }
+    AnimSrcNodeIK2Target "SteeringMainIKT 41450" {
+     EditorPos 6.1 37.7
+     Child "CoDriverIdleAnim"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E63966EFF2}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E63966EFF3}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeBlend "Blend 17882" {
+     EditorPos 6.4 36.4
+     BlendWeight "normalize(Vehicle_Wobble, 0.0, 0.15) * normalize(VehicleSpeed, 1.5, 4)"
+     Child0 "SteeringMainIKT 41450"
+     Child1 "Time Scale 33083"
+     IkTargets "Keep Singular From First"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeVarUpdate "Var Update 15592" {
+     EditorPos 6.2 33.3
+     Child "VehicleIK 25785"
+     Varupdate {
+      AnimSrcNodeVarUpdateItem "{6574F2E63966EFF6}" {
+       VariableName "Vehicle_Wobble"
+       UpdateOnInit 1
+       UpdateOnMainPath 1
+       UpdateOnBlendOut 1
+       MaxDifferencePerSecond 0.05
+      }
+     }
+    }
+    AnimSrcNodeSource "Source 38100" {
+     EditorPos 8.9 39.6
+     Source "Vehicle.CoDriver.Wobble"
+     Looptype Loop
+    }
+    AnimSrcNodeIK2 "VehicleIK 25785" {
+     EditorPos 6.2 35.1
+     Child "Blend 17882"
+     Chains {
+      AnimSrcIkBinding "{6574F2E63966EFFA}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkBinding "{6574F2E63966C512}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E63966C513}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeTimeScale "Time Scale 33083" {
+     EditorPos 8.9 38
+     Child "Source 38100"
+     TimeExpr "(1 + (1 - (normalize(Vehicle_Wobble, 0.0, 0.1)))) * lerp(Random01(), 1.0, 1.2)"
+     TimeStorage "Real Time"
+    }
+    AnimSrcNodeBlend "Blend 36247" {
+     EditorPos 26.146 35.473
+     BlendWeight "normalize(Vehicle_Wobble, 0.0, 0.15) * normalize(VehicleSpeed, 1.5, 4)"
+     Child0 "SteeringMainIKT 28552"
+     Child1 "Time Scale 16485"
+     IkTargets "Keep Singular From First"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeIK2Target "SteeringMainIKT 28552" {
+     EditorPos 26.2 36.8
+     Child "RandomIdleVarSet"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E63966C515}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E63966C516}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeSource "Source 28308" {
+     EditorPos 28.9 38.8
+     Source "Vehicle.CoDriver.Wobble"
+     Looptype Loop
+    }
+    AnimSrcNodeVarUpdate "Var Update 38150" {
+     EditorPos 25.946 32.373
+     Child "VehicleIK 34263"
+     Varupdate {
+      AnimSrcNodeVarUpdateItem "{6574F2E63966C517}" {
+       VariableName "Vehicle_Wobble"
+       UpdateOnInit 1
+       UpdateOnMainPath 1
+       UpdateOnBlendOut 1
+       MaxDifferencePerSecond 0.05
+      }
+     }
+    }
+    AnimSrcNodeTimeScale "Time Scale 16485" {
+     EditorPos 28.673 36.468
+     Child "Source 28308"
+     TimeExpr "(1 + (1 - (normalize(Vehicle_Wobble, 0.0, 0.1)))) * lerp(Random01(), 1.0, 1.2)"
+     TimeStorage "Real Time"
+    }
+    AnimSrcNodeIK2 "VehicleIK 34263" {
+     EditorPos 25.946 34.173
+     Child "Blend 36247"
+     Chains {
+      AnimSrcIkBinding "{6574F2E63966C529}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkBinding "{6574F2E63966C52A}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E63966C52B}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeSource "IdleM In Anim" {
+     EditorPos 6.8 0.7
+     Source "Vehicle.UniqueSeat.SwitchIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource "IdleR Out Anim" {
+     EditorPos 3.7 14.9
+     Source "Vehicle.PassengerR.SwitchOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource "IdleR In Anim" {
+     EditorPos 3.7 16.5
+     Source "Vehicle.PassengerR.SwitchIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeGroupSelect DriverGRP {
+     EditorPos 0.5 2.6
+     Child "DriverVehicle"
+     Group "Vehicle"
+     Column "Driver"
+    }
+    AnimSrcNodeGroupSelect PassengerRGRP {
+     EditorPos 3.9 12.7
+     Child "PassengerStateMachine"
+     Group "Vehicle"
+     Column "PassengerR"
+    }
+    AnimSrcNodeGroupSelect PassengerLGRP {
+     EditorPos 3.3 2.7
+     Child "PassengerStateMachine"
+     Group "Vehicle"
+     Column "PassengerL"
+    }
+    AnimSrcNodeSource "Driver Out Anim" {
+     EditorPos 0.4 -0.4
+     Source "Vehicle.Driver.SwitchOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource "Driver In Anim" {
+     EditorPos 0.4 0.6
+     Source "Vehicle.Driver.SwitchIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeStateMachine VehicleSTM {
+     Tags {
+      "TagVehicle"
+     }
+     EditorPos -1.5 3.5
+     states {
+      AnimSrcNodeState Driver {
+       EditorPos -1.2 5.7
+       Child "DriverGRP"
+       StartCondition "SeatPositionType == 0"
+       TimeStorage Inherit
+       IsExit 1
+      }
+      AnimSrcNodeState CoDriver {
+       EditorPos -1 10.1
+       Child "CoDriverGRP"
+       StartCondition "SeatPositionType == 1"
+       TimeStorage Inherit
+       IsExit 1
+      }
+      AnimSrcNodeState "Driver In" {
+       Tags {
+        "TagVehicleSwitchSeat"
+       }
+       EditorPos 0.4 6.5
+       Child "Driver In Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState IdleL {
+       EditorPos 2 5.7
+       Child "PassengerLGRP"
+       StartCondition "SeatPositionType == 2"
+       TimeStorage Inherit
+       IsExit 1
+      }
+      AnimSrcNodeState IdleR {
+       EditorPos 2.4 10.1
+       Child "PassengerRGRP"
+       StartCondition "SeatPositionType == 3 "
+       TimeStorage Inherit
+       IsExit 1
+      }
+      AnimSrcNodeState UniqueSeat {
+       EditorPos 5.2 5.6
+       Child "UniqueSeatGRP"
+       StartCondition "SeatPositionType == 4"
+       TimeStorage Inherit
+       IsExit 1
+      }
+      AnimSrcNodeState "UniqueSeat In" {
+       Tags {
+        "TagVehicleSwitchSeat"
+       }
+       EditorPos 6.8 6.5
+       Child "IdleM In Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "UniqueSeat Out" {
+       EditorPos 6.8 4.7
+       Child "IdleM Out Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "IdleL In" {
+       Tags {
+        "TagVehicleSwitchSeat"
+       }
+       EditorPos 3.6 6.5
+       Child "IdleL In Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "IdleL Out" {
+       EditorPos 3.6 4.7
+       Child "IdleL Out Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "IdleR Out" {
+       EditorPos 3.8 9
+       Child "IdleR Out Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "IdleR In" {
+       Tags {
+        "TagVehicleSwitchSeat"
+       }
+       EditorPos 3.8 11.3
+       Child "IdleR In Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "Driver Out" {
+       EditorPos 0.4 4.6
+       Child "Driver Out Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "CoDriver Out" {
+       EditorPos 0.4 9
+       Child "CoDriver Out Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "CoDriver In" {
+       Tags {
+        "TagVehicleSwitchSeat"
+       }
+       EditorPos 0.4 11.3
+       Child "CoDriver In Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Gunner {
+       EditorPos 5.6 10.1
+       Child "GunnerGRP"
+       StartCondition "SeatPositionType == 5"
+       TimeStorage Inherit
+       IsExit 1
+      }
+      AnimSrcNodeState "Gunner In" {
+       Tags {
+        "TagVehicleSwitchSeat"
+       }
+       EditorPos 7 11.3
+       Child "Gunner In Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState "Gunner Out" {
+       EditorPos 7 9
+       Child "Gunner Out Anim"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966C539}" {
+       FromState "Driver"
+       ToState "Driver In"
+       Duration "0.3"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat) "
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C53B}" {
+       FromState "UniqueSeat"
+       ToState "UniqueSeat In"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C53D}" {
+       FromState "UniqueSeat Out"
+       ToState "UniqueSeat"
+       Duration "0.01"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C53E}" {
+       FromState "IdleL"
+       ToState "IdleL In"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C53F}" {
+       FromState "IdleL Out"
+       ToState "IdleL"
+       Duration "0.3"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C530}" {
+       FromState "IdleR Out"
+       ToState "IdleR"
+       Duration "0.3"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C531}" {
+       FromState "IdleR"
+       ToState "IdleR In"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C532}" {
+       FromState "Driver Out"
+       ToState "Driver"
+       Duration "0.3"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C533}" {
+       FromState "CoDriver Out"
+       ToState "CoDriver"
+       Duration "0.3"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C534}" {
+       FromState "CoDriver"
+       ToState "CoDriver In"
+       Duration "0.3"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C536}" {
+       ToState "CoDriver"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_GetIn )  &&  SeatPositionType == 1"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C537}" {
+       ToState "Driver"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_GetIn)  &&  SeatPositionType == 0"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C549}" {
+       ToState "IdleL"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_GetIn )  &&  SeatPositionType == 2"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C54A}" {
+       ToState "IdleR"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_GetIn )  &&  SeatPositionType == 3"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C54B}" {
+       ToState "UniqueSeat"
+       Duration ""
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_GetIn )  &&  SeatPositionType == 4"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C54C}" {
+       FromState "Gunner"
+       ToState "Gunner"
+       Duration ""
+       StartTime ""
+       Condition "false"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C54E}" {
+       ToState "Gunner"
+       Duration ""
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_GetIn )  &&  SeatPositionType == 5"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C540}" {
+       FromState "Gunner"
+       ToState "Gunner In"
+       Duration ""
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C550}" {
+       FromState "Gunner Out"
+       ToState "Gunner"
+       Duration "0.3"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C552}" {
+       FromState ""
+       ToState "Driver Out"
+       Duration "0.01"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01) && SeatPositionType == 0"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C553}" {
+       FromState ""
+       ToState "CoDriver Out"
+       Duration "0.01"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01) && SeatPositionType == 1"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C555}" {
+       FromState ""
+       ToState "IdleL Out"
+       Duration "0.01"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01) && SeatPositionType == 2"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C556}" {
+       FromState ""
+       ToState "UniqueSeat Out"
+       Duration "0.01"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01) && SeatPositionType == 4"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C557}" {
+       FromState ""
+       ToState "IdleR Out"
+       Duration "0.01"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01) && SeatPositionType == 3"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C568}" {
+       FromState ""
+       ToState "Gunner Out"
+       Duration "0.01"
+       StartTime ""
+       Condition "RemainingTimeLess(0.01) && SeatPositionType == 5"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C56A}" {
+       FromState "Driver Out"
+       ToState "Driver In"
+       Duration "0.3"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat) "
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C56B}" {
+       FromState "IdleL Out"
+       ToState "IdleL In"
+      }
+      AnimSrcNodeTransition "{6574F2E63966C56D}" {
+       FromState "UniqueSeat Out"
+       ToState "UniqueSeat In"
+      }
+      AnimSrcNodeTransition "{6574F2E63966C56E}" {
+       FromState "CoDriver Out"
+       ToState "CoDriver In"
+       Duration "0.3"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C56F}" {
+       FromState "IdleR Out"
+       ToState "IdleR In"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C560}" {
+       FromState "Gunner Out"
+       ToState "Gunner In"
+       Duration ""
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_SwitchSeat)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeSource "IdleL Out Anim" {
+     EditorPos 3.3 -0.4
+     Source "Vehicle.PassengerL.SwitchOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeGroupSelect UniqueSeatGRP {
+     EditorPos 6.8 2.7
+     Child "PassengerStateMachine"
+     Group "Vehicle"
+     Column "UniqueSeat"
+    }
+    AnimSrcNodeSource "IdleL In Anim" {
+     EditorPos 3.3 0.7
+     Source "Vehicle.PassengerL.SwitchIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource "Gunner In Anim" {
+     EditorPos 7.2 16.6
+     Source "Vehicle.CoDriver.SwitchIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeGroupSelect GunnerGRP {
+     EditorPos 7.1 12.7
+     Child "PassengerStateMachine"
+     Group "Vehicle"
+     Column "Gunner"
+    }
+    AnimSrcNodeSource "Gunner Out Anim" {
+     EditorPos 7.3 14.9
+     Source "Vehicle.CoDriver.SwitchOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource "CoDriver Out Anim" {
+     EditorPos 0.4 14.9
+     Source "Vehicle.CoDriver.SwitchOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeGroupSelect CoDriverGRP {
+     EditorPos 0.3 12.7
+     Child "CoDriverVehicle"
+     Group "Vehicle"
+     Column "CoDriver"
+    }
+    AnimSrcNodeSource "CoDriver In Anim" {
+     EditorPos 0.4 16.4
+     Source "Vehicle.CoDriver.SwitchIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource "IdleM Out Anim" {
+     EditorPos 6.8 -0.4
+     Source "Vehicle.UniqueSeat.SwitchOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeQueue "Queue 26521" {
+     EditorPos -21.6 17.8
+     Child "VehicleIK 38848"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966C566}" {
+       Child "DriverUnconsciousStateMachine 26677"
+       StartExpr "GetCommandI(CMD_Unconscious) == 1"
+       BlendInTime 0.15
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeStateMachine "DriverUnconsciousStateMachine 26677" {
+     Tags {
+      "TagUnconscious"
+     }
+     EditorPos -13.3 18.2
+     states {
+      AnimSrcNodeState In {
+       EditorPos -12.9 19.6
+       Child "DriverUnconsciousIn 12531"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Idle {
+       Tags {
+        "TagCanExitUnconscious"
+       }
+       EditorPos -10.4 19.6
+       Child "DriverUnconsciousIdle 24274"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState Out {
+       EditorPos -7.7 19.6
+       Child "DriverUnconsciousOut 11456"
+       StartCondition ""
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966C57A}" {
+       FromState "In"
+       ToState "Idle"
+       Duration ""
+       StartTime ""
+       Condition "RemainingTimeLess(0.01)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966C57B}" {
+       FromState "Idle"
+       ToState "Out"
+       Duration "0.2"
+       StartTime ""
+       Condition "GetCommandI(CMD_Unconscious) == -1"
+       BlendFn S
+       MotionVecBlend 51
+      }
+     }
+    }
+    AnimSrcNodeSource "DriverUnconsciousIdle 24274" {
+     EditorPos -10.2 21.5
+     Source "Vehicle.Driver.UnconsciousIdle"
+     Looptype Loop
+    }
+    AnimSrcNodeSource "DriverUnconsciousOut 11456" {
+     EditorPos -7.6 21.5
+     Source "Vehicle.Driver.UnconsciousOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource "DriverUnconsciousIn 12531" {
+     EditorPos -12.8 21.5
+     Source "Vehicle.Driver.UnconsciousIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource BrakeSpineDriverAnim {
+     EditorPos -16.8 27.6
+     Source "Vehicle.Driver.SpineBrakeHard"
+    }
+    AnimSrcNodeIK2 VehicleIK_1_2_1 {
+     EditorPos -21.7 24.3
+     Child "BrakeSpineDriverQ"
+     Chains {
+      AnimSrcIkBinding "{6574F2E63966C57F}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkBinding "{6574F2E63966B713}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E63966B71C}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeTimeScale BrakeSpineDriverTime {
+     EditorPos -18.3 25.5
+     Child "BrakeSpineDriverIntensityB"
+     TimeExpr "-(clamp(SpineAccelerationFB, -1, -0.3))"\
+     ""
+     TimeStorage "Real Time"
+    }
+    AnimSrcNodeIK2Target SteeringMainIKT_1_2_1 {
+     EditorPos -21.8 26.6
+     Child "VehicleIK_1_2"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E63966B71E}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E63966B71F}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeSource NoBrakeSpineDriverAnim {
+     EditorPos -19.1 27.6
+     Source "Vehicle.Driver.SpineBrakeSoft"
+    }
+    AnimSrcNodeIK2 VehicleIK_1_2 {
+     EditorPos -22 30.4
+     Child "VehicleBrakeQ"
+     Chains {
+      AnimSrcIkBinding "{6574F2E63966B719}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E63966B71A}" {
+      SnapRotation 1
+      AllowStretching 0
+     }
+     Version 1
+    }
+    AnimSrcNodeQueue BrakeSpineDriverQ {
+     EditorPos -21.7 25.2
+     Child "SteeringMainIKT_1_2_1"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B71B}" {
+       Child "BrakeSpineDriverTime"
+       StartExpr "inRange(VehicleAccelerationFB, -1, -0.3)"
+       BlendInTime 0.1
+       BlendOutTime 0.2
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeBlend BrakeSpineDriverIntensityB {
+     Tags {
+      "TagDeceleration"
+     }
+     EditorPos -18.1 26.5
+     BlendWeight "normalize(SpineAccelerationFB, -0.1, -1.5)"
+     Child0 "NoBrakeSpineDriverAnim"
+     Child1 "BrakeSpineDriverAnim"
+     Optimization "Always eval both"
+     SelectMainPath 1
+    }
+    AnimSrcNodeVarUpdate "Var Update 40757" {
+     EditorPos -21.6 16.4
+     Child "Queue 26521"
+     Varupdate {
+      AnimSrcNodeVarUpdateItem "{6574F2E63966B7E6}" {
+       VariableName "Vehicle_Wobble"
+       UpdateOnInit 1
+       UpdateOnMainPath 1
+       UpdateOnBlendOut 1
+       MaxDifferencePerSecond 0.05
+      }
+     }
+    }
+    AnimSrcNodeSource "Source 42687" {
+     EditorPos -18.3 22.3
+     Source "Vehicle.Driver.Wobble"
+     Looptype Loop
+    }
+    AnimSrcNodeIK2 "VehicleIK 38848" {
+     EditorPos -21.8 19.4
+     Child "Blend 20870"
+     Chains {
+      AnimSrcIkBinding "{6574F2E63966B7E7}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkBinding "{6574F2E63966B7E0}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E63966B7E1}" {
+      SnapRotation 1
+      AllowStretching 1
+     }
+     Version 1
+    }
+    AnimSrcNodeTimeScale "Time Scale 33764" {
+     EditorPos -18.5 21.2
+     Child "Source 42687"
+     TimeExpr "(1 + (1 - (normalize(Vehicle_Wobble, 0.0, 0.1)))) * lerp(Random01(), 1.0, 1.2)"
+     TimeStorage "Real Time"
+    }
+    AnimSrcNodeIK2Target "SteeringMainIKT 23996" {
+     EditorPos -21.4 22
+     Child "VehicleIK_1_2_1"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E63966B7E2}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E63966B7E3}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeBlend "Blend 20870" {
+     EditorPos -21.7 20.7
+     BlendWeight "normalize(Vehicle_Wobble, 0.0, 0.15) * normalize(VehicleSpeed, 1.5, 4)"
+     Child0 "SteeringMainIKT 23996"
+     Child1 "Time Scale 33764"
+     IkTargets "Keep Singular From First"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodePose2 LookHeadMove_1 {
+     EditorPos -19 14.1
+     Source "Vehicle.Driver.HeadLook"
+     ValueX "LookX"
+     ValueY "LookY"
+     Table "Y(-90): X(-90)= 0, X(0) = 1, X(90) = 2"\
+     "Y(0): X(-90) = 3, X(0) = 4, X(90) = 5"\
+     "Y(90): X(-90) = 6, X(0) = 7, X(90) = 8"
+    }
+    AnimSrcNodeBlendT "Blend T 20303" {
+     EditorPos -21.7 12.6
+     Condition "if(IsTag(\"TagUnconscious\") == true, 0.0, 1.0)"
+     Child0 "Var Update 40757"
+     Child1 "LookHeadMove_1"
+     Optimization "Always eval left"
+     PostEval 1
+    }
+    AnimSrcNodeBlendT "Blend T 22088" {
+     EditorPos 4.9 21.9
+     Condition "if(IsTag(\"TagUnconscious\") == true, 0.0, 1.0)"
+     Child0 "VehicleIK_1_2_1_1"
+     Child1 "LookHeadMove 19003"
+     Optimization "Always eval left"
+     PostEval 1
+    }
+    AnimSrcNodePose2 "LookHeadMove 19003" {
+     EditorPos 6.7 23.8
+     Source "Vehicle.HeadLook"
+     ValueX "LookX"
+     ValueY "LookY"
+     Table "Y(-90): X(-90)= 0, X(0) = 1, X(90) = 2"\
+     "Y(0): X(-90) = 3, X(0) = 4, X(90) = 5"\
+     "Y(90): X(-90) = 6, X(0) = 7, X(90) = 8"
+    }
+    AnimSrcNodePose2 "LookHeadMove 15869" {
+     EditorPos 27.6 19.8
+     Source "Vehicle.HeadLook"
+     ValueX "LookX"
+     ValueY "LookY"
+     Table "Y(-90): X(-90)= 0, X(0) = 1, X(90) = 2"\
+     "Y(0): X(-90) = 3, X(0) = 4, X(90) = 5"\
+     "Y(90): X(-90) = 6, X(0) = 7, X(90) = 8"
+    }
+    AnimSrcNodeBlendT "Blend T 20186" {
+     EditorPos 25.8 17.9
+     Condition "if(IsTag(\"TagUnconscious\") == true, 0.0, 1.0)"
+     Child0 "VehicleIK_1_2_2"
+     Child1 "LookHeadMove 15869"
+     Optimization "Always eval left"
+     PostEval 1
+    }
+    AnimSrcNodePose DriverUnconDeathAnim {
+     EditorPos -23.9 10
+     Source "Vehicle.UnconsciousIdle"
+     Time "1.0"
+    }
+    AnimSrcNodePose CoDriverUnconDeath {
+     EditorPos 12 20.6
+     Source "Vehicle.UnconsciousIdle"
+     Time "1.0"
+    }
+    AnimSrcNodePose PassengerUnconDeathAnim {
+     EditorPos 34.6 17.8
+     Source "Vehicle.UnconsciousIdle"
+     Time "1.0"
+    }
+    AnimSrcNodeGroupSelect AccelerationG {
+     EditorPos 1.1 -4.4
+     Child "AccelerationDir_1"
+     Group "Vehicle"
+     Column "PassengerL"
+    }
+    AnimSrcNodeIK2Target DriverDamageIKT {
+     EditorPos -1.9 -6.4
+     Child "VehicleIK_1"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E63966B7F4}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+      AnimSrcIkTargetBinding "{6574F2E63966B7F5}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeSource "PassengerIdleSrc 32775" {
+     EditorPos 23.4 45.4
+     Source "Vehicle.Idle"
+     Looptype Loop
+    }
+    AnimSrcNodeSource "PassengerIdleSrc 24036" {
+     EditorPos 29 45.3
+     Source "Vehicle.Idle02"
+     Looptype Loop
+    }
+    AnimSrcNodeSource "PassengerIdleSrc 29243" {
+     EditorPos 26.2 45.4
+     Source "Vehicle.Idle01"
+     Looptype Loop
+    }
+    AnimSrcNodeStateMachine IdlePoseVarSTM {
+     EditorPos 26.1 42.4
+     states {
+      AnimSrcNodeState Idle00 {
+       EditorPos 23.5 43.6
+       Child "PassengerIdleSrc 32775"
+       StartCondition "inRange(Random01(), 0.0, 0.30)"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Idle01 {
+       EditorPos 26.1 43.6
+       Child "PassengerIdleSrc 29243"
+       StartCondition "inRangeExclusive(Random01(), 0.30, 0.65)"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Idle02 {
+       EditorPos 29 43.6
+       Child "PassengerIdleSrc 24036"
+       StartCondition "inRange(Random01(), 0.65, 1.0)"
+       TimeStorage "Real Time"
+      }
+     }
+    }
+    AnimSrcNodeVarSet RandomIdleVarSet {
+     EditorPos 26.1 40.4
+     Child "IdlePoseVarSTM"
+     VarSet {
+      AnimSrcNodeVarSetFloatItem "{6574F2E63966B7FC}" {
+       VariableName "RandomIdle"
+       SetOnInit 1
+       Value "Random01()"
+      }
+     }
+    }
+    AnimSrcNodeQueue DoorBR_Q {
+     EditorPos -1.9 -7.4
+     Child "DriverDamageIKT"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7FF}" {
+       Child "DoorBR_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 3 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 3 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1"
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 3"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+       TagMainPath "TagCharacterInVehicleDoorSTM"
+       CacheOnEnqueue AnimSrcVarCmdTempStorage "{6574F2E63966B7F8}" {
+        Commands {
+         "CMD_Vehicle_GetOut"
+        }
+       }
+      }
+     }
+    }
+    AnimSrcNodeQueue DoorFR_Q {
+     EditorPos -1.9 -9.4
+     Child "DoorBL_Q"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7FB}" {
+       Child "DoorFR_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 1 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 1 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1"
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 1"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+       TagMainPath "TagCharacterInVehicleDoorSTM"
+      }
+     }
+    }
+    AnimSrcNodeQueue DoorBL_Q {
+     EditorPos -1.9 -8.4
+     Child "DoorBR_Q"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7C6}" {
+       Child "DoorBL_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 2 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 2 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1"
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 2"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+       TagMainPath "TagCharacterInVehicleDoorSTM"
+       CacheOnEnqueue AnimSrcVarCmdTempStorage "{6574F2E63966B7C7}" {
+        Commands {
+         "CMD_Vehicle_GetOut"
+        }
+       }
+      }
+     }
+    }
+    AnimSrcNodeQueue MasterControl {
+     EditorPos -1.9 -10.4
+     Child "DoorFR_Q"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7C1}" {
+       Child "DoorFL_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 0 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 0 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1"
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 0"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+       TagMainPath "TagCharacterInVehicleDoorSTM"
+      }
+     }
+    }
+   }
+  }
+  AnimSrcGraphSheet Vehicle {
+   Nodes {
+    AnimSrcNodeQueue "DoorBL_Q 16400" {
+     EditorPos -46.088 -63.572
+     Child "DoorBR_Q 27847"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7CC}" {
+       Child "DoorBL_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 2 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 2 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 "
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 2"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeQueue "DoorFR_Q 19162" {
+     EditorPos -46.088 -65.072
+     Child "DoorBL_Q 16400"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7CE}" {
+       Child "DoorFR_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 1 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 1 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 "
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 1"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeQueue "DoorBR_Q 27847" {
+     EditorPos -46.088 -61.972
+     Child "VehicleBrakeQ"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7C8}" {
+       Child "DoorBR_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 3 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 3 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 "
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 3"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeQueue VehicleMasterControl {
+     EditorPos -46.088 -66.672
+     Child "DoorFR_Q 19162"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7CA}" {
+       Child "DoorFL_STM_Test"
+       StartExpr "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 0 &&"\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 "\
+       "||"\
+       "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 0 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 "
+       InterruptExpr "IsCommand(CMD_Vehicle_FinishActionQueue) && "\
+       "GetCommandIa(CMD_Vehicle_FinishActionQueue) == 0"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+      }
+     }
+    }
+   }
+  }
+  AnimSrcGraphSheet Shared {
+   Nodes {
+    AnimSrcNodeSource HornInAnim {
+     EditorPos -44.456 -71.946
+     Source "VehicleActions.Veh/Play.HornIn"
+    }
+    AnimSrcNodeBlend VehicleBRakeB {
+     EditorPos -43.256 -96.746
+     BlendWeight "VehicleBrake"
+     Child0 "VehicleBrake0Anim"
+     Child1 "VehicleBrake1Anim"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodePose SteeringExtremePose_1 {
+     EditorPos -41.456 -55.746
+     Source "VehicleActions.Veh/Play.SteeringExtreme"
+     Time "(VehicleSteering*0.5)+0.5"
+    }
+    AnimSrcNodePose VehicleBrake0Anim {
+     EditorPos -44.2 -95.4
+     Source "VehicleActions.Veh/Play.Brake"
+     Time "0.0"
+    }
+    AnimSrcNodeStateMachine SteeringSTM_1 {
+     EditorPos -46.156 -60.346
+     states {
+      AnimSrcNodeState SteeringMain {
+       EditorPos -45.656 -59.146
+       Child "SteeringMainB_1"
+       StartCondition "true"
+       TimeStorage Inherit
+       IsExit 0
+      }
+      AnimSrcNodeState SteeringExtremeB {
+       EditorPos -41.556 -59.146
+       Child "SteeringExtremeB_1"
+       StartCondition "false"
+       TimeStorage Inherit
+       IsExit 0
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B7D7}" {
+       FromState "SteeringMain"
+       ToState "SteeringExtremeB"
+       Duration "0.05"
+       StartTime ""
+       Condition "VehicleSteering <= -0.98 || VehicleSteering >= 0.98"
+       BlendFn S
+       MotionVecBlend 51
+       Events {
+        AnimSrcEventGeneric "{546494629DBC6010}" {
+         Name "Sound"
+         UserString "SOUND_WHEELMOVEMENT_GEAR"
+         UserInt 0
+        }
+       }
+      }
+      AnimSrcNodeTransition "{6574F2E63966B7DC}" {
+       FromState "SteeringExtremeB"
+       ToState "SteeringMain"
+       Duration "0.05"
+       StartTime ""
+       Condition "inRange(VehicleSteering, -0.05, 0.05)"
+       BlendFn S
+       MotionVecBlend 51
+       Events {
+        AnimSrcEventGeneric "{5464946293870CC4}" {
+         Name "Sound"
+         UserString "SOUND_WHEELMOVEMENT_GEAR"
+         UserInt 0
+        }
+       }
+      }
+     }
+    }
+    AnimSrcNodeSource EngineStartStopLoopAnim_1 {
+     EditorPos -39.756 -63.246
+     Source "VehicleActions.Veh/Play.EngineStartLoop"
+     Looptype Loop
+    }
+    AnimSrcNodePose VehicleBrake1Anim {
+     EditorPos -41.856 -95.346
+     Source "VehicleActions.Veh/Play.Brake"
+     Time "1.0"
+    }
+    AnimSrcNodeQueue VehicleBrakeQ {
+     EditorPos -46.456 -98.146
+     Child "HandbrakeQ"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7D9}" {
+       Child "VehicleBRakeB"
+       StartExpr "VehicleBrake >= 0.01"
+       InterruptExpr "VehicleBrake < 0.01"
+       StartTime ""
+       BlendInTime 0.3
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeQueue "Queue 1" {
+     EditorPos -46.556 -70.546
+     Child "SteeringMainIKT_1_1"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7DB}" {
+       Child "EngineStartStopSTM_1"
+       StartExpr " IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) != -2"
+       InterruptExpr " IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) == -2"
+       BlendInTime 0.2
+       BlendOutTime 0.2
+       EnqueueMethod InterruptAll
+      }
+     }
+    }
+    AnimSrcNodeIK2Target SteeringMainIKT_1_1 {
+     EditorPos -46.556 -65.246
+     Child "SteeringVarUpdate"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E63966B7A6}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+    }
+    AnimSrcNodeStateMachine EngineStartStopSTM_1 {
+     Tags {
+      "TagEngineIgnition"
+     }
+     EditorPos -39.756 -66.946
+     states {
+      AnimSrcNodeState EngineStartStopIn {
+       EditorPos -42.956 -65.446
+       Child "EngineStartStopInAnim_1"
+       StartCondition "IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) == 1"
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState EngineStartStopLoop {
+       Tags {
+        "TagEngineLoop"
+       }
+       EditorPos -39.756 -64.546
+       Child "EngineStartStopLoopAnim_1"
+       StartCondition "false"
+       TimeStorage "Real Time"
+       IsExit 0
+      }
+      AnimSrcNodeState EngineStartStopOut {
+       EditorPos -36.456 -65.446
+       Child "EngineStartStopOutAnim_1"
+       StartCondition "IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) == 2"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+      AnimSrcNodeState EngineStop {
+       EditorPos -33.456 -65.446
+       Child "EngineStopAnim_1"
+       StartCondition "IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) == 3"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B7A1}" {
+       FromState "EngineStartStopIn"
+       ToState "EngineStartStopLoop"
+       Duration "0.15"
+       StartTime ""
+       Condition "RemainingTimeLess(2.8)"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966B7AC}" {
+       FromState "EngineStartStopLoop"
+       ToState "EngineStartStopOut"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) == -1"
+       BlendFn S
+       PostEval 1
+       MotionVecBlend 51
+      }
+      AnimSrcNodeTransition "{6574F2E63966B7AD}" {
+       FromState ""
+       ToState "EngineStop"
+       Duration "0.1"
+       StartTime ""
+       Condition "IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) == 3 ||"\
+       "IsCommand(CMD_Vehicle_GetOut ) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 0 &&"\
+       "GetCommandIb(CMD_Vehicle_GetOut) !=0  "\
+       ""\
+       ""
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{6574F2E63966B7AF}" {
+       FromState "EngineStartStopIn"
+       ToState "EngineStartStopOut"
+       Duration "0.2"
+       Condition "IsCommand(CMD_Vehicle_Engine_StartStop ) && "\
+       "GetCommandI(CMD_Vehicle_Engine_StartStop) == -1"
+       PostEval 1
+      }
+     }
+    }
+    AnimSrcNodeQueue HornQ {
+     EditorPos -46.256 -76.246
+     Child "Queue 1"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7AA}" {
+       Child "HornSTM"
+       StartExpr "HasVariableChanged(Horn, false)"
+       InterruptExpr "HasVariableChanged(Horn, true)"
+       BlendInTime 0.1
+       BlendOutTime 0.3
+       EnqueueMethod InterruptOther
+      }
+     }
+    }
+    AnimSrcNodeSource GearShiftAnim_1 {
+     EditorPos -41.056 -84.946
+     Source "VehicleActions.Veh/Play.ShiftGear"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeStateMachine HornSTM {
+     Tags {
+      "TagHorn"
+     }
+     EditorPos -43.156 -74.746
+     states {
+      AnimSrcNodeState HornIn {
+       EditorPos -44.456 -73.646
+       Child "HornInAnim"
+       StartCondition ""
+       TimeStorage Inherit
+       IsExit 0
+      }
+      AnimSrcNodeState HornLoop {
+       Tags {
+        "HornOut"
+       }
+       EditorPos -41.956 -73.646
+       Child "HornLoopAnim"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState HornOut {
+       Tags {
+        "HornOut"
+       }
+       EditorPos -39.456 -73.646
+       Child "HornOutAnim"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B7B7}" {
+       FromState "HornIn"
+       ToState "HornLoop"
+       Duration "0.1"
+       Condition "RemainingTimeLess(0.1)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{6574F2E63966B7B0}" {
+       FromState "HornLoop"
+       ToState "HornOut"
+       Duration "0.1"
+       Condition "!Horn && RemainingTimeLess(0.1)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{6574F2E63966B7B2}" {
+       FromState "HornOut"
+       ToState "HornLoop"
+       Duration "0.1"
+       Condition "Horn"
+      }
+     }
+    }
+    AnimSrcNodeIK2Target SteeringMainIKT_1_2 {
+     EditorPos -46.356 -84.646
+     Child "VehicleIK_1_1"
+     Chains {
+      AnimSrcIkTargetBinding "{6574F2E63966B7BD}" {
+       IkTarget "LHandIKTarget"
+       IkChain "LeftArm"
+      }
+     }
+    }
+    AnimSrcNodeQueue GearShiftQ_1 {
+     EditorPos -46.756 -86.846
+     Child "SteeringMainIKT_1_2"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B7BE}" {
+       Child "GearShiftAnim_1"
+       StartExpr "IsCommand(CMD_Vehicle_GearSwitch)"
+       InterruptExpr ""
+       StartTime ""
+       BlendInTime 0.1
+       BlendOutTime 0.1
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeSource LightsOffAnim {
+     EditorPos -40.756 -77.446
+     Source "VehicleActions.Veh/Play.LightsOff"
+    }
+    AnimSrcNodeBlend SteeringExtremeB_1 {
+     EditorPos -41.556 -57.446
+     BlendWeight "1.0"
+     Child0 "SteeringExtremePose_1"
+     Child1 "DriverThrottleP_1"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeIK2 VehicleIK_1_1 {
+     EditorPos -46.356 -83.546
+     Child "LightsQ"
+     Chains {
+      AnimSrcIkBinding "{6574F2E63966B7BB}" {
+       IkTarget "RHandIKTarget"
+       IkChain "RightArm"
+      }
+     }
+     Solver AnimSrcNodeIK2TwoBoneSolver "{6574F2E63966B784}" {
+      SnapRotation 1
+      AllowStretching 0
+     }
+     Version 1
+    }
+    AnimSrcNodeQueue HandbrakeQ {
+     EditorPos -46.556 -94.146
+     Child "GearShiftQ_1"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B79F}" {
+       Child "HandBrakeSTM"
+       StartExpr "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) != -2"
+       InterruptExpr "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) == -2"
+       BlendInTime 0.1
+       BlendOutTime 0.3
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodeBlend SteeringMainB_1 {
+     EditorPos -45.656 -57.446
+     BlendWeight "1.0"
+     Child0 "SteeringMainPose_1"
+     Child1 "DriverThrottleP_1"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeQueue LightsQ {
+     EditorPos -46.256 -82.246
+     Child "HornQ"
+     QueueItems {
+      AnimSrcNodeQueueItem "{6574F2E63966B864}" {
+       Child "LightsSTM"
+       StartExpr "IsCommand(CMD_Lights ) && "\
+       "GetCommandI(CMD_Lights) != -2"
+       InterruptExpr "IsCommand(CMD_Lights ) && "\
+       "GetCommandI(CMD_Lights) == -2"
+       EnqueueMethod Ignore
+      }
+     }
+    }
+    AnimSrcNodePose HandBrakeLoopPose {
+     EditorPos -36.356 -89.446
+     Source "VehicleActions.Veh/Play.HandBrakeLoop"
+    }
+    AnimSrcNodeSource HornOutAnim {
+     EditorPos -39.456 -71.946
+     Source "VehicleActions.Veh/Play.HornOut"
+    }
+    AnimSrcNodeStateMachine HandBrakeSTM {
+     EditorPos -43.7 -92
+     states {
+      AnimSrcNodeState HandBrakeOn {
+       EditorPos -44.656 -91.046
+       Child "HandBrakeOnAnim"
+       StartCondition "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) == 1"
+       TimeStorage Inherit
+       IsExit 1
+      }
+      AnimSrcNodeState HandBrakeOff {
+       EditorPos -41.356 -91.046
+       Child "HandBrakeOffAnim"
+       StartCondition "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) == 2"
+       IsExit 1
+      }
+      AnimSrcNodeState HandBrakeIn {
+       EditorPos -38.8 -91
+       Child "HandBrakeInAnim"
+       StartCondition "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) == 3"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState HandBrakeLoop {
+       EditorPos -36.4 -90.6
+       Child "HandBrakeLoopPose"
+       StartCondition "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) == 4"
+      }
+      AnimSrcNodeState HandBrakeOut {
+       EditorPos -33.856 -91.046
+       Child "HandBrakeOutAnim"
+       TimeStorage "Real Time"
+       IsExit 1
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B86C}" {
+       FromState "HandBrakeIn"
+       ToState "HandBrakeLoop"
+       Duration "0.2"
+       Condition "RemainingTimeLess(0.1)"
+       PostEval 1
+      }
+      AnimSrcNodeTransition "{6574F2E63966B86E}" {
+       FromState "HandBrakeLoop"
+       ToState "HandBrakeOut"
+       Duration "0.1"
+       Condition "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) == -1"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B86F}" {
+       FromState "HandBrakeIn"
+       ToState "HandBrakeOut"
+       Duration "0.1"
+       Condition "IsCommand(CMD_HandBrake) && "\
+       "GetCommandI(CMD_HandBrake) == -1"
+      }
+     }
+    }
+    AnimSrcNodeSource HornLoopAnim {
+     EditorPos -41.956 -71.946
+     Source "VehicleActions.Veh/Play.HornLoop"
+    }
+    AnimSrcNodeSource HandBrakeOffAnim {
+     EditorPos -41.356 -89.446
+     Source "VehicleActions.Veh/Play.HandBrakeoff"
+    }
+    AnimSrcNodeSource EngineStartStopOutAnim_1 {
+     EditorPos -36.456 -63.246
+     Source "VehicleActions.Veh/Play.EngineStartOut"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource HandBrakeInAnim {
+     EditorPos -38.756 -89.446
+     Source "VehicleActions.Veh/Play.HandBrakeIn"
+    }
+    AnimSrcNodeStateMachine LightsSTM {
+     EditorPos -42.256 -80.146
+     states {
+      AnimSrcNodeState LightsOn {
+       EditorPos -43.256 -79.046
+       Child "LightsOnAnim"
+       StartCondition "IsCommand(CMD_Lights ) && "\
+       "GetCommandI(CMD_Lights) == 1"
+       IsExit 1
+      }
+      AnimSrcNodeState LightsOff {
+       EditorPos -40.756 -79.046
+       Child "LightsOffAnim"
+       StartCondition "IsCommand(CMD_Lights ) && "\
+       "GetCommandI(CMD_Lights) == 2"
+       IsExit 1
+      }
+     }
+    }
+    AnimSrcNodePose DriverThrottleP_1 {
+     EditorPos -43.3 -52.9
+     Source "VehicleActions.Veh/Play.Throttle"
+     Time "VehicleThrottle"
+    }
+    AnimSrcNodeSource LightsOnAnim {
+     EditorPos -43.256 -77.446
+     Source "VehicleActions.Veh/Play.LightsOn"
+    }
+    AnimSrcNodeSource HandBrakeOnAnim {
+     EditorPos -44.656 -89.446
+     Source "VehicleActions.Veh/Play.HandBrakeOn"
+    }
+    AnimSrcNodeSource EngineStartStopInAnim_1 {
+     EditorPos -42.956 -63.246
+     Source "VehicleActions.Veh/Play.EngineStartIn"
+     Looptype "No Loop"
+    }
+    AnimSrcNodeSource HandBrakeOutAnim {
+     EditorPos -33.856 -89.446
+     Source "VehicleActions.Veh/Play.HandBrakeOut"
+    }
+    AnimSrcNodeSource EngineStopAnim_1 {
+     EditorPos -33.456 -63.246
+     Source "VehicleActions.Veh/Play.EngineStop"
+    }
+    AnimSrcNodePose SteeringMainPose_1 {
+     EditorPos -45.756 -55.746
+     Source "VehicleActions.Veh/Play.SteeringMain"
+     Time "(VehicleSteering*0.5)+0.5"
+    }
+    AnimSrcNodeSource FRGetOut_NoDoorAnim {
+     EditorPos -6.326 -83.467
+     Source "Vehicle.CoDriver.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B870}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine DoorBL_STM_Test {
+     Tags {
+      "TagDoorAction" "TagItemUpdateColliders"
+     }
+     EditorPos 5.063 -96.125
+     states {
+      AnimSrcNodeState GetIn_NoDoor {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos 7.563 -94.825
+       Child "BLGetIn_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 2"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos 7.563 -93.125
+       Child "BLGetOut_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 2"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetIn_NoDoor_Unique {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos 15.063 -94.825
+       Child "BLGetIn_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor_Unique {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos 15.063 -93.125
+       Child "BLGetOut_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B87E}" {
+       FromState ""
+       ToState "GetIn_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 2"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B87F}" {
+       FromState ""
+       ToState "GetOut_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 2"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B878}" {
+       FromState ""
+       ToState "GetOut_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B879}" {
+       FromState ""
+       ToState "GetIn_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 2 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+      }
+     }
+    }
+    AnimSrcNodeSource BRGetIn_NoDoorAnim {
+     EditorPos 7.574 -88.967
+     Source "Vehicle.PassengerR.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B87A}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource BLGetIn_NoDoorAnim {
+     EditorPos 7.574 -97.167
+     Source "Vehicle.PassengerL.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B845}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource BRGetIn_NoDoorAnim_Unique {
+     EditorPos 15.074 -88.967
+     Source "Vehicle.UniqueSeat.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B846}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource BRGetOut_NoDoorAnim_Unique {
+     EditorPos 15.074 -83.467
+     Source "Vehicle.UniqueSeat.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B847}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine DoorFL_STM_Test {
+     Tags {
+      "TagDoorAction" "TagItemUpdateColliders"
+     }
+     EditorPos -8.8 -96
+     states {
+      AnimSrcNodeState GetIn_NoDoor {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos -6.3 -94.7
+       Child "FLGetIn_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 0"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos -6.3 -93
+       Child "FLGetOut_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) != 4"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetIn_NoDoor_Unique {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos 1.2 -94.7
+       Child "FLGetIn_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor_Unique {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos 1.2 -93
+       Child "FLGetOut_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B842}" {
+       FromState ""
+       ToState "GetIn_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 0"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B843}" {
+       FromState ""
+       ToState "GetOut_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) != 4"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B84C}" {
+       FromState ""
+       ToState "GetIn_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B84D}" {
+       FromState ""
+       ToState "GetOut_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 0 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+      }
+     }
+    }
+    AnimSrcNodeSource FLGetOut_NoDoorAnim_Unique {
+     EditorPos 1.174 -91.667
+     Source "Vehicle.UniqueSeat.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B848}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine DoorFR_STM_Test {
+     Tags {
+      "TagDoorAction" "TagItemUpdateColliders"
+     }
+     EditorPos -8.826 -87.867
+     states {
+      AnimSrcNodeState GetIn_NoDoor {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos -6.326 -86.567
+       Child "FRGetIn_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 1"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos -6.326 -84.867
+       Child "FRGetOut_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 1"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetIn_NoDoor_Unique {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos 1.174 -86.567
+       Child "FRGetIn_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor_Unique {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos 1.174 -84.867
+       Child "FRGetOut_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B84A}" {
+       FromState ""
+       ToState "GetIn_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 1"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B84B}" {
+       FromState ""
+       ToState "GetOut_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 1"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B854}" {
+       FromState ""
+       ToState "GetIn_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B856}" {
+       FromState ""
+       ToState "GetOut_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+      }
+     }
+    }
+    AnimSrcNodeSource FRGetIn_NoDoorAnim {
+     EditorPos -6.326 -88.967
+     Source "Vehicle.CoDriver.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B850}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource BLGetOut_NoDoorAnim_Unique {
+     EditorPos 15.074 -91.667
+     Source "Vehicle.UniqueSeat.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B851}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource FRGetOut_NoDoorAnim_Unique {
+     EditorPos 1.174 -83.467
+     Source "Vehicle.UniqueSeat.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966B852}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeStateMachine DoorBR_STM_Test {
+     Tags {
+      "TagDoorAction" "TagItemUpdateColliders"
+     }
+     EditorPos 5.074 -87.867
+     states {
+      AnimSrcNodeState GetIn_NoDoor {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos 7.574 -86.567
+       Child "BRGetIn_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 3"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos 7.574 -84.867
+       Child "BRGetOut_NoDoorAnim"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 3"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetIn_NoDoor_Unique {
+       Tags {
+        "TagVehicleGetIn"
+       }
+       EditorPos 15.074 -86.567
+       Child "BRGetIn_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState GetOut_NoDoor_Unique {
+       Tags {
+        "TagGetOut"
+       }
+       EditorPos 15.074 -84.867
+       Child "BRGetOut_NoDoorAnim_Unique"
+       StartCondition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{6574F2E63966B85E}" {
+       FromState ""
+       ToState "GetIn_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 3"
+      }
+      AnimSrcNodeTransition "{6574F2E63966B85F}" {
+       FromState ""
+       ToState "GetOut_NoDoor"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 3"
+      }
+      AnimSrcNodeTransition "{6574F2E639669437}" {
+       FromState ""
+       ToState "GetIn_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetIn) && "\
+       "GetCommandIa(CMD_Vehicle_GetIn) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetIn) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetIn) == 4"
+      }
+      AnimSrcNodeTransition "{6574F2E639669431}" {
+       FromState ""
+       ToState "GetOut_NoDoor_Unique"
+       Duration "0.3"
+       Condition "IsCommand(CMD_Vehicle_GetOut) && "\
+       "GetCommandIa(CMD_Vehicle_GetOut) == 3 && "\
+       "GetCommandIb(CMD_Vehicle_GetOut) == 1 && "\
+       "GetCommandIc(CMD_Vehicle_GetOut) == 4"
+      }
+     }
+    }
+    AnimSrcNodeSource BLGetOut_NoDoorAnim {
+     EditorPos 7.574 -91.667
+     Source "Vehicle.PassengerL.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E639669433}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource BRGetOut_NoDoorAnim {
+     EditorPos 7.574 -83.467
+     Source "Vehicle.PassengerR.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966944D}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource FLGetOut_NoDoorAnim {
+     EditorPos -6.326 -91.667
+     Source "Vehicle.Driver.01_GetOut_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966944F}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource FLGetIn_NoDoorAnim {
+     EditorPos -6.326 -97.167
+     Source "Vehicle.Driver.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E639669448}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource BLGetIn_NoDoorAnim_Unique {
+     EditorPos 15.074 -97.167
+     Source "Vehicle.UniqueSeat.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E63966944A}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource FRGetIn_NoDoorAnim_Unique {
+     EditorPos 1.174 -88.967
+     Source "Vehicle.UniqueSeat.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E639669444}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeSource FLGetIn_NoDoorAnim_Unique {
+     EditorPos 1.174 -97.167
+     Source "Vehicle.UniqueSeat.01_GetIn_NoDoor"
+     Predictions {
+      AnimSrcNodePrediction "{6574F2E639669446}" {
+       Name "PredictionVehicleGetIn"
+       Bone "EntityPosition"
+       PercentTime 1
+       MainPath 1
+      }
+     }
+    }
+    AnimSrcNodeVarUpdate SteeringVarUpdate {
+     EditorPos -46.227 -62.966
+     Child "SteeringSTM_1"
+     Varupdate {
+      AnimSrcNodeVarUpdateItem "{6574F2E639669440}" {
+       VariableName "VehicleSteering"
+       UpdateOnInit 1
+       UpdateOnMainPath 1
+       MaxDifferencePerSecond 3
+      }
+     }
+    }
+   }
+  }
+ }
+}
