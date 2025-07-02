@@ -5,6 +5,8 @@ If you'd like to contribute, report an issue, or get any information related to 
 
 No license is attached to this repository directly, but each subfolder has its own license which must be followed. Generally, we use the APL-SA license, but some mods may be set under different licenses by the author. You can read up on BI's licenses at https://www.bohemia.net/community/licenses
 
+Note that ALL RHS derivitive content is under the CC BY-NC-ND 4.0 License, regardless of what the "main" license is for the mod. You can read the full version at https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
 Contributors:
 - poly
 - Citadel
