@@ -8,5 +8,13 @@ GameEntity : "{7EF2B28BA78F736A}Prefabs/Characters/Uniforms/Parka_Night/Night_pa
     }
    }
   }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{B5FBDC5E14116486}Assets/Characters/Uniforms/Parka_Night/Data/night_parka_corb_des.emat"
+   }
+   ItemMaterialsOverride {
+    "{B5FBDC5E14116486}Assets/Characters/Uniforms/Parka_Night/Data/night_parka_corb_des.emat"
+   }
+  }
  }
 }

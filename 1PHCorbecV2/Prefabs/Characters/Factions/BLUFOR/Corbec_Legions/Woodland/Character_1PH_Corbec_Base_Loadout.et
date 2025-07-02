@@ -13,10 +13,10 @@ SCR_ChimeraCharacter : "{3C336B94AFD4A5DC}Prefabs/Characters/Factions/BLUFOR/Cor
      Prefab "{D974E37E739A0EEF}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_corb_wdl.et"
     }
     LoadoutSlotInfo Jacket {
-     Prefab "{0E924C84C063DB3C}Prefabs/Characters/Uniforms/Jacket_M88_corb_wdl.et"
+     Prefab "{E03AE40F5F07DB6D}Prefabs/Characters/Uniforms/Jacket_US_BDU_corb_wdl.et"
     }
     LoadoutSlotInfo Pants {
-     Prefab "{4ABE3ECCA8D951A6}Prefabs/Characters/Uniforms/Pants_M70_corb_wdl.et"
+     Prefab "{C0BC2CEB02832679}Prefabs/Characters/Uniforms/Pants_US_BDU_corb_wdl.et"
     }
     LoadoutSlotInfo Boots {
      Prefab "{DAAFD15478BDE1C3}Prefabs/Characters/Footwear/CombatBoots_US_01.et"

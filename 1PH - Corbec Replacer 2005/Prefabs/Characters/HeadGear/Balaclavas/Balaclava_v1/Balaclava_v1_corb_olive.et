@@ -10,5 +10,13 @@ GameEntity : "{7621C7D9145AF8D5}Prefabs/Characters/HeadGear/Balaclavas/Balaclava
     }
    }
   }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornMaterialsOverride {
+    "{51D132854A1AA2F8}Assets/Characters/HeadGear/Balaclavas/LShZ_Balaclava/Data/lshz_balaclava_wear_corb_olive.emat"
+   }
+   ItemMaterialsOverride {
+    "{7FBD157E469B2197}Assets/Characters/HeadGear/Balaclavas/LShZ_Balaclava/Data/lshz_balaclava_item_corb_olive.emat"
+   }
+  }
  }
 }

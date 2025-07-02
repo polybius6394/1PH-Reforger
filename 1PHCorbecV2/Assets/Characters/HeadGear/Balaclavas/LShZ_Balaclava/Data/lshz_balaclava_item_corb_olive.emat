@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{E969CEE662A2E479}Assets/Characters/HeadGear/Balaclavas/LShZ_Balaclava/Data/rhs_lshz_balaclava_corb_olive_BCR.edds"
+ NMOMap "{2F390950D442CE0F}Assets/Characters/HeadGear/Balaclavas/LShZ_Balaclava/Data/rhs_lshz_balaclava_item_NMO.edds"
+}

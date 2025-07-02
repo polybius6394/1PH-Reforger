@@ -16,6 +16,13 @@ GameEntity : "{604BB72BE8E023C2}Prefabs/Characters/Uniforms/Pants_US_BDU.et" {
      Name "Corbequais Battle Dress Uniform Trousers (Woodland)"
      Description "Standard-issue Corbequais BDUs."
     }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      CameraOffset 0 0 0
+      PreviewWornModel 1
+      PreviewModel "{065DC5366BA23024}Assets/Characters/Uniforms/Pants_M70/Pants_M70_01.xob"
+     }
+    }
    }
   }
   BaseLoadoutClothComponent "{5104869D194C627A}" {

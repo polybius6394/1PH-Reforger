@@ -9,5 +9,13 @@ GameEntity : "{D19C474FA0F42CC4}Prefabs/Characters/Handwear/Gloves_Pilot_US_01/G
     }
    }
   }
+  BaseLoadoutClothComponent "{5DF2774268A6E4AA}" {
+   WornMaterialsOverride {
+    "{B06BDBB721078C8F}Assets/Characters/Handwear/Gloves_Pilot_US_01/Data/Gloves_Pilot_US_01_olive_calf.emat"
+   }
+   ItemMaterialsOverride {
+    "{B06BDBB721078C8F}Assets/Characters/Handwear/Gloves_Pilot_US_01/Data/Gloves_Pilot_US_01_olive_calf.emat"
+   }
+  }
  }
 }

@@ -1,0 +1,6 @@
+MatPBRMulti : "{9F490D9BC0544DAC}Assets/Characters/Uniforms/Jacket_BDU_M81/Data/Jacket_BDU_M81.emat" {
+ VFXMap "{CB4827EC6001168B}Assets/Characters/Uniforms/Parka_Night/Data/blood/RHS_night_parka_VFX.edds"
+ DirtBCRMap "{83E299D6E512F579}Assets/Characters/Uniforms/Parka_Night/Data/blood/RHS_night_parka_BCR.edds"
+ BCR_1 "{60E8E3F0B7608339}Assets/Characters/Uniforms/Parka_Night/Data/night_parka_corb_wdl_BCR.edds"
+ NMO_1 "{2C4EC716922DCAD8}Assets/Characters/Uniforms/Parka_Night/Data/night_parka_NMO.edds"
+}

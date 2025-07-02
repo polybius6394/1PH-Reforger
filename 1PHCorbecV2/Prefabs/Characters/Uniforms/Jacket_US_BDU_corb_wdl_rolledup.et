@@ -16,6 +16,12 @@ GameEntity : "{3CCA7A9BB4FD3197}Prefabs/Characters/Uniforms/Jacket_US_BDU_rolled
      Name "Corbequais Battle Dress Uniform Blouse (Woodland, Rolled)"
      Description "Standard-issue Corbequais BDUs."
     }
+    CustomAttributes {
+     PreviewRenderAttributes "{555292467DA11B7C}" {
+      PreviewWornModel 1
+      PreviewModel "{99DD45795E81EFAB}Assets/Characters/Uniforms/Jacket_M88/Jacket_M88_01.xob"
+     }
+    }
    }
   }
   BaseLoadoutClothComponent "{5104869D194C627A}" {

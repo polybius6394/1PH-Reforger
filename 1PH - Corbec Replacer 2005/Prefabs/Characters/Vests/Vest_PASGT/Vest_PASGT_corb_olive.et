@@ -1,3 +1,19 @@
 GenericEntity : "{4B57C11AA5161760}Prefabs/Characters/Vests/Vest_PASGT/Vest_PASGT.et" {
  ID "525674F565A195C4"
+ components {
+  InventoryItemComponent "{5DF2CE902E1EB161}" {
+   Attributes SCR_ItemAttributeCollection "{5DF2CE902E1EB16A}" {
+    CustomAttributes {
+     PreviewRenderAttributes "{5DF2CE902E1EB17F}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 2
+      CameraOffset 0 0.1 0
+      FOV 20
+      PreviewWornModel 1
+      PreviewModel ""
+     }
+    }
+   }
+  }
+ }
 }
