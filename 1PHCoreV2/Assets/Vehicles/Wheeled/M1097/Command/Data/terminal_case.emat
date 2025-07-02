@@ -1,8 +1,0 @@
-MatPBRBasic {
- Color 0.153 0.168 0.129 1
- RoughnessScale 1.606
- MetalnessScale 1.829
- BCRMap "{F6DF089137E5FC6F}Assets/Vehicles/Wheeled/M1097/Command/Data/kiok_humvee_terminal_tex_terminal_case_BCR.edds"
- NormalPower 1.756
- NMOMap "{CE07B303EE92AEF1}Assets/Vehicles/Wheeled/M1097/Command/Data/kiok_humvee_terminal_tex_terminal_case_NMO.edds"
-}

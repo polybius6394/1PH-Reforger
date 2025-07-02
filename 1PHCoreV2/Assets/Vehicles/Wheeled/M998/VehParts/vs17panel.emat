@@ -1,9 +1,0 @@
-MatPBRBasic {
- BCRMap "{33C06097F2482380}Assets/Vehicles/Wheeled/M998/VehParts/tarporange_base.edds"
- NormalPower 0.442
- DetailNormalPower 0.358
- DetailNormalMap "{CE52625E3D77D331}Assets/Vehicles/Wheeled/M998/VehParts/tarp_orange_norm.edds"
- ParallaxScale 0.017
- ParallaxMidlePlane 0.266
- ParallaxShadowScale 0.13
-}

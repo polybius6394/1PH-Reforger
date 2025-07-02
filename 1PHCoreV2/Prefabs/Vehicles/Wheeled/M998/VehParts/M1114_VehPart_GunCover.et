@@ -1,9 +1,0 @@
-GenericEntity : "{A6055B7C2AD1B1FF}Prefabs/Vehicles/Turrets/TRC_VehPart_M2HB_Gunshield.et" {
- ID "623EA74782EC971A"
- components {
-  MeshObject "{4B42E716914465B9}" {
-   Object "{22C8B2E3404C9752}Assets/Vehicles/Wheeled/M1114/Gun_Cover/kiok_gun_cover.xob"
-  }
- }
- coords 90.791 1 1223.878
-}

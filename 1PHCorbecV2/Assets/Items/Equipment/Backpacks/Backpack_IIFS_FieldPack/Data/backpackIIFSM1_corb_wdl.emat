@@ -1,0 +1,6 @@
+MatPBRBasic : "{2E17B5197C87B728}Assets/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack/Data/backpackIIFSM1_nomark.emat" {
+ Emissive 0.23 0.441 0.061 0
+ EmissiveLV -4
+ EmissiveMap "{6616C462E6D001AA}Assets/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack/Data/Backpack_IIFS_FieldPack_1_EM.edds"
+ BCRMap "{E72F4E4EC77265BB}Assets/Items/Equipment/Backpacks/Backpack_IIFS_FieldPack/Data/Backpack_IIFS_FieldPack_1_corb_wdl_BCR.edds"
+}
