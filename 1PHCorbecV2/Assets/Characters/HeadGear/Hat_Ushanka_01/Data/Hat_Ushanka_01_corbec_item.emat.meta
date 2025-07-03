@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{4393A695BEA44791}Assets/Characters/HeadGear/Hat_Ushanka_01/Data/Hat_Ushanka_01_corbec_item.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

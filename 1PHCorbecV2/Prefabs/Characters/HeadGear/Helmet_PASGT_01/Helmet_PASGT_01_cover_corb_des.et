@@ -15,7 +15,6 @@ GameEntity : "{D974E37E739A0EEF}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helm
     RHS_LoadoutSlotInfo NVG {
     }
     RHS_LoadoutSlotInfo Shroud {
-     Enabled 0
     }
    }
    WornMaterialsOverride {

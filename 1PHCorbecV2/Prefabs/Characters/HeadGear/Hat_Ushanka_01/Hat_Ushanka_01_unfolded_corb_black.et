@@ -55,6 +55,12 @@ GameEntity : "{323641C91965842E}Prefabs/Characters/HeadGear/Hat_Ushanka_01/Hat_U
      m_sInspectIconTexture "{EA640FDAF6A450BD}UI/Textures/InventoryIcons/Inspection-gizmo-headset-slot-UI.edds"
     }
    }
+   WornMaterialsOverride {
+    "{36AA98C5C491FB99}Assets/Characters/HeadGear/Hat_Ushanka_01/Data/Hat_Ushanka_corbec_01.emat"
+   }
+   ItemMaterialsOverride {
+    "{4393A695BEA44791}Assets/Characters/HeadGear/Hat_Ushanka_01/Data/Hat_Ushanka_01_corbec_item.emat"
+   }
   }
  }
 }

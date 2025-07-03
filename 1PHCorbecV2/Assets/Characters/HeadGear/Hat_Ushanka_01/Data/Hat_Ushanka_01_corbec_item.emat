@@ -1,0 +1,7 @@
+MatPBRBasic : "{5C36AD8317E8C4FF}Assets/Characters/HeadGear/Hat_Ushanka_01/Data/Hat_Ushanka_01_item.emat" {
+ AlphaMul 5
+ BlendMode AlphaBlend
+ BCRMap "{5D25BA613E497E93}Assets/Characters/HeadGear/Hat_Ushanka_01/Data/Hat_Ushanka_01_corbec_item_BCR.edds"
+ OpacityMap "{E4FDBA609005B600}Assets/Characters/HeadGear/Hat_Ushanka_01/Data/Hat_Ushanka_01_item_nopin_A.edds"
+ NMOMap "{C079CCC0FCB11FC3}Assets/Characters/HeadGear/Hat_Ushanka_01/Data/Hat_Ushanka_01_item_nopin_NMO.edds"
+}
