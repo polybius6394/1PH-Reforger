@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{27404F886728DE92}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_scrim_corb_opfor.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

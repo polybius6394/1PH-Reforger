@@ -1,0 +1,20 @@
+GameEntity : "{0AC951AFF4C9546E}Prefabs/Characters/Uniforms/Jacket_M88_rolledup_corb_wdl.et" {
+ ID "5104869D194C6243"
+ components {
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "Para-Hussar Combat Blouse (OPFOR, Rolled)"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornMaterialsOverride {
+    "{1CAC539369589111}Assets/Characters/Uniforms/Jacket_M88/Data/Jacket_M88_01_rolledup_corb_opfor.emat"
+   }
+   ItemMaterialsOverride {
+    "{F3686A2AA5F17526}Assets/Characters/Uniforms/Jacket_M88/Data/Jacket_M88_01_item_corb_opfor.emat"
+   }
+  }
+ }
+}

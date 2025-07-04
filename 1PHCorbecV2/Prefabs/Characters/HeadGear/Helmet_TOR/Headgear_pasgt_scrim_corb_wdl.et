@@ -30,11 +30,11 @@ GameEntity : "{3128AF01D21C4D28}Prefabs/Characters/HeadGear/Helmet_TOR/Headgear_
   BaseLoadoutClothComponent "{5112706CD4157AF8}" {
    WornModel "{E1BA3B1B50C83183}Assets/Characters/HeadGear/Helmet_PASGT/Helmet_PASGT_01_scrim.xob"
    WornMaterialsOverride {
-    "" "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    "{15EEE32220E8E3FC}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_scrim_corb_wdl.emat" "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
    }
    ItemModel "{FAF1C9480CEC12E1}Assets/Characters/HeadGear/Helmet_PASGT/Helmet_PASGT_01_scrim_Item.xob"
    ItemMaterialsOverride {
-    "" "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    "{15EEE32220E8E3FC}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_scrim_corb_wdl.emat" "" "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
    }
   }
  }

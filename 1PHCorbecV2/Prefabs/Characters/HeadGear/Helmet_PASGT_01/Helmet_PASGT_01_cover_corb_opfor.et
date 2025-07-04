@@ -1,0 +1,13 @@
+GameEntity : "{D974E37E739A0EEF}Prefabs/Characters/HeadGear/Helmet_PASGT_01/Helmet_PASGT_01_cover_corb_wdl.et" {
+ ID "50D49DC5BC0CD17E"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornMaterialsOverride {
+    "{B4FAB79AE6624CE8}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_cover_corb_opfor.emat"
+   }
+   ItemMaterialsOverride {
+    "{B4FAB79AE6624CE8}Assets/Characters/HeadGear/Helmet_PASGT/data/Helmet_PASGT_01_cover_corb_opfor.emat"
+   }
+  }
+ }
+}
