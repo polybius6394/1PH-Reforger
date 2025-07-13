@@ -1,0 +1,13 @@
+GenericEntity : "{AB84E597273FAECA}Prefabs/Characters/Vests/Vest_Lifchik/Vest_Lifchik_GrenadeBelt.et" {
+ ID "5868B28E4EE9E073"
+ components {
+  BaseLoadoutClothComponent "{521AC04910AB9954}" {
+   WornMaterialsOverride {
+    "{F8E3A85F1E8CD5A1}Assets/Characters/Vests/Vest_Lifchik/Data/Vest_Lifchik_ALICE.emat"
+   }
+   ItemMaterialsOverride {
+    "{F8E3A85F1E8CD5A1}Assets/Characters/Vests/Vest_Lifchik/Data/Vest_Lifchik_ALICE.emat"
+   }
+  }
+ }
+}

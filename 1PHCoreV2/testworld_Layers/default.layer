@@ -1,0 +1,6 @@
+GenericEntity : "{AB04BEC017030FF8}Prefabs/Characters/Vests/Vest_6B3/Vest_6B3_satchel.et" {
+ coords 2505.284 148.336 2257.503
+}
+GenericEntity : "{D46DBBEF912B0E7F}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled_slotted.et" {
+ coords 2510.365 148.241 2253.411
+}

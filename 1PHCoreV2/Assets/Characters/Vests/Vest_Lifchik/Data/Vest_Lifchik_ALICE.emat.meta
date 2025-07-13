@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F8E3A85F1E8CD5A1}Assets/Characters/Vests/Vest_Lifchik/Data/Vest_Lifchik_ALICE.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

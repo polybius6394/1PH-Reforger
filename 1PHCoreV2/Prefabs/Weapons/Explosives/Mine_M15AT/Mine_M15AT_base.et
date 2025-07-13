@@ -1,0 +1,10 @@
+GenericEntity : "{9C80A507960AA473}Prefabs/Weapons/Core/Mine_base.et" {
+ ID "5968D2B6A82C6019"
+ components {
+  SCR_MineInventoryItemComponent "{59E4E694B93DC656}" {
+   Attributes SCR_ItemAttributeCollection "{5A10B8E3F1D55606}" {
+    CommonItemType "ravenTac_StowedMine"
+   }
+  }
+ }
+}
