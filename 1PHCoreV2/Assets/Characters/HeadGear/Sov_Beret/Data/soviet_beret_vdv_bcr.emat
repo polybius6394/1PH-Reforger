@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{0812A619CA022D17}Assets/Characters/HeadGear/Sov_Beret/Data/soviet_beret_vdv_bcr.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{30CA1D8B13757F89}Assets/Characters/HeadGear/Sov_Beret/Data/soviet_beret_vdv_nmo.edds"
+}

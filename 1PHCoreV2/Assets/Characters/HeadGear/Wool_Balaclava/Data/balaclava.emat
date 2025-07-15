@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ BCRMap "{43F1A05EF155106B}Assets/Characters/HeadGear/Wool_Balaclava/Data/balaclava_BCR.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{7B291BCC282242F5}Assets/Characters/HeadGear/Wool_Balaclava/Data/balaclava_NMO.edds"
+}

@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ BCRMap "{417186B7B56517CF}Assets/Characters/HeadGear/M69_Visor/Data/soviet_enlistedhat_insignia_bcr.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{79A93D256C124551}Assets/Characters/HeadGear/M69_Visor/Data/soviet_enlistedhat_insignia_nmo.edds"
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{BE12145C5068D65C}Assets/Characters/Uniforms/M69_Tunic/Data/m69_sleeve_officer.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

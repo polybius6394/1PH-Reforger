@@ -1,0 +1,36 @@
+GameEntity : "{8ADCD843C1A1816D}Prefabs/Characters/Eyewear/sov_glasses_basic/sov_glasses_basic.et" {
+ ID "61E857F550C42839"
+ components {
+  InventoryItemComponent "{61E857F550C428E6}" {
+   Attributes SCR_ItemAttributeCollection "{61E857F550C428FB}" {
+    ItemDisplayName UIInfo "{61E857F550C428FD}" {
+     Name "Aviator Sunglasses"
+     Description "Western style Aviator sunglasses, highly fashionable."
+    }
+   }
+  }
+  MeshObject "{61E857F550C42889}" {
+   Object "{9D8EA1783D43452B}Assets/Characters/Eyewear/Sov_Glasses/sunglasses_adlers.xob"
+   Materials {
+    MaterialAssignClass "{65DE448D247DFFEB}" {
+     SourceMaterial "02___Default"
+     AssignedMaterial "{5C158420F0582733}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglasses.emat"
+    }
+    MaterialAssignClass "{65DE448DF6A02210}" {
+     SourceMaterial "wire_153228153"
+     AssignedMaterial "{ABF104D7F42BD999}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglass_lense.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{61E857F550C42881}" {
+   WornModel "{9D8EA1783D43452B}Assets/Characters/Eyewear/Sov_Glasses/sunglasses_adlers.xob"
+   WornMaterialsOverride {
+    "{5C158420F0582733}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglasses.emat" "{ABF104D7F42BD999}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglass_lense.emat"
+   }
+   ItemModel "{9D8EA1783D43452B}Assets/Characters/Eyewear/Sov_Glasses/sunglasses_adlers.xob"
+   ItemMaterialsOverride {
+    "{5C158420F0582733}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglasses.emat" "{ABF104D7F42BD999}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglass_lense.emat"
+   }
+  }
+ }
+}

@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{65573D1E6CE4F81F}Assets/Characters/Handwear/Sov_Gloves/Data/sov_officer_gloves_brn_BCR.edds"
+ NMOMap "{5D8F868CB593AA81}Assets/Characters/Handwear/Sov_Gloves/Data/sov_officer_gloves_brn_NMO.edds"
+}

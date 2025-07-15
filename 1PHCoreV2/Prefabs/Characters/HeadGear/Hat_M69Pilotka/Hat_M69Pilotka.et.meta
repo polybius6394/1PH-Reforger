@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F02421665C746AF9}Prefabs/Characters/HeadGear/Hat_M69Pilotka/Hat_M69Pilotka.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

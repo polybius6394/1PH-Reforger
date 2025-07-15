@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6EA908FC359ABC1A}Assets/Characters/HeadGear/Sov_Beret/Data/soviet_beret_vdv_bcr.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

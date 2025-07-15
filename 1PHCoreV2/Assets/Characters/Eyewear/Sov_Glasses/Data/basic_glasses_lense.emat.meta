@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{11B06344EA972361}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses_lense.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

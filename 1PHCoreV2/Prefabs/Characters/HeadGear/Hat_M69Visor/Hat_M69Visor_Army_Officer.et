@@ -1,0 +1,18 @@
+GameEntity : "{642F6B5EAD683FB2}Prefabs/Characters/HeadGear/Hat_M69Visor/Hat_M69Visor_Army_Enlisted.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D6029EB6A957}" {
+    ItemDisplayName UIInfo "{52C8D6029DC1C3CB}" {
+     Name "M69 Officer Visor"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornModel "{D164ECD8289F9300}Assets/Characters/HeadGear/M69_Visor/M69_visor_officer.xob"
+   WornMaterialsOverride {
+    "{B2364F807774595E}Assets/Characters/HeadGear/M69_Visor/Data/enlistedvisor_army.emat" "{4BBCC9E1F8416801}Assets/Characters/HeadGear/M69_Visor/Data/sov_officervisor_insignia.emat"
+   }
+  }
+ }
+}

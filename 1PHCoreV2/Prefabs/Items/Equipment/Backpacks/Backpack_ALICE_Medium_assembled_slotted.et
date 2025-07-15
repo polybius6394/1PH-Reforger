@@ -21,8 +21,8 @@ GenericEntity : "{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_AL
       }
       SCR_EquipmentStorageSlot stowedLAW2 {
        PivotID "Spine5"
-       Offset -0.0668 0.3386 -0.3181
-       Angles 0.2255 89.767 44.06
+       Offset -0.0637 0.3363 -0.3111
+       Angles 0.3039 89.7859 45.7699
        Enabled 0
        Prefab "{9C5C20FB0E01E64F}Prefabs/Weapons/Launchers/M72/Launcher_M72A3.et"
        AllowedItemTypes {

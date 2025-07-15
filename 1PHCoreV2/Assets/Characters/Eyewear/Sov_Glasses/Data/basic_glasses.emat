@@ -1,0 +1,6 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ BCRMap "{5D77574B2F7C944E}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses_BCR.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{65AFECD9F60BC6D0}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses_NMO.edds"
+}

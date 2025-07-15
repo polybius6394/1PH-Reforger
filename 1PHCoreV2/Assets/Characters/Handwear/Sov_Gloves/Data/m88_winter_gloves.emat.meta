@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{FD0767A47907CA08}Assets/Characters/Handwear/Sov_Gloves/Data/m88_winter_gloves.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

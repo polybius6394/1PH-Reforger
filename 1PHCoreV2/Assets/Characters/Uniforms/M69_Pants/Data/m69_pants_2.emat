@@ -1,0 +1,11 @@
+MatPBRMulti {
+ Color 0.533 0.533 0.533 1
+ GlobalMCRMap "{4A4FA93A11CBDBCD}Assets/Characters/Uniforms/M69_Pants/Data/m69_pants_2_BCR.edds"
+ VFXMap "{5293050F37090245}Assets/Characters/Uniforms/M69_Pants/Data/m69_pants_2_wound_vfx.edds"
+ GlobalNMOMap "{729712A8C8BC8953}Assets/Characters/Uniforms/M69_Pants/Data/m69_pants_2_NMO.edds"
+ DirtUserOpacity 1
+ DirtOpacity 3
+ DirtRoughness 1
+ DirtBCRMap "{4B8E85B5CBB7ABAA}Assets/ESU/M69_Pants/Data/m69_pants_2_wound_BCR.edds"
+ Color_1 0.533 0.533 0.533 1
+}

@@ -1,0 +1,8 @@
+MatPBRBasic {
+ Color 0.533 0.533 0.533 1
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{6D39FDC8F35FC139}Assets/Characters/HeadGear/M69_Sidecap/Data/soviet_m69_pilotka_v2_BCR.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{55E1465A2A2893A7}Assets/Characters/HeadGear/M69_Sidecap/Data/soviet_m69_pilotka_v2_NMO.edds"
+}

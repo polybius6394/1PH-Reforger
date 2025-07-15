@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7DBABEFB3D11A93B}Prefabs/Characters/Footwear/KerseyBoots_Sobiet_01/KerseyBoots_Soviet_01.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

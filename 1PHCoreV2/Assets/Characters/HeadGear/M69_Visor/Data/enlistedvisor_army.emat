@@ -1,0 +1,7 @@
+MatPBRBasic {
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{3FF8F8A0DF6E606E}Assets/Characters/HeadGear/M69_Visor/Data/soviet_visor_army_bcr.edds"
+ OpacityMap "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds"
+ NMOMap "{07204332061932F0}Assets/Characters/HeadGear/M69_Visor/Data/soviet_visor_army_nmo.edds"
+}

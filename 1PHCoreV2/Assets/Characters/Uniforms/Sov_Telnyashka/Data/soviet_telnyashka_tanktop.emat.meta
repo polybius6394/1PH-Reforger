@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7C681B7BCC0E3C3B}Assets/Characters/Uniforms/Sov_Telnyashka/Data/soviet_telnyashka_tanktop.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,16 @@
+GenericEntity : "{2149560A9BEFBAC2}Prefabs/Items/Core/Equip_Accessory_base.et" {
+ ID "521AC0491712FB3A"
+ components {
+  MeshObject "{521AC04910AB9941}" {
+   Object "{ACAE8AB157C7B9E6}Assets/Characters/Vests/Vest_SovietHarness/Vest_SovietHarness_Belt_item.xob"
+  }
+  BaseLoadoutClothComponent "{521AC04910AB9954}" {
+   WornModel "{76FD4BF808E4F564}Assets/Characters/Vests/M69_Officer_Mapcase/m69_mapcase.xob"
+   WornMaterialsOverride {
+    "{16D2AF3FAA342A08}Assets/Characters/Vests/M69_Officer_Mapcase/Data/sov_mapcase.emat"
+   }
+   ItemModel "{ACAE8AB157C7B9E6}Assets/Characters/Vests/Vest_SovietHarness/Vest_SovietHarness_Belt_item.xob"
+  }
+ }
+ coords 60.343 1.001 243.108
+}

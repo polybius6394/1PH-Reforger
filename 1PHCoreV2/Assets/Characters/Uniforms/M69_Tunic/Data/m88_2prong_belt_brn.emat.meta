@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{000E35C1543C7467}Assets/Characters/Uniforms/M69_Tunic/Data/m88_2prong_belt_brn.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

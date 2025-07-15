@@ -1,0 +1,41 @@
+GameEntity : "{6ED66E4BF74756C0}Prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D6029EB6A957}" {
+    ItemDisplayName UIInfo "{52C8D6029DC1C3CB}" {
+     Name "M69 Enlisted Visor"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5966629ABBDBE041}" {
+      PreviewWornModel 1
+      PreviewModel "{5B802EB56D3B27BE}Assets/ESU/M69_Visor/M69_visor_enlisted.xob"
+     }
+    }
+   }
+  }
+  MeshObject "{5112706CD4157AE0}" {
+   Object "{D519A7489BBCE4B5}Assets/Characters/HeadGear/M69_Visor/M69_visor_enlisted.xob"
+   Materials {
+    MaterialAssignClass "{65DE449AFEC87170}" {
+     SourceMaterial "Material_#324"
+     AssignedMaterial "{B2364F807774595E}Assets/Characters/HeadGear/M69_Visor/Data/enlistedvisor_army.emat"
+    }
+    MaterialAssignClass "{65DE449AFEC8716D}" {
+     SourceMaterial "Material_#325"
+     AssignedMaterial "{E6BD3972728B9E0F}Assets/Characters/HeadGear/M69_Visor/Data/sov_enlistedvisor_insignia.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornModel "{D519A7489BBCE4B5}Assets/Characters/HeadGear/M69_Visor/M69_visor_enlisted.xob"
+   WornMaterialsOverride {
+    "{B2364F807774595E}Assets/Characters/HeadGear/M69_Visor/Data/enlistedvisor_army.emat" "{E6BD3972728B9E0F}Assets/Characters/HeadGear/M69_Visor/Data/sov_enlistedvisor_insignia.emat"
+   }
+   ItemModel "{C7D190468353E706}Assets/Characters/HeadGear/M69_Visor/M69_visor_enlisted_item.xob"
+   ItemMaterialsOverride {
+    "{B2364F807774595E}Assets/Characters/HeadGear/M69_Visor/Data/enlistedvisor_army.emat" "{E6BD3972728B9E0F}Assets/Characters/HeadGear/M69_Visor/Data/sov_enlistedvisor_insignia.emat"
+   }
+  }
+ }
+}

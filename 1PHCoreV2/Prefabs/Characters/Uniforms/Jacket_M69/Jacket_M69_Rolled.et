@@ -1,0 +1,21 @@
+GameEntity : "{1FDC2069E59F049C}Prefabs/Characters/Uniforms/Jacket_M69/Jacket_M69.et" {
+ ID "5104869D194C6243"
+ components {
+  SCR_UniversalInventoryStorageComponent "{5222CB01D5B9A306}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB01245CDF32}" {
+    ItemDisplayName UIInfo "{5222CB0109A04AB2}" {
+     Name "M69 Field Tunic (Rolled)"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5104869D194C627A}" {
+   WornModel "{E1D29DA8C79AEAA8}Assets/Characters/Uniforms/M69_Tunic/M69_Tunic_blank_v2_rolled.xob"
+   WornMaterialsOverride + {
+    "{9883243E90A9870D}Assets/Characters/Uniforms/M69_Tunic/Data/m69_tunic_sleeves.emat"
+   }
+   OverrideMeshesToHide {
+    "Torso" "ArmUpper_L" "ArmUpper_R"
+   }
+  }
+ }
+}

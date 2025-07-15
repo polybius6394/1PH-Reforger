@@ -1,0 +1,41 @@
+GameEntity : "{6ED66E4BF74756C0}Prefabs/Characters/HeadGear/Hat_M88_01/Hat_M88_01_base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes SCR_ItemAttributeCollection "{52C8D6029EB6A957}" {
+    ItemDisplayName UIInfo "{52C8D6029DC1C3CB}" {
+     Name "VDV Beret"
+     Description "https://youtu.be/0rAHrHd2lcw?list=RD0rAHrHd2lcw"
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5966629ABBDBE041}" {
+      PreviewModel "{CA57CA4CA4D46642}Assets/ESU/Sov_Beret/VDV_Beret.xob"
+     }
+    }
+   }
+  }
+  MeshObject "{5112706CD4157AE0}" {
+   Object "{8DC526B15B36F3EC}Assets/Characters/HeadGear/Sov_Beret/VDV_Beret_item.xob"
+   Materials {
+    MaterialAssignClass "{65DE448EAA2B6D44}" {
+     SourceMaterial "Material_#325"
+     AssignedMaterial "{E6BD3972728B9E0F}Assets/Characters/HeadGear/M69_Visor/Data/sov_enlistedvisor_insignia.emat"
+    }
+    MaterialAssignClass "{65DE448EAA2B6D74}" {
+     SourceMaterial "ranks"
+     AssignedMaterial "{6EA908FC359ABC1A}Assets/Characters/HeadGear/Sov_Beret/Data/soviet_beret_vdv_bcr.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornModel "{EE85F6BB11BF7B4E}Assets/Characters/HeadGear/Sov_Beret/VDV_Beret.xob"
+   WornMaterialsOverride {
+    "{E6BD3972728B9E0F}Assets/Characters/HeadGear/M69_Visor/Data/sov_enlistedvisor_insignia.emat" "{6EA908FC359ABC1A}Assets/Characters/HeadGear/Sov_Beret/Data/soviet_beret_vdv_bcr.emat"
+   }
+   ItemModel "{8DC526B15B36F3EC}Assets/Characters/HeadGear/Sov_Beret/VDV_Beret_item.xob"
+   ItemMaterialsOverride {
+    "{E6BD3972728B9E0F}Assets/Characters/HeadGear/M69_Visor/Data/sov_enlistedvisor_insignia.emat" "{6EA908FC359ABC1A}Assets/Characters/HeadGear/Sov_Beret/Data/soviet_beret_vdv_bcr.emat"
+   }
+  }
+ }
+}

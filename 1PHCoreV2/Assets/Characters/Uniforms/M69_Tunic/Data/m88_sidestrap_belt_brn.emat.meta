@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{28DECD466610CD70}Assets/Characters/Uniforms/M69_Tunic/Data/m88_sidestrap_belt_brn.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

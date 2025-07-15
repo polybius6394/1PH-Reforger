@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{4EEF9E22AACA3C0E}Assets/Characters/Uniforms/M69_Tunic/Data/m88_2prong_belt_brn_BCR.edds"
+ NMOMap "{763725B073BD6E90}Assets/Characters/Uniforms/M69_Tunic/Data/m88_2prong_belt_brn_NMO.edds"
+}

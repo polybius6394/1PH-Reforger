@@ -1,0 +1,31 @@
+GameEntity : "{86FE7EA528978CEB}Prefabs/Characters/Handwear/Gloves_Leather_01/Gloves_Leather_01_base.et" {
+ ID "5DF2774398EBD275"
+ components {
+  InventoryItemComponent "{5E38A40D482770CE}" {
+   Attributes SCR_ItemAttributeCollection "{5E38A40D4BC49A36}" {
+    ItemDisplayName UIInfo "{5E38A40D4C298215}" {
+     Name "Leather Officer Gloves"
+    }
+   }
+  }
+  MeshObject "{5DF2774268A6E46B}" {
+   Object "{CF79FF39A27C8437}Assets/Characters/Handwear/Sov_Gloves/sov_officer_leathergloves_item.xob"
+   Materials {
+    MaterialAssignClass "{65DE448C74674F1F}" {
+     SourceMaterial "Material_#1167"
+     AssignedMaterial "{AB40420D87CEB2C7}Assets/Characters/Handwear/Sov_Gloves/Data/officerleather_gloves_brown.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DF2774268A6E4AA}" {
+   WornModel "{32F7DC628CCC626D}Assets/Characters/Handwear/Sov_Gloves/sov_officer_leathergloves.xob"
+   WornMaterialsOverride {
+    "{AB40420D87CEB2C7}Assets/Characters/Handwear/Sov_Gloves/Data/officerleather_gloves_brown.emat"
+   }
+   ItemModel "{CF79FF39A27C8437}Assets/Characters/Handwear/Sov_Gloves/sov_officer_leathergloves_item.xob"
+   ItemMaterialsOverride {
+    "{AB40420D87CEB2C7}Assets/Characters/Handwear/Sov_Gloves/Data/officerleather_gloves_brown.emat"
+   }
+  }
+ }
+}

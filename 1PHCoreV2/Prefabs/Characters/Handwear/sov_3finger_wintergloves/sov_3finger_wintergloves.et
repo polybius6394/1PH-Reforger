@@ -1,0 +1,18 @@
+GameEntity : "{43157D90F1FE5C73}Prefabs/Characters/Handwear/Gloves_Wool_01/Gloves_Wool_01_base.et" {
+ ID "5DF2774398EBD275"
+ components {
+  InventoryItemComponent "{5E38A40D482770CE}" {
+   Attributes SCR_ItemAttributeCollection "{5E38A40D4BC49A36}" {
+    ItemDisplayName UIInfo "{5E38A40D4C298215}" {
+     Name "Three-Finger Winter Gloves"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5DF2774268A6E4AA}" {
+   WornModel "{724687FA1B89947C}Assets/Characters/Handwear/Sov_Gloves/sov_3finger_wintergloves.xob"
+   WornMaterialsOverride {
+    "{FD0767A47907CA08}Assets/Characters/Handwear/Sov_Gloves/Data/m88_winter_gloves.emat"
+   }
+  }
+ }
+}

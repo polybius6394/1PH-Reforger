@@ -1,0 +1,6 @@
+MatPBRBasicGlass {
+ AllowUserAlphaBias 1
+ BCRMap "{BCB8A756AAB7DAA1}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses_lense_BCR.edds"
+ OpacityMap "{2350C81BB05F2AFC}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses_lense_Opacity.edds" "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds" anim( 0 )
+ NMOMap "{84601CC473C0883F}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses_lense_NMO.edds"
+}

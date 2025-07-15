@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{669976ABD4ADA899}Assets/Characters/Handwear/Sov_Gloves/Data/soviet_m88_wintergloves_BCR.edds"
+ NMOMap "{5E41CD390DDAFA07}Assets/Characters/Handwear/Sov_Gloves/Data/soviet_m88_wintergloves_NMO.edds"
+}

@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{09BC4920972C7BE1}Assets/Characters/Uniforms/M69_Tunic/Data/soviet_m69_tunic_open_retopo.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

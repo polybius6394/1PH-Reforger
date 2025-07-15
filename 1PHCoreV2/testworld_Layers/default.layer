@@ -1,6 +1,60 @@
+GameEntity : "{01544BC7B5066C14}Prefabs/Characters/Uniforms/Pants_M69/Pants_M69_officer.et" {
+ coords 2521.28 147.271 2266.25
+}
+GameEntity : "{04481B11588AB324}Prefabs/Characters/Uniforms/Jacket_M69/Jacket_M69_Rolled.et" {
+ coords 2520.765 147.225 2268.119
+}
+GameEntity : "{1A3BC029D389C252}Prefabs/Characters/Handwear/sov_officergloves_brown/sov_officergloves_brown.et" {
+ coords 2522.464 147.253 2267.041
+}
+GameEntity : "{1FDC2069E59F049C}Prefabs/Characters/Uniforms/Jacket_M69/Jacket_M69.et" {
+ coords 2520.867 147.242 2264.786
+}
+GameEntity : "{642F6B5EAD683FB2}Prefabs/Characters/HeadGear/Hat_M69Visor/Hat_M69Visor_Army_Enlisted.et" {
+ coords 2520.04 147.274 2266.523
+}
+GenericEntity : "{6462B8B3FFD8C594}Prefabs/Characters/Vests/Vest_SovietHarness/Variants/Vest_SovietOfficer_Kit.et" {
+ coords 2519.471 147.361 2266.94
+}
+GameEntity : "{6B2C28D701C35973}Prefabs/Characters/HeadGear/Hat_Beret_VDV/Hat_Beret_VDV.et" {
+ coords 2521.958 147.253 2265.144
+}
+GameEntity : "{7082A462C3E46AA7}Prefabs/Characters/Uniforms/Jacket_M69/Jacket_M69_Officer.et" {
+ coords 2520.691 147.248 2266.13
+}
+GameEntity : "{78CBAF7EFDB1D2AB}Prefabs/Characters/Handwear/sov_3finger_wintergloves/sov_3finger_wintergloves.et" {
+ coords 2522.307 147.256 2266.122
+}
+GenericEntity : "{7DBABEFB3D11A93B}Prefabs/Characters/Footwear/KerseyBoots_Sobiet_01/KerseyBoots_Soviet_01.et" {
+ coords 2522.808 147.233 2265.162
+}
+GameEntity : "{8ADCD843C1A1816D}Prefabs/Characters/Eyewear/sov_glasses_basic/sov_glasses_basic.et" {
+ coords 2522.035 147.258 2265.759
+}
+GameEntity : "{95D40F5279F7529A}Prefabs/Characters/HeadGear/Hat_M69Visor/Hat_M69Visor_Army_Officer.et" {
+ coords 2519.844 147.34 2265.974
+}
+GameEntity : "{9B7481F69169F5B3}Prefabs/Characters/Uniforms/Jacket_M69/Jacket_M69_Officer_Rolled.et" {
+ coords 2520.787 147.228 2267.17
+}
 GenericEntity : "{AB04BEC017030FF8}Prefabs/Characters/Vests/Vest_6B3/Vest_6B3_satchel.et" {
  coords 2505.284 148.336 2257.503
 }
+GameEntity : "{AD1A93A59497BF33}Prefabs/Characters/Uniforms/Pants_M69/Pants_M69.et" {
+ coords 2522.315 147.25 2266.68
+}
+GameEntity : "{D08A14467A9FAFFB}Prefabs/Characters/Eyewear/sov_glasses_adlers/sov_glasses_adlers.et" {
+ coords 2522.335 147.251 2264.942
+}
+GameEntity : "{D3E04429F9922045}Prefabs/Characters/HeadGear/sov_wool_balaclava/sov_wool_balaclava.et" {
+ coords 2521.584 147.264 2267.647
+}
 GenericEntity : "{D46DBBEF912B0E7F}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled_slotted.et" {
  coords 2510.365 148.241 2253.411
+}
+GameEntity : "{F02421665C746AF9}Prefabs/Characters/HeadGear/Hat_M69Pilotka/Hat_M69Pilotka.et" {
+ coords 2521.669 147.27 2266.441
+}
+GameEntity : "{F47772D8A7A9A8EF}Prefabs/Characters/Eyewear/sov_glasses_basic/sov_sunglasses_basic.et" {
+ coords 2521.757 147.27 2267.102
 }

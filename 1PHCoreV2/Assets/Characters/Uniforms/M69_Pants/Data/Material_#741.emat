@@ -1,0 +1,11 @@
+MatPBRMulti {
+ Color 0.533 0.533 0.533 1
+ GlobalMCRMap "{E6D411CA555AFF0A}Assets/Characters/Uniforms/M69_Pants/Data/soviet_m69_pants_v2_retopo_bcr.edds"
+ VFXMap "{AE7EAFF0D0491CF8}Assets/Characters/Uniforms/M69_Pants/Data/soviet_m69_pants_v2_retopo_VFX.edds"
+ GlobalNMOMap "{DE0CAA588C2DAD94}Assets/Characters/Uniforms/M69_Pants/Data/soviet_m69_pants_v2_retopo_nmo.edds"
+ DirtUserOpacity 1
+ DirtOpacity 3
+ DirtRoughness 1
+ DirtBCRMap "{DE888A005A6C939F}Assets/ESU/M69_Pants/Data/soviet_m69_pants_v2_retopo_wound_bcr.edds"
+ Color_1 0.533 0.533 0.533 1
+}

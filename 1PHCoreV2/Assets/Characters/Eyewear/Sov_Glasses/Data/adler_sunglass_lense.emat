@@ -1,0 +1,6 @@
+MatPBRBasicGlass {
+ AllowUserAlphaBias 1
+ BCRMap "{E4303D92B8A33A8F}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglasses_lense_BCR.edds"
+ OpacityMap "{5A817E3E2EAF5328}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglasses_lense_Opacity.edds" "{70A53F4EA373F142}Assets/Characters/Basebody/Data/HeadClipping_A.edds" anim( 0 )
+ NMOMap "{DCE8860061D46811}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglasses_lense_NMO.edds"
+}

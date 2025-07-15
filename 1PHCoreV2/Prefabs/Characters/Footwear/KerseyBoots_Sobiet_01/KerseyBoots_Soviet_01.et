@@ -1,0 +1,63 @@
+GenericEntity : "{80C8C9227D2C7CF5}Prefabs/Characters/Core/Footwear_Base.et" {
+ ID "5244C46FA7C5E08C"
+ components {
+  InventoryItemComponent "{5244C46AD695742D}" {
+   Attributes SCR_ItemAttributeCollection "{605362EDA6ACF45B}" {
+    ItemDisplayName UIInfo "{605362EDA6ACF451}" {
+     Name "Kersey Jack Boots"
+     Description "A pair of Kersey Boots, Used from ~1940 to 1991"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{605362EDA6ACF457}" {
+     Weight 2
+     SizeSetupStrategy Manual
+     ItemDimensions 15 15 15
+     ItemVolume 2500
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{605362EDA6ACF469}" {
+      CameraOrbitAngles -25 25 0
+      CameraDistanceToItem 2.5
+      FOV 10
+      PreviewModel "{4E6396CB65600223}Assets/ESU/Kersey_Boots/Kersey_boots_item.xob"
+     }
+    }
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+  }
+  MeshObject "{5244C34DEE7DBFB4}" {
+   Object "{63C3698B820BF97F}Assets/Characters/Footwear/Kersey_Boots/Kersey_boots_item.xob"
+   Materials {
+    MaterialAssignClass "{65DE448E3C73236F}" {
+     SourceMaterial "Material_#1157"
+     AssignedMaterial "{EAB0A12A4D2A2BB5}Assets/Characters/Footwear/Kersey_Boots/Data/sov_sapogi_boots_v2.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5244C34DEE7DBFB2}" {
+   AreaType LoadoutBootsArea "{605362EDA6ACF46E}" {
+   }
+   WornModel "{38ECF9874221FAB3}Assets/Characters/Footwear/Kersey_Boots/Kersey_boots.xob"
+   WornMaterialsOverride {
+    "{EAB0A12A4D2A2BB5}Assets/Characters/Footwear/Kersey_Boots/Data/sov_sapogi_boots_v2.emat"
+   }
+   ItemModel "{63C3698B820BF97F}Assets/Characters/Footwear/Kersey_Boots/Kersey_boots_item.xob"
+   ItemMaterialsOverride {
+    "{EAB0A12A4D2A2BB5}Assets/Characters/Footwear/Kersey_Boots/Data/sov_sapogi_boots_v2.emat"
+   }
+   SoundInt 620
+   OverrideMeshesToHide {
+    "Foot_L" "Foot_R"
+   }
+  }
+  ActionsManagerComponent "{5244C34DEE7DBF9F}" {
+   ActionContexts {
+    UserActionContext "{5244C34DEE7DBF83}" {
+     Position PointInfo "{5244C34DEE7DBF80}" {
+      Offset 0 0.1 0
+     }
+    }
+   }
+  }
+ }
+ coords 1212.622 39.094 2839.711
+}

@@ -1,0 +1,33 @@
+GameEntity : "{8ADCD843C1A1816D}Prefabs/Characters/Eyewear/sov_glasses_basic/sov_glasses_basic.et" {
+ ID "61E857F550C42839"
+ components {
+  InventoryItemComponent "{61E857F550C428E6}" {
+   Attributes SCR_ItemAttributeCollection "{61E857F550C428FB}" {
+    ItemDisplayName UIInfo "{61E857F550C428FD}" {
+     Name "Perscription Sunglasses"
+     Description "A simple but stylish pair of perscription sunglasses for the visually impaired."
+    }
+   }
+  }
+  MeshObject "{61E857F550C42889}" {
+   Materials {
+    MaterialAssignClass "{65DE448D247DFFEB}" {
+     SourceMaterial "02___Default"
+     AssignedMaterial "{4EE48BC433F3ABEB}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses.emat"
+    }
+    MaterialAssignClass "{65DE448D247DFF05}" {
+     SourceMaterial "wire_154185229"
+     AssignedMaterial "{ABF104D7F42BD999}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglass_lense.emat"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{61E857F550C42881}" {
+   WornMaterialsOverride {
+    "{4EE48BC433F3ABEB}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses.emat" "{ABF104D7F42BD999}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglass_lense.emat"
+   }
+   ItemMaterialsOverride {
+    "{4EE48BC433F3ABEB}Assets/Characters/Eyewear/Sov_Glasses/Data/basic_glasses.emat" "{ABF104D7F42BD999}Assets/Characters/Eyewear/Sov_Glasses/Data/adler_sunglass_lense.emat"
+   }
+  }
+ }
+}
