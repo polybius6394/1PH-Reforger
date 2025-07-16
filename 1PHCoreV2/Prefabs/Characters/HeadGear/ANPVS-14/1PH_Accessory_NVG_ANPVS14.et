@@ -1,0 +1,132 @@
+GameEntity : "{70CB1F43828CA108}Prefabs/Characters/Core/1PH_Accessory_NVG_Base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  SignalsManagerComponent "{65E0126C9E4B1909}" {
+  }
+  SoundComponent "{65E0126CE2A0ED33}" {
+   Filenames {
+    "{12A94705DF2BFD25}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic.acp" "{0737072109E39224}Sounds/Items/_SharedData/Drop/Items_Drop_Helmet.acp"
+   }
+  }
+  BaseLightManagerComponent "{65E0126CE8156308}" {
+   LightsEnabled 1
+   HighBeamTurnsOffHeadLights 0
+  }
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes ItemAttributeCollection "{5244E4431DA56D64}" {
+    ItemDisplayName UIInfo "{5244E443130B31B9}" {
+     Name "#RHS-Item_ANPVS14_Name"
+     Description "#RHS-Item_ANPVS14_Description"
+    }
+    CustomAttributes {
+     RHS_CustomAttributes "{65E012503E500B44}" {
+      m_sShortName "AN/PVS-14"
+     }
+    }
+   }
+  }
+  MeshObject "{5112706CD4157AE0}" {
+   Object "{643DC5DE52F5959C}Assets/Items/Equipment/NVG/pvs14/RHS_LG_PVS.xob"
+  }
+  RHS_NVGIlluminatorComponent "{65E0126CF30B7502}" {
+   m_iAvailableLightTypes {
+    4
+   }
+   m_sActionContextName "RHS_NightVisionContext"
+   m_sToggleActionListenerName "RHS_CharacterToggleNVGIlluminator"
+  }
+  RHS_RhinoAttachmentComponent "{65E0126CFC27128D}" {
+   m_eAnimVariable NONE
+   m_fAnimationLength 0.3
+   m_sNVGGooglesHDRMatrial "{AB64B3E655B400B6}Assets/Items/Equipment/NVG/pvs14/data/NVG_GreenPhosphor_HDR.emat"
+   m_sNVGGooglesFilmGrainMaterial "{C52A43C51F58BF0B}Assets/Items/Equipment/NVG/pvs14/data/NVG_Effect_FilmGrain_RHS.emat"
+   m_sImageMask "{453A073FB7DAAB87}UI/Imagesets/SingleMask_ca.edds"
+   m_fWidthOverride 1100
+   m_fHeightOverride 1100
+   m_aBlemSet {
+    ""
+   }
+   m_bManualGainControl 1
+   m_aGainLevels {
+    0.001 0.003 0.01 0.05 0.1 0.3 0.6 1 3 5 10 20
+   }
+   m_bIsAvialbleInTPP 1
+   m_bIsAvialbleOutADS 1
+   m_bIsAvialbleInADS 1
+   m_fMaxZoomLevel 2
+  }
+  RHS_SGC_RadialMenuComponent "{65E0126CD305F1B9}" {
+   m_sDisplayName "AN/PVS-14"
+  }
+  RigidBody "{5112706CD4157AE6}" {
+   AngularSleepingThreashold 1
+   ResponseIndex "HugeDestructible"
+   Static 0
+  }
+  ProcAnimComponent "{65E0126CDD81073F}" {
+   Parameters {
+    ProcAnimParams "{65E0126B224E3378}" {
+     ResourceName "{4D8FD19CC5BB20AA}Anims/proc/PVS14.pap"
+     BoneNames {
+      "L4G24_ARM"
+     }
+    }
+   }
+  }
+  SCR_SoundDataComponent "{5B18D20B1F8073E0}" {
+   Enabled 0
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   AreaType ravenTac_NVGArea "{5AD4C744691240D1}" {
+   }
+   Animate 0
+   WornModel "{643DC5DE52F5959C}Assets/Items/Equipment/NVG/pvs14/RHS_LG_PVS.xob"
+   ItemModel "{0985FCC24A78CC37}Assets/Items/Equipment/NVG/pvs14/RHS_LG_PVS_ITEM.xob"
+   DepthFront 0
+   DepthBack 0
+   DepthLeft 0
+   DepthRight 0
+   OffsetShoulderLeft 0
+   OffsetShoulderRight 0
+  }
+  ActionsManagerComponent "{5112706CD4157AC9}" {
+   additionalActions {
+    SCR_EquipClothAction "{52E6EC76F51E12DE}" {
+     VisibilityRange 0.001
+    }
+    RHS_AttachToClothAction "{65E0126B7B16FAF6}" {
+     ParentContextList {
+      "default"
+     }
+     "Inventory action" 1
+    }
+    RHS_DetachFromClothAction "{65E0126B7CE0C88B}" {
+     ParentContextList {
+      "default"
+     }
+     "Sort Priority" 2
+     m_bIgnoreInRadial 0
+     m_sRadialLabelOverride "#RHS-Action_Detach_From"
+    }
+    RHS_ReplaceClothAction "{65E0126B41E65F5B}" {
+     ParentContextList {
+      "default"
+     }
+     "Sort Priority" 1
+     "Inventory action" 1
+     m_sRadialLabelOverride "#RHS-Action_Replace_With"
+    }
+    RHS_NVG_Toggle_Illuminator_Action "{65E0126B4B340747}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5DCEACC6A9F7608B}" {
+      Name "#RHS_Action_TurnON"
+     }
+     "Sort Priority" 4
+     m_bIgnoreInRadial 0
+    }
+   }
+  }
+ }
+}

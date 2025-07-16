@@ -1,0 +1,7 @@
+MatPBRBasic {
+ BlendMode AlphaBlend
+ AllowUserAlphaBias 1
+ DisableUserAphaInShadow 1
+ BCRMap "{DA3B313849D6861E}Assets/Characters/Earwear/Data/JTACGreen_Foam_BCR.edds"
+ NMOMap "{E2E38AAA90A1D480}Assets/Characters/Earwear/Data/JTACGreen_Foam_NMO.edds"
+}

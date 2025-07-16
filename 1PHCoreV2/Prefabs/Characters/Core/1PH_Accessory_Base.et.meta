@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{F47772D8A7A9A8EF}Prefabs/Characters/Eyewear/sov_glasses_basic/sov_sunglasses_basic.et"
+ Name "{0A7474CBAFE3FCC4}Prefabs/Characters/Core/1PH_Accessory_Base.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

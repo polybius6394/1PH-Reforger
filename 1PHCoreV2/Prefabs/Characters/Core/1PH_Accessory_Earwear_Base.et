@@ -1,0 +1,16 @@
+GameEntity : "{0A7474CBAFE3FCC4}Prefabs/Characters/Core/1PH_Accessory_Base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes ItemAttributeCollection "{5244E4431DA56D64}" {
+    CustomAttributes {
+     RHS_CustomAttributes "{65E012503E500B44}" {
+      m_sCompatibleSlotNames {
+       "ravenTac_EarwearArea"
+      }
+     }
+    }
+   }
+  }
+ }
+}

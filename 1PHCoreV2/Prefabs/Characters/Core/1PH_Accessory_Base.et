@@ -1,0 +1,61 @@
+GameEntity : "{17F335BF60DD2550}Prefabs/Characters/Core/Headgear_Base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes ItemAttributeCollection "{5244E4431DA56D64}" {
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.05
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{52D2D35767351900}" {
+      PreviewWornModel 1
+     }
+     RHS_CustomAttributes "{65E012503E500B44}" {
+     }
+    }
+   }
+  }
+  ActionsManagerComponent "{5112706CD4157AC9}" {
+   additionalActions {
+    RHS_AttachToClothAction "{65E0126BACCD90ED}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5DB09132CE81D63C}" {
+      Name "#RHS-Action_Attach_To"
+     }
+     "Sort Priority" 1
+     "Inventory action" 1
+     m_ClothFromArea LoadoutHeadCoverArea "{5DB09132BBC2018D}" {
+     }
+    }
+    RHS_DetachFromClothAction "{65E0126BB8EE5321}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5D77651344FE807D}" {
+      Name "#RHS-Action_Detach_From"
+     }
+     "Sort Priority" 2
+     m_bIgnoreInRadial 0
+     m_sRadialLabelOverride "#RHS-Action_Detach_From"
+     m_ClothFromArea LoadoutHeadCoverArea "{5DB09132BBC2018D}" {
+     }
+    }
+    RHS_ReplaceClothAction "{65E0126B834F30FB}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{5DB6FDDA7EE65E82}" {
+      Name "#RHS-Action_Replace_With"
+     }
+     "Sort Priority" 1
+     "Inventory action" 1
+     m_sRadialLabelOverride "#RHS-Action_Replace_With"
+     m_ClothFromArea LoadoutHeadCoverArea "{5DB6FDDA7872D29F}" {
+     }
+    }
+   }
+  }
+ }
+}

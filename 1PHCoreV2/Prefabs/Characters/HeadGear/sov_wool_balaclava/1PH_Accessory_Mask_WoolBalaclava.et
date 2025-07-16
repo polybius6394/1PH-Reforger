@@ -1,0 +1,34 @@
+GameEntity : "{BA170928BF2CC464}Prefabs/Characters/Core/1PH_Accessory_Mask_Base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes ItemAttributeCollection "{5244E4431DA56D64}" {
+    ItemDisplayName UIInfo "{5244E443130B31B9}" {
+     Name "Wool Balaclava"
+     Description "A brown/tan wool balaclava that covers the whole face but the eyes. Used in colder weather and by Spetznaz Operators."
+    }
+    CustomAttributes {
+     RHS_CustomAttributes "{65E012503E500B44}" {
+      m_sShortName "Wool Balaclava"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   WornModel "{9C9F048D2F8D6509}Assets/Characters/HeadGear/Wool_Balaclava/wool_balaclava_brown.xob"
+   WornMaterialsOverride {
+    "{4E72870227997DD8}Assets/Characters/HeadGear/Wool_Balaclava/Data/balaclava.emat"
+   }
+   ItemModel "{C8E9716F804A12A7}Assets/Characters/HeadGear/Wool_Balaclava/wool_balaclava_brown_item.xob"
+   ItemMaterialsOverride {
+    "{4E72870227997DD8}Assets/Characters/HeadGear/Wool_Balaclava/Data/balaclava.emat"
+   }
+   DepthFront 0
+   DepthBack 0
+   DepthLeft 0
+   DepthRight 0
+   OffsetShoulderLeft 0
+   OffsetShoulderRight 0
+  }
+ }
+}

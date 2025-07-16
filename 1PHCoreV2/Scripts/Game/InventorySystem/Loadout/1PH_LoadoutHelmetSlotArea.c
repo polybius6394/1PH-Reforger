@@ -25,9 +25,6 @@ class ravenTac_LoadoutSSh68CoverSlotArea : ravenTac_HelmetCoverArea
 {
 }
 
-class ravenTac_LoadoutSSh68MakeshiftCoverSlotArea : ravenTac_HelmetCoverArea
-{
-}
 
 // accessories
 
@@ -54,10 +51,6 @@ class ravenTac_StrobeArea : LoadoutAreaType
 }
 
 class ravenTac_ScrimNettingArea : LoadoutAreaType
-{
-}
-
-class ravenTac_NVGMountArea : LoadoutAreaType
 {
 }
 

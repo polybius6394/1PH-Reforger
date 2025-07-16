@@ -1,0 +1,35 @@
+GameEntity : "{16B36BFBF9D9D948}Prefabs/Characters/Core/1PH_Accessory_Earwear_Base.et" {
+ ID "5112706CD4157AC7"
+ components {
+  InventoryItemComponent "{5244E4431E28A759}" {
+   Attributes ItemAttributeCollection "{5244E4431DA56D64}" {
+    ItemDisplayName UIInfo "{5244E443130B31B9}" {
+     Name "Bowman Headset"
+     Description ""
+    }
+    CustomAttributes {
+     RHS_CustomAttributes "{65E012503E500B44}" {
+      m_sShortName "Bowman Headset"
+     }
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Enabled 1
+   WornModel "{361D2F312301ABF5}Assets/Characters/Earwear/ZTacHeadset.xob"
+   WornMaterialsOverride {
+    "{225A6F222C4F5735}Assets/Characters/Earwear/Data/JTac.emat" "{A63D86233B04F59D}Assets/Characters/Earwear/Data/Foam.emat" "{B5FCBD37EA8F8000}Assets/Characters/Earwear/Data/JTacStraps.emat"
+   }
+   ItemModel "{FFCBA6DFA37AD1A6}Assets/Characters/Earwear/ZTacHeadsetGround.xob"
+   ItemMaterialsOverride {
+    "{225A6F222C4F5735}Assets/Characters/Earwear/Data/JTac.emat" "{A63D86233B04F59D}Assets/Characters/Earwear/Data/Foam.emat" "{B5FCBD37EA8F8000}Assets/Characters/Earwear/Data/JTacStraps.emat"
+   }
+   DepthFront 0
+   DepthBack 0
+   DepthLeft 0
+   DepthRight 0
+   OffsetShoulderLeft 0
+   OffsetShoulderRight 0
+  }
+ }
+}
